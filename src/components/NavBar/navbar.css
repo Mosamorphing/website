@@ -1,0 +1,212 @@
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: static;
+  top: 0;
+  z-index: 3;
+  font-weight: 500;
+}
+
+.logo {
+  object-fit: cover;
+  width: 2.5rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  position: relative;
+  color: white;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover {
+  background-color: #444;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.desktopMenuBtn {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.7rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.desktopMenuBtn:hover {
+  transform: translateY(-5px);
+  color: #c91919;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.desktopMenuBtn a:hover {
+  background-color: #c91919;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 2rem; /* Adjust logo size */
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: auto; /* Adjust width to fit content */
+    position: absolute;
+    top: 60px; /* Position directly under the hamburger icon */
+    right: 20px; /* Align to the right */
+    background-color: transparent; /* Remove background color */
+    z-index: 1001;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    list-style: none; /* Remove the dot in front of the list items */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure full width */
+  }
+
+  .menu-item {
+    margin: 10px 0;
+    width: 100%; /* Ensure full width */
+  }
+
+  .menu-item a {
+    font-size: 1rem;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure full width */
+    display: block; /* Ensure block display */
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    padding-left: 0;
+    width: 100%; /* Ensure full width */
+  }
+
+  .dropdown-menu li {
+    width: 100%; /* Ensure full width */
+  }
+
+  .dropdown-menu li a {
+    font-size: 0.9rem;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure full width */
+    display: block; /* Ensure block display */
+  }
+
+  .desktopMenuBtn {
+    display: none; /* Hide the Send a Mail button on mobile */
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* Hide the hamburger icon on desktop */
+  }
+
+  .menu {
+    display: flex; /* Ensure the menu is displayed */
+  }
+
+  .menu-list {
+    display: flex; /* Ensure the menu items are displayed horizontally */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center;
+    list-style: none; /* Remove the dot in front of the list items */
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-item {
+    margin: 0 10px;
+  }
+
+  .menu-item a {
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+  }
+
+  .desktopMenuBtn {
+    display: flex; /* Show the Send a Mail button on desktop */
+  }
+}

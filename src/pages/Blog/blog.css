@@ -1,0 +1,28 @@
+.blog-article {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .blog-article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e63946;
+  }
+  
+  .blog-article p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .styled-blockquote {
+    font-size: 1.2rem;
+    border-left: 2px solid white; /* Black vertical line */
+    padding-left: 16px; /* Space between the line and the text */
+    font-style: italic; /* Optional for a classic blockquote look */
+    color: #ffffff; /* Text color */
+    margin: 20px 0; /* Add vertical spacing */
+  }
+  
