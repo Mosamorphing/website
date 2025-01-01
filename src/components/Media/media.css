@@ -13,6 +13,8 @@
   padding: 10px 20px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px; /* Set a maximum width */
+  margin: 0 auto; /* Center the filter bar */
 }
 
 .filter-btn {
@@ -118,6 +120,12 @@
   max-width: 1200px;
 }
 
+.media-footer-line {
+  flex: 2; /* Allow the line to stretch to fill available space */
+  height: 1px;
+  background-color: black;
+}
+
 .media-footer-links {
   display: flex;
   gap: 30px;
@@ -142,7 +150,8 @@
 
   .filter-bar {
     flex-wrap: wrap; /* Allow wrapping to fit smaller screens */
-    gap: 8px; /* Adjust gap for mobile */
+    gap: 10px; /* Adjust gap for mobile */
+    max-width: 100%; /* Allow full width on mobile */
   }
 
   .filter-btn {
@@ -172,9 +181,9 @@
     font-size: 0.9rem;
   }
 
-  .media-footer-section {
+  /* .media-footer-section {
     padding: 20px;
-  }
+  } */
 
   .media-footer-content {
     flex-direction: column;

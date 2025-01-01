@@ -84,14 +84,20 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.desktopMenuBtn a {
+  color: black;
+  font-weight: 500; 
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
 .desktopMenuBtn:hover {
   transform: translateY(-5px);
-  color: #c91919;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.desktopMenuBtn a:hover {
-  background-color: #c91919;
+.desktopMenuBtn:hover a {
+  color: #c91919; /* Change color to red on hover */
 }
 
 /* Media Queries for Mobile */

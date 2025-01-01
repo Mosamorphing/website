@@ -64,6 +64,12 @@
   max-width: 1200px; /* Optional: limit max width */
 }
 
+.career-footer-line {
+  flex: 2; /* Allow the line to stretch to fill available space */
+  height: 1px;
+  background-color: black;
+}
+
 .career-footer-links {
   display: flex;
   gap: 30px;
@@ -127,24 +133,23 @@
     object-fit: cover;
   }
 
-  .career-footer-section {
-    padding: 20px;
-    position: relative; /* Ensure footer is positioned correctly */
-    z-index: 3; /* Ensure footer is above the image */
-  }
 
+  /* .career-footer-section {
+    padding: 20px;
+  } */
+  
   .career-footer-content {
     flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center align items */
-    gap: 20px; /* Adjust gap */
+    align-items: center; 
+    gap: 20px;
   }
-
+  
   .career-footer-links {
-    flex-direction: row; /* Keep links in a row */
-    gap: 20px; /* Adjust gap */
+    flex-direction: row; 
+    gap: 20px; 
   }
-
+  
   .career-footer-links a {
-    font-size: 0.9rem; /* Adjust font size for mobile */
+    font-size: 0.9rem; 
   }
 }

@@ -204,7 +204,7 @@ h1, h2, h3, p {
   .home-image {
     max-width: 100%;
     margin-top: 0; /* Remove top margin */
-    margin-left: 40px; /* Nudge the image to the right */
+    margin-left: 70px; /* Nudge the image to the right */
   }
 
   .home-image img {
@@ -215,6 +215,7 @@ h1, h2, h3, p {
 
   .features-section {
     padding: 20px;
+    margin-top: -20px;
   }
 
   .features-grid {
