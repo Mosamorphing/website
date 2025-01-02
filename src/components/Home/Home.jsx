@@ -11,16 +11,16 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="home-section layout__container">
-        <div className="home-content">
-          <h1>MOSADOLUWA FASASI</h1>
-          <h2>Adventurer, Thinker, Doer.</h2>
-          <h3>Principal, The Morphing—500</h3>
+      <section className="flex h-auto lg:h-[94vh] items-center justify-between layout__container">
+        <div className="">
+          <h1 className="text-[70px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px]">MOSADOLUWA FASASI</h1>
+          <h2 className="text-[70px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] font-[200] mb-5">Adventurer, Thinker, Doer.</h2>
+          <h3 className="text-[25px] font-[200] mb-5">Principal, The Morphing—500</h3>
           <Link to="/about/bio">
             <button className="about-me-btn">About Me</button>
           </Link>
         </div>
-        <div className="w-1/2 object-cover h-auto mr-[50px]">
+        <div className="w-1/2 lg:w-auto md:hidden object-cover h-auto mr-[50px]">
           <img src={hero} alt="Hero" />
         </div>
       </section>
