@@ -38,7 +38,7 @@
   align-items: center;
 }
 
-.bio-image img {
+.about__hero__img {
   width: 700px;
   max-width: 1000px;
   border-radius: 8px;
@@ -127,7 +127,7 @@
     opacity: 0.5; /* Optional: Adjust opacity for better readability */
   }
 
-  .bio-image img {
+  .about__hero__img {
     width: 100%;
     height: 100%;
     object-fit: cover;

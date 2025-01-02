@@ -29,6 +29,7 @@
   margin-bottom: 20px;
   font-size: 25px;
   font-weight: 250;
+  width: 100%;
 }
 
 .career-image {
@@ -86,6 +87,19 @@
   color: #e63946; /* Highlight color on hover */
 }
 
+@media (max-width: 1280px) {
+  .career-text {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Ensure text is above the image */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Add padding for better readability */
+    border-radius: 10px; /* Optional: Add border radius */
+  }
+}
+
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .career-section {
@@ -104,7 +118,7 @@
     text-align: left;
     position: relative;
     z-index: 2; /* Ensure text is above the image */
-        background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px; /* Add padding for better readability */
     border-radius: 10px; /* Optional: Add border radius */
   }
@@ -133,23 +147,22 @@
     object-fit: cover;
   }
 
-
   /* .career-footer-section {
     padding: 20px;
   } */
-  
+
   .career-footer-content {
     flex-direction: column; /* Stack content vertically */
-    align-items: center; 
+    align-items: center;
     gap: 20px;
   }
-  
+
   .career-footer-links {
-    flex-direction: row; 
-    gap: 20px; 
+    flex-direction: row;
+    gap: 20px;
   }
-  
+
   .career-footer-links a {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
