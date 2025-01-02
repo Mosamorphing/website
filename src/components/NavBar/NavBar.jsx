@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar layout__container">
+    <nav className="navbar sticky top-0 right-0 layout__container">
       {/* Logo */}
       <a href="/">
         <img src={logo} alt="logo" className="logo" />
