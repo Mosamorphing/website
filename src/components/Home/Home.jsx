@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="home-section width__layout">
+      <section className="home-section layout__container">
         <div className="home-content">
           <h1>MOSADOLUWA FASASI</h1>
           <h2>Adventurer, Thinker, Doer.</h2>
@@ -20,117 +20,122 @@ const Home = () => {
             <button className="about-me-btn">About Me</button>
           </Link>
         </div>
-        <div className="home-image">
+        <div className="w-1/2 object-cover h-auto mr-[50px]">
           <img src={hero} alt="Hero" />
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="features-section width__layout">
-        <h2>Features on The Moveee Magazine</h2>
-        <div className="features-grid">
-          {/* Feature 1 */}
-          <div className="feature-item">
-            <div
-              className="feature-image"
-              style={{ backgroundImage: `url(${placeholder})` }}
-            ></div>
-            <div className="feature-text">
-              <h3 className="feature-title">
-                <a
-                  href="https://themoveee.com/africa-will-become-another-west/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Will Africa Become Another West?
-                </a>
-              </h3>
-              <p className="feature-description">
-                More than being a part of the global village, Africa is a hybrid
-                continent. This is not just because it has 54 countries and
-                thousands of ethnic groups,[...]
-              </p>
+      <div className="bg-white">
+        <section className="layout__container px-[100px] xl:px-[60px] lg:px-[40px] 2xs:px-[20px] py-20 md:py-14 2xs:py-10">
+          <h2 className="text-[45px] md:text-[32px] 2xs:text-[28px] text-black">
+            Features on The Moveee Magazine
+          </h2>
+          <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
+            {/* Feature 1 */}
+            <div className="w-[22%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+              <div
+                className="feature-image"
+                style={{ backgroundImage: `url(${placeholder})` }}
+              ></div>
+              <div className="feature-text">
+                <h3 className="feature-title">
+                  <a
+                    href="https://themoveee.com/africa-will-become-another-west/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Will Africa Become Another West?
+                  </a>
+                </h3>
+                <p className="feature-description">
+                  More than being a part of the global village, Africa is a
+                  hybrid continent. This is not just because it has 54 countries
+                  and thousands of ethnic groups,[...]
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* Feature 2 */}
-          <div className="feature-item">
-            <div
-              className="feature-image"
-              style={{ backgroundImage: `url(${genz})` }}
-            ></div>
-            <div className="feature-text">
-              <h3 className="feature-title">
-                <a
-                  href="https://themoveee.com/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Gen-Z, Startups, and the Art of Collaboration in Modern Work
-                  Culture
-                </a>
-              </h3>
-              <p className="feature-description">
-                One of the reasons why it appears that Gen-Zs lack the ability
-                to collaborate with traditional institutions is mistrust. Gen-Zs
-                have grown up in a time of unprecedented [...]
-              </p>
+            {/* Feature 2 */}
+            <div className="w-[22%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+              <div
+                className="feature-image"
+                style={{ backgroundImage: `url(${genz})` }}
+              ></div>
+              <div className="feature-text">
+                <h3 className="feature-title">
+                  <a
+                    href="https://themoveee.com/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Gen-Z, Startups, and the Art of Collaboration in Modern Work
+                    Culture
+                  </a>
+                </h3>
+                <p className="feature-description">
+                  One of the reasons why it appears that Gen-Zs lack the ability
+                  to collaborate with traditional institutions is mistrust.
+                  Gen-Zs have grown up in a time of unprecedented [...]
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* Feature 3 */}
-          <div className="feature-item">
-            <div
-              className="feature-image"
-              style={{ backgroundImage: `url(${work})` }}
-            ></div>
-            <div className="feature-text">
-              <h3 className="feature-title">
-                <a
-                  href="https://themoveee.com/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  The Work Culture and the New Breed: What the Old Wineskin
-                  Means for the New Wine
-                </a>
-              </h3>
-              <p className="feature-description">
-                We have enough gaps in our existence already. Things only worsen
-                when we fail to understand how we can synchronise our [...]
-              </p>
+            {/* Feature 3 */}
+            <div className="w-[22%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+              <div
+                className="feature-image"
+                style={{ backgroundImage: `url(${work})` }}
+              ></div>
+              <div className="feature-text">
+                <h3 className="feature-title">
+                  <a
+                    href="https://themoveee.com/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    The Work Culture and the New Breed: What the Old Wineskin
+                    Means for the New Wine
+                  </a>
+                </h3>
+                <p className="feature-description">
+                  We have enough gaps in our existence already. Things only
+                  worsen when we fail to understand how we can synchronise our
+                  [...]
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* Feature 4 */}
-          <div className="feature-item">
-            <div
-              className="feature-image"
-              style={{ backgroundImage: `url(${peopledao})` }}
-            ></div>
-            <div className="feature-text">
-              <h3 className="feature-title">
-                <a
-                  href="https://themoveee.com/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  PeopleDAO: The Nigerian community Implementing NFTs in
-                  Tackling Human Trafficking
-                </a>
-              </h3>
-              <p className="feature-description">
-                The community at PeopleDAO is an example of how technology can
-                aid the fundraising process. It’s not a solution [...]
-              </p>
+            {/* Feature 4 */}
+            <div className="w-[22%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+              <div
+                className="feature-image"
+                style={{ backgroundImage: `url(${peopledao})` }}
+              ></div>
+              <div className="feature-text">
+                <h3 className="feature-title">
+                  <a
+                    href="https://themoveee.com/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    PeopleDAO: The Nigerian community Implementing NFTs in
+                    Tackling Human Trafficking
+                  </a>
+                </h3>
+                <p className="feature-description">
+                  The community at PeopleDAO is an example of how technology can
+                  aid the fundraising process. It’s not a solution [...]
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Footer Section */}
       <footer className="footer-section">

@@ -69,16 +69,16 @@ h1, h2, h3, p {
 
 /* Features Section */
 .features-section {
-  padding: 20px 100px;
+  /* padding: 20px 100px; */
   background-color: white;
 }
 
-.features-section h2 {
+/* .features-section h2 {
   color: black;
   font-family: Inter;
   font-weight: 250;
   font-size: 45px;
-}
+} */
 
 .features-grid {
   padding-top: 20px;

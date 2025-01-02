@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar width__layout">
+    <nav className="navbar layout__container">
       {/* Logo */}
       <img src={logo} alt="logo" className="logo" />
 
@@ -24,21 +24,29 @@ const Navbar = () => {
       <div className={`menu ${isOpen ? "open" : ""}`}>
         <ul className="menu-list">
           <li className="menu-item">
-            <Link to="/" onClick={closeMenu}>Home</Link>
+            <Link to="/" onClick={closeMenu}>
+              Home
+            </Link>
           </li>
           <li className="menu-item dropdown">
             <span>About</span>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/about/bio" onClick={closeMenu}>Bio</Link>
+                <Link to="/about/bio" onClick={closeMenu}>
+                  Bio
+                </Link>
               </li>
               <li>
-                <Link to="/about/career" onClick={closeMenu}>Career</Link>
+                <Link to="/about/career" onClick={closeMenu}>
+                  Career
+                </Link>
               </li>
             </ul>
           </li>
           <li className="menu-item">
-            <Link to="/media" onClick={closeMenu}>Media</Link>
+            <Link to="/media" onClick={closeMenu}>
+              Media
+            </Link>
           </li>
         </ul>
       </div>
