@@ -18,7 +18,9 @@ const Navbar = () => {
   return (
     <nav className="navbar layout__container">
       {/* Logo */}
-      <img src={logo} alt="logo" className="logo" />
+      <a href="/">
+        <img src={logo} alt="logo" className="logo" />
+      </a>
 
       {/* Menu */}
       <div className={`menu ${isOpen ? "open" : ""}`}>
