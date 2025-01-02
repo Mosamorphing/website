@@ -110,10 +110,10 @@
     padding-right: 0;
     text-align: left;
     position: relative;
-    z-index: 2; /* Ensure text is above the image */
-
-    padding: 20px; /* Add padding for better readability */
-    border-radius: 10px; /* Optional: Add border radius */
+    z-index: 2;
+    line-height: normal;
+    padding: 20px;
+    border-radius: 10px;
   }
 
   .career-text h2 {

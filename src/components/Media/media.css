@@ -103,9 +103,9 @@
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .filter-bar {
-    flex-wrap: wrap; /* Allow wrapping to fit smaller screens */
+    width: 100%;
     gap: 10px; /* Adjust gap for mobile */
-    max-width: 100%; /* Allow full width on mobile */
+    width: 100%; /* Allow full width on mobile */
   }
 
   .filter-btn {

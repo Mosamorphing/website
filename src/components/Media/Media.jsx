@@ -119,14 +119,16 @@ const Media = () => {
       ? features
       : features.filter((feature) => feature.category === activeFilter);
 
+      const tabs = ["All", "Publications", "Speakings", "Features", "Blog"]
+
   return (
     <>
       <div className="media-wrapper layout__container">
         {/* Media Section */}
         <div className="media-section pt-8">
           {/* Filter Bar */}
-          <div className="filter-bar rounded-[100px]">
-            {["All", "Publications", "Speakings", "Features", "Blog"].map(
+          <div className="filter-bar overflow-x-auto px-4">
+            {tabs?.map(
               (filter) => (
                 <button
                   key={filter}
