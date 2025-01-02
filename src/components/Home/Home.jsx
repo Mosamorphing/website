@@ -14,13 +14,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="flex h-auto lg:h-[78vh] xs:h-[92vh] items-center justify-between layout__container relative overflow-hidden">
         <div className="z-[10]">
-          <h1 className="text-[70px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px]">
+          <h1 className="text-[70px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight">
             MOSADOLUWA FASASI
           </h1>
-          <h2 className="text-[70px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] font-[200] mb-5">
+          <h2 className="text-[66px] lg:text-[45px] 2xs:text-[35px] xs:text-[28px] font-[200] mb-5 leading-tight">
             Adventurer, Thinker, Doer.
           </h2>
-          <h3 className="text-[25px] font-[200] mb-5">
+          <h3 className="text-[25px] font-[200] mb-5 leading-tight">
             Principal, The Morphing—500
           </h3>
           <Link to="/about/bio">

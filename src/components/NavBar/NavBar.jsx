@@ -30,7 +30,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="menu-item dropdown">
+          <li className="menu-item dropdown relative">
             <span>About</span>
             <ul className="dropdown-menu">
               <li>
