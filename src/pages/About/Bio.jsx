@@ -1,13 +1,14 @@
 import React from "react";
 import "./bio.css"; // Custom CSS for Bio page // Replace with the actual image path
+import Footer from "../../components/Footer";
 
 const Bio = () => {
   return (
     <>
       {/* Bio Section */}
-      <section className="bio-section">
+      <section className="layout__container relative">
         <div className="bio-content">
-          <div className="bio-text">
+          <div className="bio-text mb-10">
             <h2>
               "If you feel stuck & you don't know where to go, what to do & who
               to become, create a beautiful list of where you don't want to go,
@@ -54,9 +55,7 @@ const Bio = () => {
             <p>
               To see some of his entrepreneurial adventures, click {""}
               <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/about/career"
                 style={{ textDecoration: "none", color: "#e63946" }}
               >
                 Career
@@ -71,34 +70,7 @@ const Bio = () => {
       </section>
 
       {/* Footer Section */}
-      <footer className="bio-footer-section">
-        <div className="bio-footer-content">
-          <div className="bio-footer-line"></div>
-          <div className="bio-footer-links">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mosadoluwa-fasasi-4008b81a9/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://x.com/mofasasi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              X/Twitter
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

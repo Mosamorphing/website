@@ -1,6 +1,5 @@
 /* Media Section */
 .media-section {
-  padding: 50px;
   color: white;
   text-align: center;
 }
@@ -13,7 +12,7 @@
   padding: 10px 20px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 450px; /* Set a maximum width */
+  max-width: 500px;
   margin: 0 auto; /* Center the filter bar */
 }
 
@@ -40,7 +39,7 @@
 
 /* Features Section */
 .media-features-section {
-  padding: 20px 100px;
+  /* padding: 20px 100px; */
 }
 
 .media-features-section h2 {
@@ -52,7 +51,7 @@
 
 /* Features Grid */
 .media-features-grid {
-  padding-top: 20px;
+  padding: 20px 0 40px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -101,53 +100,8 @@
   color: #e2e2e2;
 }
 
-/* Footer Section */
-.media-footer-section {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 30px 30px;
-  margin: 0;
-  min-height: 100px;
-  color: white;
-}
-
-.media-footer-content {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.media-footer-line {
-  flex: 2; /* Allow the line to stretch to fill available space */
-  height: 1px;
-  background-color: black;
-}
-
-.media-footer-links {
-  display: flex;
-  gap: 30px;
-}
-
-.media-footer-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.media-footer-links a:hover {
-  color: #e63946;
-}
-
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-  .media-section {
-    padding: 20px;
-  }
-
   .filter-bar {
     flex-wrap: wrap; /* Allow wrapping to fit smaller screens */
     gap: 10px; /* Adjust gap for mobile */
@@ -161,12 +115,12 @@
   }
 
   .media-features-section {
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .media-features-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 40px;
   }
 
   .media-feature-image {
@@ -178,25 +132,6 @@
   }
 
   .media-feature-description {
-    font-size: 0.9rem;
-  }
-
-  /* .media-footer-section {
-    padding: 20px;
-  } */
-
-  .media-footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .media-footer-links {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .media-footer-links a {
     font-size: 0.9rem;
   }
 }
