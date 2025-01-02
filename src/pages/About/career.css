@@ -84,13 +84,20 @@
 }
 
 @media (max-width: 1280px) {
+  .career-content {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; /* Ensure relative positioning for absolute children */
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .career-text {
     max-width: 100%;
     padding-right: 0;
     text-align: left;
     position: relative;
     z-index: 2; /* Ensure text is above the image */
-    background: rgba(0, 0, 0, 0.5);
+
     padding: 20px; /* Add padding for better readability */
     border-radius: 10px; /* Optional: Add border radius */
   }
@@ -98,19 +105,13 @@
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-  .career-content {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative; /* Ensure relative positioning for absolute children */
-  }
-
   .career-text {
     max-width: 100%;
     padding-right: 0;
     text-align: left;
     position: relative;
     z-index: 2; /* Ensure text is above the image */
-    background: rgba(0, 0, 0, 0.5);
+
     padding: 20px; /* Add padding for better readability */
     border-radius: 10px; /* Optional: Add border radius */
   }

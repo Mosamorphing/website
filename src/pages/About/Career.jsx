@@ -53,7 +53,7 @@ const Career = () => {
               ''Contributor of the Month'' He operated in various roles, led and
               collaborated with cross-functional teams to support and accelerate
               incubated projects. Some of the projects he accelerated includes;
-              We&aposre Gonna Buy The Constitution (WAGBTC),
+              We&apos;re Gonna Buy The Constitution (WAGBTC),
               (https://constitutiondao2.com/), and The Lost Children of Benin
               City
               {/* (https://giveth.io/project/documentary-about-nigerian-human-trafficking?tab=updates#:~:text=dedicated%20team(Ariel%20%26-,Mosa,-)%20on%20the%20PeopleDAO) */}

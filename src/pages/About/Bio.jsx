@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 
 const Bio = () => {
   return (
-    <>
+    <div className="min-h-[100dvh] flex flex-col justify-between">
       {/* Bio Section */}
       <section className="layout__container relative">
         <div className="bio-content">
@@ -71,7 +71,7 @@ const Bio = () => {
 
       {/* Footer Section */}
       <Footer />
-    </>
+    </div>
   );
 };
 
