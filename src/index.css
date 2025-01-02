@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .width__layout {
+    @apply w-[1400px] mx-[auto] xl:w-full xl:px-[60px] lg:px-[40px] 2xs:px-[20px];
+  }
+
+
+}

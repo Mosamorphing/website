@@ -1,20 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    background: transparent;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
 }
 
 body {
-    background: #151414;
-    color: white;
-    overflow: hidden;
-    overflow-y: scroll;
+  background: #151414;
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
 }
-  

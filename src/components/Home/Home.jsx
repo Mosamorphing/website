@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="home-section">
+      <section className="home-section width__layout">
         <div className="home-content">
           <h1>MOSADOLUWA FASASI</h1>
           <h2>Adventurer, Thinker, Doer.</h2>
@@ -26,7 +26,7 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="features-section">
+      <section className="features-section width__layout">
         <h2>Features on The Moveee Magazine</h2>
         <div className="features-grid">
           {/* Feature 1 */}
@@ -47,7 +47,9 @@ const Home = () => {
                 </a>
               </h3>
               <p className="feature-description">
-                More than being a part of the global village, Africa is a hybrid continent. This is not just because it has 54 countries and thousands of ethnic groups,[...]
+                More than being a part of the global village, Africa is a hybrid
+                continent. This is not just because it has 54 countries and
+                thousands of ethnic groups,[...]
               </p>
             </div>
           </div>
@@ -72,8 +74,8 @@ const Home = () => {
               </h3>
               <p className="feature-description">
                 One of the reasons why it appears that Gen-Zs lack the ability
-                to collaborate with traditional institutions is mistrust.
-                Gen-Zs have grown up in a time of unprecedented [...]
+                to collaborate with traditional institutions is mistrust. Gen-Zs
+                have grown up in a time of unprecedented [...]
               </p>
             </div>
           </div>
@@ -97,7 +99,8 @@ const Home = () => {
                 </a>
               </h3>
               <p className="feature-description">
-                We have enough gaps in our existence already. Things only worsen when we fail to understand how we can synchronise our [...]
+                We have enough gaps in our existence already. Things only worsen
+                when we fail to understand how we can synchronise our [...]
               </p>
             </div>
           </div>
