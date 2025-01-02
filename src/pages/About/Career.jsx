@@ -10,9 +10,8 @@ const Career = () => {
           <div className="career-text">
             <h2>"The journey is the reward. Embrace growth, seek wisdom, and be excellent in your delieverables."</h2>
             <p>After a long and productive time in Web2, Mosadoluwa Fasasi transitioned full-time into Web3 in Q1 2024. Below are his adventures from his last engagement in Web2 to his current emphasis in Web3. </p>
-            <p>Founder, DeSci NG (Dec 2024 till date):
-            A community built on the ideals of Decentralised Science to increase the quality of education in Nigeria and accelerate innovation via academia, research and public good projects. To check out DeSci NG, click here (https://x.com/DeSci_NG)</p>
-            <p>
+            <p>DeSci NG (Dec 2024 till date):
+            A community built on the ideals of Decentralised Science. Mosadoluwa Fasasi leads this community with the goal of increasing the quality of education in Nigeria and accelerating innovation via academia, research and public good projects. To check out DeSci NG, click here (https://x.com/DeSci_NG)<p>
           Multisightapp (Dec 2023 till date):
           An analytics tool for Multisignature wallet and teams. Mosadoluwa Fasasi is a co-builder at Multisightapp. They got into the Safe Ecosystem grant in 2022 and have shipped an MVP.  To check out Multisightapp, click here (https://x.com/multisightapp)</p>
             <p>
