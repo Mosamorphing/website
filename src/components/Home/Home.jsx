@@ -13,7 +13,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className="flex h-auto lg:h-[78vh] xs:h-[92vh] items-center justify-between layout__container relative overflow-hidden">
-        <div className="">
+        <div className="z-[10]">
           <h1 className="text-[70px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px]">
             MOSADOLUWA FASASI
           </h1>
@@ -27,8 +27,12 @@ const Home = () => {
             <button className="about-me-btn">About Me</button>
           </Link>
         </div>
-        <div className="w-1/2 lg:absolute bottom-0 right-0 md:hidden object-cover h-auto mr-[50px]">
-          <img src={hero} alt="Hero" />
+        <div className="w-1/2 lg:absolute lg:bottom-0 lg:left-0 lg:w-full lg:h-[78vh] xs:h-[92vh] 2xs:z-1 lg:opacity-50 2xs:flex 2xs:justify-center object-cover bg-top h-auto mr-[50px]">
+          <img
+            src={hero}
+            alt="Hero"
+            className="w-full h-auto max-h-[92vh] object-cover"
+          />
         </div>
       </section>
 
