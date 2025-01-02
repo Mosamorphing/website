@@ -18,7 +18,7 @@ const Bio = () => {
               style={{ textDecoration: "none", color: "#e63946"}}
               >
                 The Morphing—500
-              </a>, a life and enterprise consult.
+              </a>, a life and enterprise consult, helping people morph from their current levels to their desired levels through guided insights and visioning. 
             </p>
             <p>He is an adventurous serial entrepreneur with a proven track record of managing and creating user-centred experiences across diverse industries. With a solid background in writing & communication, design & visuals, and technical domains, he has hands-on experience leading and collaborating with cross-functional AGILE teams.</p>
             <p>
