@@ -31,7 +31,7 @@ const Home = () => {
           <img
             src={hero}
             alt="Hero"
-            className="w-full h-auto max-h-[92vh] object-cover"
+            className="w-full h-auto max-h-full object-cover"
           />
         </div>
       </section>
@@ -39,7 +39,7 @@ const Home = () => {
       {/* Features Section */}
       <div className="bg-white">
         <section className="layout__container xl:px-[60px] lg:px-[40px] 2xs:px-[20px] py-20 md:py-14 2xs:py-10">
-          <h2 className="text-[45px] md:text-[32px] 2xs:text-[28px] text-black">
+          <h2 className="text-[45px] md:text-[32px] 2xs:text-[20px] text-black">
             Features on The Moveee Magazine
           </h2>
           <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
@@ -50,7 +50,7 @@ const Home = () => {
                 style={{ backgroundImage: `url(${placeholder})` }}
               ></div>
               <div className="feature-text">
-                <h3 className="feature-title">
+                <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
                     href="https://themoveee.com/africa-will-become-another-west/"
                     target="_blank"
@@ -60,7 +60,7 @@ const Home = () => {
                     Will Africa Become Another West?
                   </a>
                 </h3>
-                <p className="feature-description">
+                <p className="text-sm text-[#666] mt-[10px]">
                   More than being a part of the global village, Africa is a
                   hybrid continent. This is not just because it has 54 countries
                   and thousands of ethnic groups,[...]
@@ -75,7 +75,7 @@ const Home = () => {
                 style={{ backgroundImage: `url(${genz})` }}
               ></div>
               <div className="feature-text">
-                <h3 className="feature-title">
+                <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
                     href="https://themoveee.com/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/"
                     target="_blank"
@@ -86,7 +86,7 @@ const Home = () => {
                     Culture
                   </a>
                 </h3>
-                <p className="feature-description">
+                <p className="text-sm text-[#666] mt-[10px]">
                   One of the reasons why it appears that Gen-Zs lack the ability
                   to collaborate with traditional institutions is mistrust.
                   Gen-Zs have grown up in a time of unprecedented [...]
@@ -101,7 +101,7 @@ const Home = () => {
                 style={{ backgroundImage: `url(${work})` }}
               ></div>
               <div className="feature-text">
-                <h3 className="feature-title">
+                <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
                     href="https://themoveee.com/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
                     target="_blank"
@@ -112,7 +112,7 @@ const Home = () => {
                     Means for the New Wine
                   </a>
                 </h3>
-                <p className="feature-description">
+                <p className="text-sm text-[#666] mt-[10px]">
                   We have enough gaps in our existence already. Things only
                   worsen when we fail to understand how we can synchronise our
                   [...]
@@ -127,7 +127,7 @@ const Home = () => {
                 style={{ backgroundImage: `url(${peopledao})` }}
               ></div>
               <div className="feature-text">
-                <h3 className="feature-title">
+                <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
                     href="https://themoveee.com/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/"
                     target="_blank"
@@ -138,7 +138,7 @@ const Home = () => {
                     Tackling Human Trafficking
                   </a>
                 </h3>
-                <p className="feature-description">
+                <p className="text-sm text-[#666] mt-[10px]">
                   The community at PeopleDAO is an example of how technology can
                   aid the fundraising process. It’s not a solution [...]
                 </p>

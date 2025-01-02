@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <div className="bg-white">
       <footer className="layout__container">
-        <div className="flex justify-center px-0 py-[30px] m-0 min-h-[100px] text-white">
-          <div className="flex items-center xs:justify-center  gap-[30px] w-full">
+        <div className="flex justify-center px-0 py-[30px] m-0 min-h-[100px] text-white xs:border-t">
+          <div className="flex items-center xs:justify-center gap-[30px] w-full">
             <div className="career-footer-line xs:hidden"></div>
-            <div className="career-footer-links">
+            <div className="flex gap-[30px] text-sm text-black">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
