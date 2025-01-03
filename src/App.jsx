@@ -23,7 +23,7 @@ const App = () => {
           <Route index element={<Media />} />
           <Route path="blog/on-influences" element={<Influence />} />
           <Route path="blog/into-the-mind" element={<IntoTheMind />} />
-          <Route path="publication/a-case-for-desci" element={<Desci />} />
+          <Route path="publication/a-case-for-desci" element={<Desci />} /> 
         </Route>
       </Routes>
     </Router>
