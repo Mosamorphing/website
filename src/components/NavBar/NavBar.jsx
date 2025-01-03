@@ -30,20 +30,10 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="menu-item dropdown relative">
-            <span>About</span>
-            <ul className="dropdown-menu">
-              <li>
-                <Link to="/about/bio" onClick={closeMenu}>
-                  Bio
-                </Link>
-              </li>
-              <li>
-                <Link to="/about/career" onClick={closeMenu}>
-                  Career
-                </Link>
-              </li>
-            </ul>
+          <li className="menu-item">
+            <Link to="/about/career" onClick={closeMenu}>
+              Career
+            </Link>
           </li>
           <li className="menu-item">
             <Link to="/media" onClick={closeMenu}>
