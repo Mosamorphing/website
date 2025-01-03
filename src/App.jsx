@@ -4,8 +4,8 @@ import NavBar from "./components/NavBar/NavBar";
 
 // Import components
 import Home from "./components/Home/Home";
-import Bio from "./pages/About/bio";
-import Career from "./pages/About/career";
+import Bio from "./pages/About/Bio";
+import Career from "./pages/About/Career";
 import Media from "./components/Media/Media";
 import Influence from "./pages/Blog/Influence";
 import IntoTheMind from "./pages/Blog/IntoTheMind";
