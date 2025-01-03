@@ -32,7 +32,22 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="menu-item">
+              <li className="menu-item dropdown block sm:hidden">
+                <span>About</span>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link to="/bio" onClick={closeMenu}>
+                      Bio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/career" onClick={closeMenu}>
+                      Career
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="menu-item hidden sm:block">
                 <Link to="/career" onClick={closeMenu}>
                   Career
                 </Link>

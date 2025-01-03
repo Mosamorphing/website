@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="layout__container">
         <div className="flex justify-center px-0 py-[30px] m-0 min-h-[100px] text-white xs:border-t">
           <div className="flex items-center xs:justify-center gap-[30px] w-full">
-            <div className="career-footer-line xs:hidden"></div>
+            <div className="footer__line xs:hidden"></div>
             <div className="flex gap-[30px] text-sm text-black footer__links">
               <a
                 href="https://www.instagram.com/mofasasi"

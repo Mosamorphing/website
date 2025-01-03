@@ -5,11 +5,10 @@ import Footer from "../../components/Footer";
 const Career = () => {
   return (
     <div className="min-h-[93.5dvh] flex flex-col justify-between">
-      {/* Career Section */}
       <div className="relative overflow-hidden">
         <section className="w-[1400px] mx-[auto] xl:w-full xl:pl-[60px] lg:pl-[40px] 2xs:pl-[20px] flex">
-          <div className="career-content w-[47%] lg:w-full">
-            <div className="career-text mb-10">
+          <div className="career-content w-[80%] lg:w-full">
+            <div className="career-text mb-10 z-[999]">
               <h2>
                 "The journey is the reward. Embrace growth, seek wisdom, and be
                 excellent in your delieverables."
@@ -32,7 +31,8 @@ const Career = () => {
                   href="https://x.com/DeSci_NG"
                 >
                   here
-                </a>.
+                </a>
+                .
                 <br />
                 Multisightapp (Dec 2023 till date): An analytics tool for
                 Multisignature wallet and teams. Mosadoluwa Fasasi is a
@@ -45,7 +45,8 @@ const Career = () => {
                   href="https://x.com/multisightapp"
                 >
                   here
-                </a>.
+                </a>
+                .
               </p>
               <p>
                 WTF Academy Africa (Jan 2023 till date): An open-source Web3
@@ -58,10 +59,10 @@ const Career = () => {
                   href="https://www.linkedin.com/feed/update/urn:li:activity:7195716748053008384"
                 >
                   here
-                </a>.{" "}
-                They recently struck a partnership with The Family of Students,
-                Naija's largest community of students online, to continue to
-                drive their mission forward.
+                </a>
+                . They recently struck a partnership with The Family of
+                Students, Naija's largest community of students online, to
+                continue to drive their mission forward.
               </p>
               <p>
                 PeopleDAO (August 2022 - Dec 2024): A meta-dao that incubates
@@ -89,7 +90,8 @@ const Career = () => {
                   href="https://giveth.io/project/documentary-about-nigerian-human-trafficking?tab=updates#:~:text=dedicated%20team(Ariel%20%26-,Mosa,-)%20on%20the%20PeopleDAO"
                 >
                   here
-                </a>.
+                </a>
+                .
               </p>
               <p>
                 Techsemester | Talntsapp (Jan 2023 - Apr 2024): An ed-tech
@@ -112,7 +114,6 @@ const Career = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
       <Footer />
     </div>
   );

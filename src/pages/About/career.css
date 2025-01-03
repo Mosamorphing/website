@@ -13,7 +13,7 @@
 }
 
 .career-text h2 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 100;
   font-style: italic;
   margin-bottom: 20px;
@@ -22,7 +22,7 @@
 
 .career-text p {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 250;
   width: 100%;
 }
@@ -36,25 +36,17 @@
 
 .career__about__hero__img {
   width: 100%;
-  min-height: 100%;
-  min-width: 1000px;
+  min-width: 1900px;
   max-width: 1000px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top left;
-}
-/* Footer Section */
-
-.career-footer-line {
-  flex: 2;
-  height: 1px;
-  background-color: black;
+  opacity: 0.2;
 }
 
 @media (max-width: 1280px) {
   .career-content {
     position: relative;
-    /* background: rgba(0, 0, 0, 0.5); */
   }
 
   .career-text {

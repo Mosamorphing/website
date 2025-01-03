@@ -43,6 +43,13 @@
   color: #e63946;
 }
 
+.footer__line {
+  flex: 2;
+  height: 1px;
+  background-color: #151414;
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   .about__hero__img {
     width: 100%;
