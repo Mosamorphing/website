@@ -23,24 +23,26 @@ const Navbar = () => {
       </a>
 
       {/* Menu */}
-      <div className={`menu ${isOpen ? "open" : ""}`}>
-        <ul className="menu-list">
-          <li className="menu-item">
-            <Link to="/" onClick={closeMenu}>
-              Home
-            </Link>
-          </li>
-          <li className="menu-item">
-            <Link to="/about/career" onClick={closeMenu}>
-              Career
-            </Link>
-          </li>
-          <li className="menu-item">
-            <Link to="/media" onClick={closeMenu}>
-              Media
-            </Link>
-          </li>
-        </ul>
+      <div className="">
+        <div className={`menu ${isOpen ? "open" : ""}`}>
+          <ul className="menu-list">
+            <li className="menu-item">
+              <Link to="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/about/career" onClick={closeMenu}>
+                Career
+              </Link>
+            </li>
+            <li className="menu-item">
+              <Link to="/media" onClick={closeMenu}>
+                Media
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Send a Mail Button */}
