@@ -2,13 +2,13 @@
 .career-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 30px;
 }
 
 .career-text {
   padding-top: 100px;
   flex: 1;
-  font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
@@ -71,5 +71,18 @@
     object-fit: cover;
     object-position: center;
     opacity: 0.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-text h2 {
+    font-size: 14px;
+  }
+
+  .career-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 250;
+    padding-right: 5px;
   }
 }

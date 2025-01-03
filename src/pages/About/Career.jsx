@@ -25,21 +25,40 @@ const Career = () => {
                 of Decentralised Science. Mosadoluwa Fasasi leads this community
                 with the goal of increasing the quality of education in Nigeria
                 and accelerating innovation via academia, research and public
-                good projects. To check out DeSci NG, click here
-                (https://x.com/DeSci_NG)
+                good projects. To check out DeSci NG, click{" "}
+                <a
+                  className="underline"
+                  target="_blank"
+                  href="https://x.com/DeSci_NG"
+                >
+                  here
+                </a>.
                 <br />
                 Multisightapp (Dec 2023 till date): An analytics tool for
                 Multisignature wallet and teams. Mosadoluwa Fasasi is a
                 co-builder at Multisightapp. They got into the Safe Ecosystem
                 grant in 2022 and have shipped an MVP. To check out
-                Multisightapp, click here (https://x.com/multisightapp)
+                Multisightapp, click{" "}
+                <a
+                  className="underline"
+                  target="_blank"
+                  href="https://x.com/multisightapp"
+                >
+                  here
+                </a>.
               </p>
               <p>
                 WTF Academy Africa (Jan 2023 till date): An open-source Web3
                 university onboarding Web2 talent. Mosadoluwa Fasasi leads this
                 project and since Q2 2023, his team has reached over 100 talent.
-                To see one of their pop-ups in 2024, click here
-                {/* (https://www.linkedin.com/feed/update/urn:li:activity:7195716748053008384). */}
+                To see one of their pop-ups in 2024, click{" "}
+                <a
+                  className="underline"
+                  target="_blank"
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7195716748053008384"
+                >
+                  here
+                </a>.{" "}
                 They recently struck a partnership with The Family of Students,
                 Naija's largest community of students online, to continue to
                 drive their mission forward.
@@ -51,13 +70,26 @@ const Career = () => {
                 exceptional contributions which he was also awarded for. During
                 his first few months of engagement at PeopleDAO, he was quickly
                 recognized as a ''Rising Star'', and went on to become a 3x
-                ''Contributor of the Month'' He operated in various roles, led
+                ''Contributor of the Month''. He operated in various roles, led
                 and collaborated with cross-functional teams to support and
                 accelerate incubated projects. Some of the projects he
                 accelerated includes; We&apos;re Gonna Buy The Constitution
-                (WAGBTC), (https://constitutiondao2.com/), and The Lost Children
-                of Benin City
-                {/* (https://giveth.io/project/documentary-about-nigerian-human-trafficking?tab=updates#:~:text=dedicated%20team(Ariel%20%26-,Mosa,-)%20on%20the%20PeopleDAO) */}
+                (WAGBTC), found{" "}
+                <a
+                  className="underline"
+                  target="_blank"
+                  href="https://constitutiondao2.com/"
+                >
+                  here
+                </a>
+                , and The Lost Children of Benin City, found{" "}
+                <a
+                  className="underline"
+                  target="_blank"
+                  href="https://giveth.io/project/documentary-about-nigerian-human-trafficking?tab=updates#:~:text=dedicated%20team(Ariel%20%26-,Mosa,-)%20on%20the%20PeopleDAO"
+                >
+                  here
+                </a>.
               </p>
               <p>
                 Techsemester | Talntsapp (Jan 2023 - Apr 2024): An ed-tech

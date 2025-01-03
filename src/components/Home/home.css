@@ -3,7 +3,10 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -25,19 +28,16 @@ h1, h2, h3, p {
 
 .home-content h1 {
   font-size: 70px;
-  font-family: sans;
   margin-bottom: 10px;
 }
 
 .home-content h2 {
-  font-family: Inter;
   font-weight: 200;
   font-size: 70px;
   margin-bottom: 20px;
 }
 
 .home-content h3 {
-  font-family: Inter;
   font-weight: 200;
   font-size: 25px;
   margin-bottom: 20px;
@@ -69,16 +69,8 @@ h1, h2, h3, p {
 
 /* Features Section */
 .features-section {
-  /* padding: 20px 100px; */
   background-color: white;
 }
-
-/* .features-section h2 {
-  color: black;
-  font-family: Inter;
-  font-weight: 250;
-  font-size: 45px;
-} */
 
 .features-grid {
   padding-top: 20px;

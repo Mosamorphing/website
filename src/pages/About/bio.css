@@ -10,7 +10,6 @@
 .bio-text {
   padding-top: 100px;
   flex: 1;
-  font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
@@ -76,5 +75,6 @@
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 250;
+    padding-right: 5px;
   }
 }
