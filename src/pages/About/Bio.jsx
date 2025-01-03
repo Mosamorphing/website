@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 
 const Bio = () => {
   return (
-    <div className="min-h-[100dvh] flex flex-col">
+    <div className="min-h-[93.5dvh] flex flex-col justify-between">
       {/* Bio Section */}
       <div className="relative overflow-hidden">
         <section className="w-[1400px] mx-[auto] xl:w-full xl:pl-[60px] lg:pl-[40px] 2xs:pl-[20px] flex">

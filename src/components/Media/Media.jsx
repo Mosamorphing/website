@@ -119,28 +119,26 @@ const Media = () => {
       ? features
       : features.filter((feature) => feature.category === activeFilter);
 
-      const tabs = ["All", "Publications", "Speakings", "Features", "Blog"]
+  const tabs = ["All", "Publications", "Speakings", "Features", "Blog"];
 
   return (
-    <>
+    <div className="min-h-[93.5dvh] flex-1 flex flex-col justify-between">
       <div className="media-wrapper layout__container">
         {/* Media Section */}
         <div className="media-section pt-8">
           {/* Filter Bar */}
           <div className="filter-bar overflow-x-auto px-4">
-            {tabs?.map(
-              (filter) => (
-                <button
-                  key={filter}
-                  className={`filter-btn ${
-                    activeFilter === filter ? "active" : ""
-                  }`}
-                  onClick={() => handleFilterClick(filter)}
-                >
-                  {filter}
-                </button>
-              )
-            )}
+            {tabs?.map((filter) => (
+              <button
+                key={filter}
+                className={`filter-btn ${
+                  activeFilter === filter ? "active" : ""
+                }`}
+                onClick={() => handleFilterClick(filter)}
+              >
+                {filter}
+              </button>
+            ))}
           </div>
 
           {/* Features Section */}
@@ -185,7 +183,7 @@ const Media = () => {
         {/* Footer Section */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
