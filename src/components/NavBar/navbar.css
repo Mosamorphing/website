@@ -86,7 +86,7 @@
     flex-direction: column;
     width: auto; /* Adjust width to fit content */
     position: absolute;
-    top: 60px; /* Position directly under the hamburger icon */
+    top: 80px; /* Position directly under the hamburger icon */
     right: 20px; /* Align to the right */
     background-color: transparent; /* Remove background color */
     z-index: 1001;
