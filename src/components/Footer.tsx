@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="career-footer-line xs:hidden"></div>
             <div className="flex gap-[30px] text-sm text-black">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/mofasasi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
