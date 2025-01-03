@@ -24,13 +24,13 @@ const Career = () => {
                 adventures from his last engagement in Web2 to his current
                 emphasis in Web3.{" "}
               </p>
-              <div className="flex flex-col gap-y-10 my-10 md:w-[95%]">
-                <div className="flex gap-x-5 gap-y-3 sm:flex-col">
-                  <div className="w-[100px]">
+              <div className="flex flex-col gap-y-10 my-10 md:w-[95%] sm:w-[98%]">
+                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="w-[100px] sm:w-[40px]">
                     <img
                       src={desci}
                       alt="desci-ng"
-                      className="w-[60px] h-[60px] object-cover"
+                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
                   <p className="flex-1">
@@ -51,12 +51,12 @@ const Career = () => {
                   </p>
                 </div>
 
-                <div className="flex gap-5 sm:flex-col">
-                  <div className="w-[100px]">
+                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="w-[100px] sm:w-[40px]">
                     <img
                       src={multisight}
                       alt="multisight"
-                      className="w-[60px] h-[60px] object-cover"
+                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
                   <p className="flex-1">
@@ -75,12 +75,12 @@ const Career = () => {
                     {""}.
                   </p>
                 </div>
-                <div className="flex gap-5 sm:flex-col">
-                  <div className="w-[100px]">
+                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="w-[100px] sm:w-[40px]">
                     <img
                       src={wtf}
                       alt="wtf academy"
-                      className="w-[60px] h-[60px] object-contain"
+                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
                   <p className="flex-1">
@@ -101,12 +101,12 @@ const Career = () => {
                     continue to drive their mission forward.
                   </p>
                 </div>
-                <div className="flex gap-5 sm:flex-col">
-                  <div className="w-[100px]">
+                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="w-[100px] sm:w-[40px]">
                     <img
                       src={peopleDao}
                       alt="people dao"
-                      className="w-[60px] h-[60px] object-contain"
+                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
                   <p>
@@ -139,12 +139,12 @@ const Career = () => {
                     {""}.
                   </p>
                 </div>
-                <div className="flex gap-5 sm:flex-col">
-                  <div className="w-[100px]">
+                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="w-[100px] sm:w-[40px]">
                     <img
                       src={techSemester}
                       alt="tech semester"
-                      className="w-[60px] h-[60px] object-cover"
+                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
                   <p>
