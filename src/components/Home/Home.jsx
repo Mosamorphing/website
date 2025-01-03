@@ -23,7 +23,7 @@ const Home = () => {
           <h3 className="text-[25px] font-[200] mb-5 leading-tight">
             Principal, The Morphing—500
           </h3>
-          <Link to="/about/bio">
+          <Link to="/bio">
             <button className="about-me-btn">About Me</button>
           </Link>
         </div>
@@ -150,34 +150,6 @@ const Home = () => {
 
       {/* Footer Section */}
       <Footer />
-      {/* <footer className="footer-section">
-        <div className="footer-content">
-          <div className="footer-line"></div>
-          <div className="footer-links">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mosadoluwa-fasasi-4008b81a9/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://x.com/mofasasi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              X/Twitter
-            </a>
-          </div>
-        </div>
-      </footer> */}
     </>
   );
 };

@@ -56,7 +56,7 @@ const Bio = () => {
               <p>
                 To see some of his entrepreneurial adventures, click {""}
                 <a
-                  href="/about/career"
+                  href="/career"
                   style={{ textDecoration: "none", color: "#e63946" }}
                 >
                   Career

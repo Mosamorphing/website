@@ -32,7 +32,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/about/career" onClick={closeMenu}>
+              <Link to="/career" onClick={closeMenu}>
                 Career
               </Link>
             </li>
