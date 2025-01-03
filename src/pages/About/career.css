@@ -1,5 +1,4 @@
 /* Career Section */
-
 .career-content {
   display: flex;
   justify-content: space-between;
@@ -35,108 +34,42 @@
   align-items: center;
 }
 
-.career-image img {
-  width: 700px;
+.career__about__hero__img {
+  width: 100%;
+  min-width: 800px;
   max-width: 1000px;
   border-radius: 8px;
   object-fit: cover;
+  object-position: top left;
 }
-
 /* Footer Section */
-.career-footer-section {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 30px 30px;
-  margin: 0;
-  min-height: 100px;
-  color: white;
-}
-
-.career-footer-content {
-  display: flex;
-  align-items: center; /* Vertically align the links */
-  gap: 30px; /* Space between the links */
-  width: 100%; /* Ensure content stretches across */
-  max-width: 1200px; /* Optional: limit max width */
-}
 
 .career-footer-line {
-  flex: 2; /* Allow the line to stretch to fill available space */
+  flex: 2;
   height: 1px;
   background-color: black;
 }
 
-.career-footer-links {
-  display: flex;
-  gap: 30px;
-}
-
-.career-footer-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.career-footer-links a:hover {
-  color: #e63946; /* Highlight color on hover */
-}
-
 @media (max-width: 1280px) {
   .career-content {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative; /* Ensure relative positioning for absolute children */
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .career-text {
-    max-width: 100%;
-    padding-right: 0;
-    text-align: left;
     position: relative;
-    z-index: 2; /* Ensure text is above the image */
-
-    padding: 20px; /* Add padding for better readability */
-    border-radius: 10px; /* Optional: Add border radius */
+    /* background: rgba(0, 0, 0, 0.5); */
   }
-}
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
   .career-text {
     max-width: 100%;
-    padding-right: 0;
     text-align: left;
     position: relative;
     z-index: 2;
-    line-height: normal;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
   }
 
-  .career-text h2 {
-    font-size: 0.7rem;
-  }
-
-  .career-text p {
-    font-size: 0.9rem;
-  }
-
-  .career-image {
-    position: absolute; /* Position the image absolutely */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Ensure image is behind the text */
-    opacity: 0.5; /* Optional: Adjust opacity for better readability */
-  }
-
-  .about__hero__img {
+  .career__about__hero__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
   }
 }

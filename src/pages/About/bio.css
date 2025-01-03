@@ -54,10 +54,10 @@
     text-align: left;
     position: relative;
     z-index: 2;
-
     padding: 5px;
     border-radius: 10px;
   }
+
   .bio__about__hero__img {
     width: 100%;
     height: 100%;

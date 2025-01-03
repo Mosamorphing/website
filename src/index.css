@@ -39,6 +39,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.footer__links a:hover {
+  color: #e63946;
+}
+
 @media (max-width: 768px) {
   .about__hero__img {
     width: 100%;
