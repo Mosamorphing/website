@@ -66,3 +66,15 @@
     opacity: 0.4;
   }
 }
+
+@media (max-width: 768px) {
+  .bio-text h2 {
+    font-size: 14px;
+  }
+
+  .bio-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 250;
+  }
+}
