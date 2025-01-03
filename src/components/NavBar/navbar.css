@@ -41,37 +41,6 @@
   background-color: #444;
 }
 
-/* Dropdown styles */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  padding: 0;
-  list-style: none;
-  z-index: 10;
-}
-
-.dropdown-menu li {
-  margin: 5px 0;
-}
-
-.dropdown-menu li a {
-  display: block;
-  padding: 5px 10px;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #555;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 .desktopMenuBtn {
   background: white;
   color: black;
@@ -104,8 +73,7 @@
   .navbar {
     flex-direction: row;
     justify-content: space-between;
-    height: auto;
-    /* padding: 20px; */
+    min-height: 6.5vh;
   }
 
   .logo {
@@ -169,23 +137,6 @@
   .hamburger-icon {
     width: 25px;
     height: 25px;
-  }
-
-  .dropdown-menu {
-    position: static;
-    padding-left: 0;
-    width: 100%; /* Ensure full width */
-  }
-
-  .dropdown-menu li {
-    width: 100%; /* Ensure full width */
-  }
-
-  .dropdown-menu li a {
-    font-size: 0.9rem;
-    text-align: left; /* Align text to the left */
-    width: 100%; /* Ensure full width */
-    display: block; /* Ensure block display */
   }
 
   .desktopMenuBtn {
