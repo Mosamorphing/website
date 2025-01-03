@@ -30,7 +30,7 @@ const Career = () => {
                     <img
                       src={desci}
                       alt="desci-ng"
-                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
+                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-cover"
                     />
                   </div>
                   <p className="flex-1">
