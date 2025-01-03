@@ -36,7 +36,8 @@
 
 .career__about__hero__img {
   width: 100%;
-  min-width: 800px;
+  min-height: 100%;
+  min-width: 1000px;
   max-width: 1000px;
   border-radius: 8px;
   object-fit: cover;
