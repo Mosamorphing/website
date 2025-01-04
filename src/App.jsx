@@ -17,12 +17,14 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about/bio" element={<Bio />} />
-        <Route path="/about/career" element={<Career />} />
-        <Route path="/media" element={<Media />} />
-        <Route path="/media/blog/on-influences" element={<Influence />} />
-        <Route path="/media/blog/into-the-mind" element={<IntoTheMind />} />
-        <Route path="/media/publication/a-case-for-desci" element={<Desci />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="media">
+          <Route index element={<Media />} />
+          <Route path="blog/on-influences" element={<Influence />} />
+          <Route path="blog/into-the-mind" element={<IntoTheMind />} />
+          <Route path="publication/a-case-for-desci" element={<Desci />} /> 
+        </Route>
       </Routes>
     </Router>
   );

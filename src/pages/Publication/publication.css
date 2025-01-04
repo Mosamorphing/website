@@ -1,54 +1,89 @@
 .publication {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: white;
-  }
-  
-  .publication h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #e63946;
-  }
-  
-  .publication p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
+  padding: 40px 20px 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
 
+.publication h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #e63946;
+}
+
+.publication p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.references {
+  padding: 20px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.references h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.references ol {
+  padding-left: 20px; /* Align with publication text */
+  margin: 0;
+}
+
+.references li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.references li a {
+  color: white; /* Same color as headings */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.references li a:hover {
+  color: #e63946; /* Slightly lighter hover color */
+  text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+  .publication {
+    padding: 40px 20px 0 20px;
+    max-width: 1000px;
+  }
 
   .references {
-    padding: 20px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: white;
+    max-width: 1000px;
+  }
+
+  .publication h1 {
+    font-size: 2rem;
   }
 
   .references h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .references li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .publication h1 {
+    font-size: 1.5rem;
+  }
+
+  .publication p {
+    font-size: 1rem;
+  }
+  .references h3 {
+    font-size: 1.2rem;
     margin-bottom: 20px;
     color: white;
   }
-  
-
-  .references ol {
-    padding-left: 20px; /* Align with publication text */
-    margin: 0;
-  }
-  
-  .references li {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  
-  .references li a {
-    color: white; /* Same color as headings */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .references li a:hover {
-    color: #e63946; /* Slightly lighter hover color */
-    text-decoration: underline;
-  }
+}

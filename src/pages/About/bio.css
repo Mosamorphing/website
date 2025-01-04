@@ -1,33 +1,30 @@
 /* Bio Section */
-.bio-section {
-  padding: 40px 130px 0 180px;
-  color: white;
-}
 
 .bio-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 30px;
 }
 
 .bio-text {
   padding-top: 100px;
   flex: 1;
-  font-family: "Inter", sans-serif;
   line-height: 1.6;
 }
 
 .bio-text h2 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 100;
   font-style: italic;
   margin-bottom: 20px;
   color: white;
+  opacity: 0.7;
 }
 
 .bio-text p {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 250;
 }
 
@@ -38,123 +35,47 @@
   align-items: center;
 }
 
-.bio-image img {
-  width: 700px;
+.bio__about__hero__img {
+  width: 100%;
+  min-width: 800px;
   max-width: 1000px;
   border-radius: 8px;
   object-fit: cover;
+  object-position: top left;
 }
 
-/* Footer Section */
-.bio-footer-section {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 30px 30px;
-  margin: 0;
-  min-height: 100px;
-  color: white;
-}
-
-.bio-footer-content {
-  display: flex;
-  align-items: center; /* Vertically align the line and links */
-  gap: 30px; /* Space between the line and links */
-  width: 100%; /* Ensure content stretches across */
-  max-width: 1200px; /* Optional: limit max width */
-}
-
-.bio-footer-line {
-  flex: 2; /* Allow the line to stretch to fill available space */
-  height: 1px;
-  background-color: black;
-}
-
-.bio-footer-links {
-  display: flex;
-  gap: 30px;
-}
-
-.bio-footer-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.bio-footer-links a:hover {
-  color: #e63946; /* Highlight color on hover */
-}
-
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-  .bio-section {
-    padding: 20px;
-  }
-
+@media (max-width: 1280px) {
   .bio-content {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative; /* Ensure relative positioning for absolute children */
+    position: relative;
+    /* background: rgba(0, 0, 0, 0.5); */
   }
-
   .bio-text {
     max-width: 100%;
-    padding-right: 0;
     text-align: left;
     position: relative;
-    z-index: 2; /* Ensure text is above the image */
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px; /* Add padding for better readability */
-    border-radius: 10px; /* Optional: Add border radius */
+    z-index: 2;
+    padding: 5px;
+    border-radius: 10px;
   }
 
-  .bio-text h2 {
-    font-size: 0.7rem;
-  }
-
-  .bio-text p {
-    font-size: 0.9rem;
-  }
-
-  .bio-image {
-    position: absolute; /* Position the image absolutely */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Ensure image is behind the text */
-    opacity: 0.5; /* Optional: Adjust opacity for better readability */
-  }
-
-  .bio-image img {
+  .bio__about__hero__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-text h2 {
+    font-size: 14px;
   }
 
-  /* .bio-footer-section {
-    padding: 20px;
-  } */
-
-  .bio-footer-content {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center align items */
-    gap: 20px; /* Adjust gap */
+  .bio-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 250;
+    padding-right: 5px;
   }
-
-  /* .bio-footer-line {
-    width: 80%;
-  } */
-
-  .bio-footer-links {
-    flex-direction: row; /* Keep links in a row */
-    gap: 20px; /* Adjust gap */
-  }
-
-  .bio-footer-links a {
-    font-size: 0.9rem; /* Adjust font size for mobile */
-  }
-
-  
 }

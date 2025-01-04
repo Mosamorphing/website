@@ -1,16 +1,14 @@
 .navbar {
-  height: 5rem;
-  width: 100vw;
+  min-height: 6.5vh;
   max-width: 100rem;
   margin: 0 auto;
-  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: static;
   top: 0;
-  z-index: 3;
   font-weight: 500;
+  background-color: #151414;
+  z-index: 99999;
 }
 
 .logo {
@@ -41,8 +39,6 @@
 .menu-item a:hover {
   background-color: #444;
 }
-
-/* Dropdown styles */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -86,7 +82,7 @@
 
 .desktopMenuBtn a {
   color: black;
-  font-weight: 500; 
+  font-weight: 500;
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
@@ -105,8 +101,7 @@
   .navbar {
     flex-direction: row;
     justify-content: space-between;
-    height: auto;
-    padding: 20px;
+    min-height: 6.5vh;
   }
 
   .logo {
@@ -119,7 +114,7 @@
     flex-direction: column;
     width: auto; /* Adjust width to fit content */
     position: absolute;
-    top: 60px; /* Position directly under the hamburger icon */
+    top: 80px; /* Position directly under the hamburger icon */
     right: 20px; /* Align to the right */
     background-color: transparent; /* Remove background color */
     z-index: 1001;
@@ -130,24 +125,36 @@
   }
 
   .menu-list {
+    background-color: #444;
+    width: 150px;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    justify-items: center;
+    align-items: flex-center; /* Align items to the left */
     list-style: none; /* Remove the dot in front of the list items */
-    padding: 0;
+    padding: 10px 10px;
     margin: 0;
-    width: 100%; /* Ensure full width */
+    border-radius: 8px;
+    text-align: center;
+    gap: 8px;
   }
 
   .menu-item {
-    margin: 10px 0;
-    width: 100%; /* Ensure full width */
+    width: 100%;
+    background-color: #222;
+    border-radius: 4px;
+    border-bottom: 1px solid transparent;
   }
 
   .menu-item a {
     font-size: 1rem;
-    text-align: left; /* Align text to the left */
+    text-align: center;
     width: 100%; /* Ensure full width */
     display: block; /* Ensure block display */
+  }
+
+  .menu-item:hover {
+    border-bottom: 1px solid #444;
   }
 
   .hamburger {
@@ -158,23 +165,6 @@
   .hamburger-icon {
     width: 25px;
     height: 25px;
-  }
-
-  .dropdown-menu {
-    position: static;
-    padding-left: 0;
-    width: 100%; /* Ensure full width */
-  }
-
-  .dropdown-menu li {
-    width: 100%; /* Ensure full width */
-  }
-
-  .dropdown-menu li a {
-    font-size: 0.9rem;
-    text-align: left; /* Align text to the left */
-    width: 100%; /* Ensure full width */
-    display: block; /* Ensure block display */
   }
 
   .desktopMenuBtn {
