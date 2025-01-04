@@ -1,5 +1,5 @@
 * {
-  font-family:  "Geist Mono", sans-serif;
+  font-family: "Gotham", "Geist Mono", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,5 +11,5 @@ body {
   background: #151414;
   color: white;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }

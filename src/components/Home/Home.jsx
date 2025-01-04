@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./home.css"; // Custom CSS for the home page
 import hero from "/hero.png"; // Correct path for hero image
 import placeholder from "/placeholder.webp"; // Correct path for placeholder image
 import genz from "/genz.webp"; // Correct path for genz image
 import work from "/work.webp"; // Correct path for work image
 import peopledao from "/peopledao.jpeg"; // Correct path for peopledao image
-import { Link } from "react-router-dom";
 import Footer from "../Footer";
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="flex h-auto lg:h-[78vh] xs:h-[92vh] items-center justify-between layout__container relative overflow-hidden">
         <div className="z-[10]">
-          <h1 className="text-[70px] font-[900] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight">
+          <h1 className="text-[70px] font-[900] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight owner__name">
             MOSADOLUWA FASASI
           </h1>
           <h2 className="text-[40px] lg:text-[30px] 2xs:text-[25px] xs:text-[23px] font-[200] mb-5 2xs:mb-3 leading-tight">

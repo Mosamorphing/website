@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @font-face {
+    font-family: "Gotham";
+    src: url("/Gotham-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Gotham-Bold";
+    src: url("/Gotham-Bold.otf") format("opentype");
+  }
+}
 @layer base {
   .layout__container {
     @apply w-[1400px] mx-[auto] xl:w-full xl:px-[60px] lg:px-[40px] 2xs:px-[20px];

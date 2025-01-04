@@ -67,6 +67,10 @@ p {
   display: block;
 }
 
+.owner__name {
+  font-family: "Gotham-Bold", sans-serif;
+}
+
 /* Features Section */
 .features-section {
   background-color: white;
