@@ -33,7 +33,7 @@ const Career = () => {
                       className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-cover"
                     />
                   </div>
-                  <p className="flex-1">
+                  <p className="flex-1 -mt-2 sm:-mt-[6px]">
                     DeSci NG (Dec 2024 till date): <br /> A community built on
                     the ideals of Decentralised Science. Mosadoluwa Fasasi leads
                     this community with the goal of increasing the quality of
@@ -59,7 +59,7 @@ const Career = () => {
                       className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
-                  <p className="flex-1">
+                  <p className="flex-1 -mt-2 sm:-mt-[6px]">
                     Multisightapp (Dec 2023 till date): <br /> An analytics tool
                     for Multisignature wallet and teams. Mosadoluwa Fasasi is a
                     co-builder at Multisightapp. They got into the Safe
@@ -83,7 +83,7 @@ const Career = () => {
                       className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
-                  <p className="flex-1">
+                  <p className="flex-1 mt-[10px] sm:mt-[4px]">
                     WTF Academy Africa (Jan 2023 till date): <br /> An
                     open-source Web3 university onboarding Web2 talent.
                     Mosadoluwa Fasasi leads this project and since Q2 2023, his
@@ -109,7 +109,7 @@ const Career = () => {
                       className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
-                  <p>
+                  <p className="flex-1 -mt-2 sm:-mt-[6px]">
                     PeopleDAO (August 2022 - Dec 2024): <br /> A meta-dao that
                     incubates public good projects. Mosadoluwa Fasasi worked as
                     a generalist member and rose to the administrative level
@@ -151,7 +151,7 @@ const Career = () => {
                       className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
                     />
                   </div>
-                  <p>
+                  <p className="flex-1 -mt-2 sm:-mt-[6px]">
                     Techsemester | Talntsapp (Jan 2023 - Apr 2024): <br /> An
                     ed-tech startup with a digital product for creators.
                     Mosadoluwa Fasasi worked as a generalist within a small team

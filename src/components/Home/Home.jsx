@@ -14,8 +14,8 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className="flex h-auto lg:h-[78vh] xs:h-[92vh] items-center justify-between layout__container relative overflow-hidden">
-        <div className="z-[10]">
-          <h1 className="text-[50px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight owner__name">
+        <div className="z-[10] mt-[-150px]">
+          <h1 className="text-[53px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight owner__name">
             MOSADOLUWA FASASI
           </h1>
           <h2 className="text-[40px] lg:text-[30px] 2xs:text-[25px] xs:text-[23px] font-[200] mb-5 2xs:mb-3 leading-tight">
