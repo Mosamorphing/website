@@ -17,16 +17,16 @@ const Influence = () => {
           being a generalist vs specialist. It was a big conversation that was
           happening every 2 market days and I remember how some of the top guys
           spoke in favour of being a specialist; “pick one thing and get so good
-          at it.” <br />
-          <br />I woke up this morning thinking, “man, thank God I didn’t
-          listen”. I don’t “actively” design anymore but it’s 2024 and I’ve seen
-          folks who were big on being a “specialist” say otherwise today. They
-          want to pick up a skill that compliments what they already do, and if
-          they get good enough at it to offer it as another standalone skill,
-          why not? <br></br>
-          <p></p>
-          Here’s the point I’m trying to make; <br></br>
+          at it.”
         </p>
+        <p>
+          I woke up this morning thinking, “man, thank God I didn’t listen”. I
+          don’t “actively” design anymore but it’s 2024 and I’ve seen folks who
+          were big on being a “specialist” say otherwise today. They want to
+          pick up a skill that compliments what they already do, and if they get
+          good enough at it to offer it as another standalone skill, why not?
+        </p>
+        <p>Here’s the point I’m trying to make;</p>
         <p>
           You’ve got to pay very close attention to yourself. Assess who you
           are, where you’re coming from and where you hope to be. Figure out
@@ -34,26 +34,25 @@ const Influence = () => {
           cost. No matter who you look at, regardless of how similar your
           journey looks or how well you think you know them, you are the only
           person that you truly know.
-          <br />
-          <br />
+        </p>
+        <p>
           You know your history more than anybody else, your struggles, your
           fears, your psyche. You may not know why you think the way you do, but
           you’re the only person that has all the pointers to the why, in
           detail.
-          <br />
-          <br />
+        </p>
+        <p>
           When you aspire to be like this person or that person you truly don’t
           know what makes them, them. All you have is a persona. You’ve built an
           idea of them in your head based on what they post, say, or show.
           That’s not them, or better put, that’s not all of them.
-          <br />
-          <br />
-          <blockquote className="styled-blockquote">
-            To accurately apply a person’s judgment, point of view or
-            “authoritative advice” on an issue to your life, you’ve got to know
-            them in their entirety, because everybody speaks contextually.
-          </blockquote>
         </p>
+        <blockquote className="styled-blockquote">
+          To accurately apply a person’s judgment, point of view or
+          “authoritative advice” on an issue to your life, you’ve got to know
+          them in their entirety, because everybody speaks contextually.
+        </blockquote>
+
         <p>
           But we’re mostly blinded from the context people speak from. We don’t
           know people in their entirety, even married people agree to this. We
@@ -61,15 +60,15 @@ const Influence = () => {
           shape us. But we make decisions based on their judgments regardless,
           because we look similar, in some type of way. And I get it. We all
           need direction, and that’s okay.
-          <br />
-          <br />
+        </p>
+        <p>
           We make decisions every day, big or small, and they all shape our
           lives in every way, big or small. However, there are 2 things I
           recommend that you consider when making decisions based on an external
           judgment.
-          <br />
-          <br />
-          <h2>First recommendation: </h2>
+        </p>
+        <h2>First recommendation: </h2>
+        <p>
           You must own every decision you’re about to make. Owning it means that
           if it doesn’t go as planned or you do not see the same results as
           you’d hoped you’d see, compared to where you got the idea/decision,
@@ -87,19 +86,18 @@ const Influence = () => {
           sideways, and I lost something valuable in the process. I was in pain
           and angered, and almost couldn’t live with myself. Until I started to
           own it.
-          <br />
-          <br />
+        </p>
+        <p>
           “You could have refused, but you didn’t. You were sure that it wasn’t
           the best judgment but you went with it anyway. No matter how much it
           looks like the “adviser” made you do it, you did it yourself.” I told
           myself that. It was a difficult conversation with myself, but it made
           me better. I learnt from it and was able to move forward.
-          <br />
-          <br />
         </p>
+
         <h2>Second recommendation: </h2>
+        <p>“To thyself be true”</p>
         <p>
-          “To thyself be true” <br></br>
           You’ve got to pay very very close attention to yourself. You’ve got to
           know yourself; where you’re coming from, where you are, and where you
           hope to be. You may have heard that several times but I’ll add to
@@ -116,15 +114,15 @@ const Influence = () => {
           and you had to grow up fast to help the household, you’ve got to be
           honest with that. Leave no factor out of this. Turn over every stone.
           The fine and the ugly ones.
-          <br />
-          <br />
+        </p>
+        <p>
           Plus, you’ve got to be honest about the mindsets you’ve built due to
           your peculiar background. If you’re from a high-income background, you
           know summer vacations outside of the country were no issue for you.
           There are some risks you can take on a whim. If you’re not from such
           household, you know you have to do calculations and plot a graph or
           two, and probably answer a family meeting on how it looks like you’ve
-          suddenly gone mad. <br></br>
+          suddenly gone mad.
         </p>
         <p>
           Again, I cannot say this enough; in the process of finding and knowing
@@ -143,30 +141,31 @@ const Influence = () => {
           these realities and the things we find. Because of the people we
           “follow” and consider to be in “better places” than us, we create a
           world of fantasy for ourselves. Somewhere we would rather be,
-          forgetting our own realities.<br></br>
-          <br></br>
+          forgetting our own realities.
+        </p>
+        <p>
           We somehow think engaging them, talking like them and acting like them
           makes us them. While this may be a good way to develop new ways of
           seeing life, it doesn’t solve the fundamental issues, and you’ve got
           to be willing to confront the fundamental issues. Without doing that,
           you’re angered at your current, real world and left constantly
-          yearning for your world of fantasy.<br></br>
-          <br></br>I have nothing against fantasy but when you assess these
-          fundamental issues, you’re more equipped. You’re armed with an acute
-          knowledge of where you are and because of that, you’re informed about
-          what it will take you to make your world of fantasy a reality.
-          <br></br>
-          <br></br>
+          yearning for your world of fantasy.
+        </p>
+        <p>
+          I have nothing against fantasy but when you assess these fundamental
+          issues, you’re more equipped. You’re armed with an acute knowledge of
+          where you are and because of that, you’re informed about what it will
+          take you to make your world of fantasy a reality.
+        </p>
+        <p>
           So, that’s it my friends. Own every decision, and “to thyself, be
           true”.
-          <br></br>
-          <br></br>I pray that the light will always guide you. Till some other
-          time, blessings.<br></br>
-          <br></br>
+        </p>
+        <p className="border-b pb-3">
+          I pray that the light will always guide you. Till some other time,
+          blessings.
         </p>
 
-        <hr></hr>
-        <br></br>
         <p> Postscript: </p>
         <p>
           - "Ada" - first female child in Igbo land <br />- If you're wondering
@@ -181,6 +180,7 @@ const Influence = () => {
           />
         </div>
       </div>
+
       <Footer />
     </>
   );

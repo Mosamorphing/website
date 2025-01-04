@@ -14,15 +14,13 @@ const Desci = () => {
           they undermine serious scientific endeavours. However, a closer
           examination reveals a more nuanced perspective, one that acknowledges
           the cultural and economic dynamics at play.
-          <br />
-          <br />
+         </p><p>
           It is interesting to know that the origin of “meme” is scientific.
           Originally coined by evolutionary biologist, Richard Dawkins, in his
           1976 book “The Selfish Gene”. Dawkins described memes as units of
           cultural transmission, akin to genes in biological evolution, capable
           of replicating and evolving through social interactions. 
-          <br />
-          <br />
+        
         </p>
         <p>
           His foundational concept highlights that memes — memecoins being a
@@ -34,7 +32,6 @@ const Desci = () => {
           Government Efficiency (D.O.G.E), humorously named after the
           cryptocurrency, which Elon Musk, an open advocate for Dogecoin is set
           to lead.
-          <br />
         </p>
         <p>
           Also, prominent figures in the cryptocurrency space have weighed in on
@@ -57,7 +54,7 @@ const Desci = () => {
           commendable — aiming for a better scientific system — many projects
           fall short and just ride the hype train for ulterior motives. His call
           for "no scams" in the DeSci space emphasises the necessity for ethical
-          investing and clear communication within the community. <br />
+          investing and clear communication within the community.
         </p>
         <p>
           In conclusion, a shared perspective among many of these debates in the

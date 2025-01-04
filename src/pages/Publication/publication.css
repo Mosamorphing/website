@@ -1,5 +1,5 @@
 .publication {
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
   max-width: 800px;
   margin: 0 auto;
   color: white;
@@ -53,13 +53,20 @@
 
 @media (max-width: 1280px) {
   .publication {
-    padding: 40px 20px;
+    padding: 40px 20px 0 20px;
     max-width: 1000px;
   }
 
   .publication h1 {
     font-size: 2rem;
   }
+
+  .references h3 {
+    font-size: 1.5rem;
+  }
+  .references li {
+  font-size: 1rem;
+}
 }
 
 @media (max-width: 768px) {
@@ -70,4 +77,10 @@
   .publication p {
     font-size: 1rem;
   }
+  .references h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+
 }
