@@ -85,7 +85,6 @@ const IntoTheMind = () => {
         </p>
         <h2>
           On Religion: <br />
-          <br />{" "}
         </h2>
         <p>
           They claimed pastors/men of God are liars and should never be trusted.
