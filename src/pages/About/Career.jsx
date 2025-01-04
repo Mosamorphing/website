@@ -115,9 +115,13 @@ const Career = () => {
                     a generalist member and rose to the administrative level
                     through his exceptional contributions which he was also
                     awarded for. During his first few months of engagement at
-                    PeopleDAO, he was quickly recognized as a ''Rising Star'',
-                    and went on to become a 3x ''Contributor of the Month''. He
-                    operated in various roles, led and collaborated with
+                    PeopleDAO, he was quickly recognized as a{" "}
+                    <span className="text-[#e63946]">''Rising Star''</span>, and
+                    went on to become a{" "}
+                    <span className="text-[#e63946]">
+                      3x ''Contributor of the Month''
+                    </span>
+                    . He operated in various roles, led and collaborated with
                     cross-functional teams to support and accelerate incubated
                     projects. Some of the projects he accelerated includes;
                     We&apos;re Gonna Buy The Constitution (WAGBTC), found{" "}
