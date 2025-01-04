@@ -68,7 +68,8 @@ p {
 }
 
 .owner__name {
-  font-family: "Gotham-Bold", sans-serif;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
 }
 
 /* Features Section */
