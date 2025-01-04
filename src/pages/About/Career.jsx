@@ -3,8 +3,8 @@ import "./career.css"; //
 import Footer from "../../components/Footer";
 import multisight from "../../../public/multisight.png";
 import wtf from "../../../public/wtf.png";
-import desci from "../../../public/desci.png";
-import peopleDao from "../../../public/peopledao.jpeg";
+import desci from "../../../public/2b.png";
+import peopleDao from "../../../public/pdao.png";
 import techSemester from "../../../public/ts.png";
 
 const Career = () => {

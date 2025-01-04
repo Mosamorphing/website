@@ -17,10 +17,10 @@ const Home = () => {
           <h1 className="text-[70px] font-[900] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight">
             MOSADOLUWA FASASI
           </h1>
-          <h2 className="text-[66px] lg:text-[45px] 2xs:text-[35px] xs:text-[28px] font-[200] mb-5 leading-tight">
+          <h2 className="text-[40px] lg:text-[30px] 2xs:text-[25px] xs:text-[23px] font-[200] mb-5 2xs:mb-3 leading-tight">
             Adventurer, Thinker, Doer.
           </h2>
-          <h3 className="text-[25px] font-[200] mb-5 leading-tight">
+          <h3 className="text-[25px] 2xs:text-base font-[200] mb-5 leading-tight">
             Principal, The Morphing—500
           </h3>
           <Link to="/bio">
