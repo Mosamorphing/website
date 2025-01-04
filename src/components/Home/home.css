@@ -99,19 +99,13 @@ p {
   text-align: left;
 }
 
-.feature-title {
-  font-size: 20px;
-  font-weight: 400;
-  color: black;
-}
-
-.feature-title a {
+.feature-text a {
   text-decoration: none; /* Removes underline */
   color: black; /* Explicit initial color */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-.feature-title a:hover {
+.feature-text a:hover {
   color: #e63946 !important; /* Ensures it overrides any conflicting rule */
 }
 
