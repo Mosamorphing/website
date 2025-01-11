@@ -12,6 +12,7 @@ import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
+import morphing500 from "../../../public/morphing500.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -51,7 +52,7 @@ const Media = () => {
       title: "From The Morphing—500",
       description:
         "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
-      image: bitget,
+      image: morphing500,
       link: "https://open.spotify.com/show/3m8buR1Sm29ydeEIfa3Avt?si=2be26911d10447b5",
       category: "Speakings",
     },
