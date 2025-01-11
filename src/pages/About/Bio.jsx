@@ -28,7 +28,7 @@ const Bio = () => {
                 >
                   The Morphing—500
                 </a>
-                , a life and enterprise consult, helping people morph from their
+                , a life and enterprise consult. There, he helps individuals and enterprises morph from their
                 current levels to their desired levels through guided insights
                 and visioning.
               </p>
