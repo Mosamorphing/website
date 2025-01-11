@@ -47,6 +47,14 @@ const Media = () => {
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
       category: "Speakings",
     },
+        {
+      title: "From The Morphing—500",
+      description:
+        "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
+      image: bitget,
+      link: "https://open.spotify.com/show/3m8buR1Sm29ydeEIfa3Avt?si=2be26911d10447b5",
+      category: "Speakings",
+    },
     {
       title:
         "On knowing the influences that shape your life and being true to yourself.",
