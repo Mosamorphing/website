@@ -12,6 +12,7 @@ import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
+import morphing500 from "../../../public/morphing500.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -45,6 +46,14 @@ const Media = () => {
         "From Memes to Millions: Rididng the Hottest Crypto Trends in 2024. Memecoins have been all the rage, but can you really become a millionaire from it? ",
       image: bitget,
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
+      category: "Speakings",
+    },
+        {
+      title: "From The Morphing—500",
+      description:
+        "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
+      image: morphing500,
+      link: "https://open.spotify.com/show/3m8buR1Sm29ydeEIfa3Avt?si=2be26911d10447b5",
       category: "Speakings",
     },
     {
