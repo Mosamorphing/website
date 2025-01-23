@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./home.css"; // Custom CSS for the home page
-import hero from "/hero.png"; // Correct path for hero image
+import hero from "/hero.webp"; // Correct path for hero image
 import placeholder from "/placeholder.webp"; // Correct path for placeholder image
 import genz from "/genz.webp"; // Correct path for genz image
 import work from "/work.webp"; // Correct path for work image
