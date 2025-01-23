@@ -169,7 +169,7 @@ const Career = () => {
         <div className="w-[47%] flex items-center justify-center absolute top-0 right-0 lg:w-full lg:h-full lg:z-1 lg:opacity-50">
           <img
             className="career__about__hero__img h-[2000px]"
-            src="/hero.png"
+            src="/hero.webp"
             alt="Hero"
           />
         </div>
