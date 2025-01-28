@@ -10,6 +10,7 @@ import into from "../../../public/into.webp";
 import bitget from "../../../public/bitget.jpeg";
 import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
+import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
@@ -54,6 +55,14 @@ const Media = () => {
         "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
       image: morphing500,
       link: "https://open.spotify.com/show/3m8buR1Sm29ydeEIfa3Avt?si=2be26911d10447b5",
+      category: "Speakings",
+    },
+            {
+      title: "Breaking Barriers in Education",
+      description:
+        "Mosadoluwa Fasasi joined ThriveRise Africa to discuss ways to reshape education and the research culture in Nigeria through the latest advancement in technology.",
+      image: tr2,
+      link: "https://www.linkedin.com/posts/mosadoluwa-fasasi-4008b81a9_if-you-innovate-long-enough-its-only-a-activity-7285915623857999875-sPXl?utm_source=share&utm_medium=member_desktop",
       category: "Speakings",
     },
     {
