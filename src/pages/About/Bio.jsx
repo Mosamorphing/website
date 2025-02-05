@@ -29,8 +29,7 @@ const Bio = () => {
                   The Morphing—500
                 </a>
                 , a life and enterprise consult. There, he helps individuals and enterprises morph from their
-                current levels to their desired levels through guided insights
-                and visioning.
+                current levels to their desired levels through guided insights, visioning and cross-functional skillset.
               </p>
               <p>
                 He is an adventurous high-performing professional with a proven track
@@ -52,10 +51,6 @@ const Bio = () => {
                 of customer needs, he drives project, product and business
                 excellence wherever you find him.{" "}
               </p>
-              {/* <p>
-                He has been identified by many adjectives: Sage, Rebel, Genius,
-                Psychologist, Counsellor; he answers them all.
-              </p> */}
               <p>
                 To see some of his professional adventures, click {""}
                 <a
