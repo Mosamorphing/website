@@ -33,7 +33,7 @@ const Bio = () => {
                 and visioning.
               </p>
               <p>
-                He is an adventurous serial entrepreneur with a proven track
+                He is an adventurous high-performing professional with a proven track
                 record of managing and creating user-centred experiences across
                 diverse industries. With a solid background in writing &
                 communication, design & visuals, and technical domains, he has
@@ -52,12 +52,12 @@ const Bio = () => {
                 of customer needs, he drives project, product and business
                 excellence wherever you find him.{" "}
               </p>
-              <p>
+              {/* <p>
                 He has been identified by many adjectives: Sage, Rebel, Genius,
                 Psychologist, Counsellor; he answers them all.
-              </p>
+              </p> */}
               <p>
-                To see some of his entrepreneurial adventures, click {""}
+                To see some of his professional adventures, click {""}
                 <a
                   href="/career"
                   style={{ textDecoration: "none", color: "#e63946" }}
