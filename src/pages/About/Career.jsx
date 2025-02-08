@@ -34,9 +34,9 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    DeSci NG (Dec 2024 till date): <br /> A community built on
-                    the ideals of Decentralised Science. Mosadoluwa Fasasi leads
-                    this community with the goal of increasing the quality of
+                    DeSci NG (Dec 2024 till date): <br /> An innovation hub built on
+                    the ideals of Decentralised Science. Mosadoluwa Fasasi founded
+                    this hub with the goal of increasing the quality of
                     education in Nigeria and accelerating innovation via
                     academia, research and public good projects. To check out
                     DeSci NG, click{" "}
