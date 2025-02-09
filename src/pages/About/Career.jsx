@@ -43,7 +43,7 @@ const Career = () => {
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://linktr.ee/DeSci_NG"
+                      href="https://desci.ng/"
                     >
                       here
                     </a>
