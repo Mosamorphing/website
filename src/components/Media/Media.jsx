@@ -10,6 +10,7 @@ import into from "../../../public/into.webp";
 import bitget from "../../../public/bitget.jpeg";
 import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
+import multi from "../../../public/multi.png";
 import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
@@ -31,6 +32,14 @@ const Media = () => {
         "The emergence of memecoins has sparked significant debate, particularly regarding their implications for the scientific community. Critics often dismiss memecoins as frivolous [...]",
       image: desci,
       path: "/media/publication/a-case-for-desci",
+      category: "Publications",
+    },
+        {
+      title: "Introduction to Multisignature Wallets",
+      description: 
+        "Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]",
+       image: multi,
+      link: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
       category: "Publications",
     },
     {
