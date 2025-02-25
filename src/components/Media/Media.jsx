@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
+import moveee1 from "../../../public/moveee1.png";
 import work from "../../../public/work.webp";
 import peopledao from "../../../public/peopledao.jpeg";
 import influence from "../../../public/influence.webp";
@@ -57,6 +58,14 @@ const Media = () => {
       image: bitget,
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
       category: "Speakings",
+    },
+        {
+      title: "Mosadoluwa Fasasi Envisions a Revolutionary Future for Scientific Research through Decentralized Science",
+      description:
+        "From Memes to Millions: Rididng the Hottest Crypto Trends in 2024. Memecoins have been all the rage, but can you really become a millionaire from it? ",
+      image: moveee1,
+      link: "https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
+      category: "Features",
     },
         {
       title: "From The Morphing—500",
