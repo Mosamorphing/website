@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./home.css"; // Custom CSS for the home page
 import hero from "/hero.webp"; // Correct path for hero image
-import placeholder from "/placeholder.webp"; // Correct path for placeholder image
+// import placeholder from "/placeholder.webp"; 
+import placeholder1 from "/placeholder1.jpeg"; 
+// import moveee1 from "/moveee1.png";
 import genz from "/genz.webp"; // Correct path for genz image
 import work from "/work.webp"; // Correct path for work image
 import peopledao from "/peopledao.jpeg"; // Correct path for peopledao image
@@ -48,23 +50,23 @@ const Home = () => {
             <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
               <div
                 className="feature-image"
-                style={{ backgroundImage: `url(${placeholder})` }}
+                style={{ backgroundImage: `url(${placeholder1})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.com/africa-will-become-another-west/"
+                    href="https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    Will Africa Become Another West?
+                    A Revolutionary Future for Scientific Research through Decentralized Science
                   </a>
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
-                  More than being a part of the global village, Africa is a
-                  hybrid continent. This is not just because it has 54 countries
-                  and thousands of ethnic groups,[...]
+                  Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, 
+                  shares insights into the essence of DeSci, its potential to revolutionize scientific 
+                  inquiry, and its [...]
                 </p>
               </div>
             </div>
