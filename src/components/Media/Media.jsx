@@ -60,9 +60,9 @@ const Media = () => {
       category: "Speakings",
     },
         {
-      title: "Mosadoluwa Fasasi Envisions a Revolutionary Future for Scientific Research through Decentralized Science",
+      title: "A Revolutionary Future for Scientific Research through Decentralized Science",
       description:
-        "From Memes to Millions: Rididng the Hottest Crypto Trends in 2024. Memecoins have been all the rage, but can you really become a millionaire from it? ",
+        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
       image: moveee1,
       link: "https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
       category: "Features",
