@@ -35,7 +35,7 @@ const Career = () => {
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
                     DeSci NG (Dec 2024 till date): <br /> An innovation hub built on
-                    the ideals of Decentralised Science. Mosadoluwa Fasasi founded
+                    the ideals of Decentralised Science. Mosadoluwa Fasasi coordinates
                     this hub with the goal of increasing the quality of
                     education in Nigeria and accelerating innovation via
                     academia, research and public good projects. To check out
@@ -86,7 +86,7 @@ const Career = () => {
                   <p className="flex-1 mt-[10px] sm:mt-[4px]">
                     WTF Academy Africa (Jan 2023 till date): <br /> An
                     open-source Web3 university onboarding Web2 talent.
-                    Mosadoluwa Fasasi leads this project and since Q2 2023, his
+                    Mosadoluwa Fasasi coordinates this project and since Q2 2023, his
                     team has reached over 100 talent. To see one of their
                     pop-ups in 2024, click{" "}
                     <a
