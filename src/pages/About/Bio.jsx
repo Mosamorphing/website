@@ -19,20 +19,7 @@ const Bio = () => {
                 pointer. Godspeed, my friend!"
               </h2>
               <p>
-                Mosadoluwa Fasasi is the Principal at {""}
-                <a
-                  href="https://www.linkedin.com/company/the-morphing%E2%80%94500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "#e63946" }}
-                >
-                  The Morphing—500
-                </a>
-                , a life and enterprise consult. There, he helps individuals and enterprises morph from their
-                current levels to their desired levels through guided insights, visioning and cross-functional skillset.
-              </p>
-              <p>
-                He is an adventurous high-performing professional with a proven track
+                Mosadoluwa Fasasi is an adventurous high-performing professional with a proven track
                 record of managing and creating user-centred experiences across
                 diverse industries. With a solid background in writing &
                 communication, design & visuals, and technical domains, he has
@@ -49,7 +36,18 @@ const Bio = () => {
               <p>
                 Combining creativity, technical acumen and a deep understanding
                 of customer needs, he drives project, product and business
-                excellence wherever you find him.{" "}
+                excellence wherever you find him.{" "}      
+                He is also the Principal at {""}
+                <a
+                  href="https://www.linkedin.com/company/the-morphing%E2%80%94500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "#e63946" }}
+                >
+                  The Morphing—500
+                </a>
+                , a life and enterprise consult. There, he helps individuals and enterprises morph from their
+                current levels to their desired levels through data-guided insights, visioning and cross-functional skillsets.
               </p>
               <p>
                 To see some of his professional adventures, click {""}
