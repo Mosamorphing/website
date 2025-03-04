@@ -23,9 +23,9 @@ const Home = () => {
           <h2 className="text-[40px] lg:text-[30px] 2xs:text-[25px] xs:text-[23px] font-[200] mb-5 2xs:mb-3 leading-tight">
             Adventurer, Thinker, Doer.
           </h2>
-          <h3 className="text-[25px] 2xs:text-base font-[200] mb-5 leading-tight">
+{/*           <h3 className="text-[25px] 2xs:text-base font-[200] mb-5 leading-tight">
             Principal, The Morphing—500
-          </h3>
+          </h3> */}
           <Link to="/bio">
             <button className="about-me-btn">About Me</button>
           </Link>
