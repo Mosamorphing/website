@@ -60,15 +60,24 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Multisightapp (Dec 2023 till date): <br /> An analytics tool
-                    for Multisignature wallet and teams. Mosadoluwa Fasasi is a
+                    Multisightapp (Dec 2023 till date): <br /> A performance analytics
+                    product for individuals and teams using Multisignature wallet. Mosadoluwa Fasasi is a
                     co-builder at Multisightapp. They got into the Safe
-                    Ecosystem grant in 2022 and have shipped an MVP. To check
+                    Ecosystem grant in 2022, produced a                    <a
+                    className="underline"
+                    target="_blank"
+                    href="https://github.com/bartosjiri/multisig-signer-incentives/blob/main/outcomes/document/README.md"
+                    >
+                    handbook on multisig wallets for Web3 projects and individuals
+                    </a>
+                    ,
+                    and have continued to refine 
+                    their analytics tool. To check
                     out Multisightapp, click{" "}
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://x.com/multisightapp"
+                      href="https://multisight.app/"
                     >
                       here
                     </a>
@@ -92,7 +101,7 @@ const Career = () => {
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://www.linkedin.com/feed/update/urn:li:activity:7195716748053008384"
+                      href="https://www.linkedin.com/company/wtf-academy-africa/"
                     >
                       here
                     </a>
@@ -113,8 +122,8 @@ const Career = () => {
                     PeopleDAO (August 2022 - Dec 2024): <br /> A meta-dao that
                     incubates public good projects. Mosadoluwa Fasasi worked as
                     a generalist member and rose to the administrative level
-                    through his exceptional contributions which he was also
-                    awarded for. During his first few months of engagement at
+                    through his exceptional contributions, for which he was also
+                    awarded. During his first few months of engagement at
                     PeopleDAO, he was quickly recognized as a{" "}
                     <span className="text-[#e63946]">''Rising Star''</span>, and
                     went on to become a{" "}
