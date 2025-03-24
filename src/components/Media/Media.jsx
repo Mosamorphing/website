@@ -16,6 +16,7 @@ import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
+import mentors from "../../../public/mentors.jpg";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -44,6 +45,14 @@ const Media = () => {
       category: "Publications",
     },
     {
+      title: "A Revolutionary Future for Scientific Research through Decentralized Science",
+      description:
+        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
+      image: moveee1,
+      link: "https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
+      category: "Features",
+    },
+    {
       title: "Artist Talk: Q&A with Daniel Sheldon, For The People NFT",
       description:
         "You can draw parallels between web3 and the American Revolution. Both reject old power structures. Both were a reaction to a deeply felt unfairness and a yearning [...]",
@@ -58,14 +67,6 @@ const Media = () => {
       image: bitget,
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
       category: "Speakings",
-    },
-        {
-      title: "A Revolutionary Future for Scientific Research through Decentralized Science",
-      description:
-        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
-      image: moveee1,
-      link: "https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
-      category: "Features",
     },
         {
       title: "From The Morphing—500",
@@ -98,6 +99,14 @@ const Media = () => {
         "We have enough gaps in our existence already. Things only worsen when we fail to understand how we can synchronise our [...]",
       image: work,
       link: "https://themoveee.com/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/",
+      category: "Publications",
+    },
+    {
+      title: "Why the Best Mentors Today Don’t Call Themselves Mentors",
+      description:
+        "Mosadoluwa Fasasi explores the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]",
+      image: mentors,
+      link: "https://themoveee.com/why-the-best-mentors-today-dont-call-themselves-mentors/",
       category: "Publications",
     },
     {
