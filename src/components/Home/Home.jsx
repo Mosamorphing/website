@@ -8,7 +8,7 @@ import placeholder1 from "/placeholder1.jpeg";
 // import moveee1 from "/moveee1.png";
 import genz from "/genz.webp"; // Correct path for genz image
 import work from "/work.webp"; // Correct path for work image
-import peopledao from "/peopledao.jpeg"; // Correct path for peopledao image
+import mentors from "/mentors.jpg"; // Correct path for mentors image
 import Footer from "../Footer";
 
 const Home = () => {
@@ -127,23 +127,21 @@ const Home = () => {
             <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
               <div
                 className="feature-image"
-                style={{ backgroundImage: `url(${peopledao})` }}
+                style={{ backgroundImage: `url(${mentors})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.com/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/"
+                    href="https://themoveee.com/why-the-best-mentors-today-dont-call-themselves-mentors/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    PeopleDAO: The Nigerian community Implementing NFTs in
-                    Tackling Human Trafficking
+                    Why the Best Mentors Today Don’t Call Themselves Mentors
                   </a>
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
-                  The community at PeopleDAO is an example of how technology can
-                  aid the fundraising process. It’s not a solution [...]
+                In this piece, Mosadoluwa Fasasi meticulously examines the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]
                 </p>
               </div>
             </div>
