@@ -18,12 +18,12 @@ const Career = () => {
                 "The journey is the reward. Embrace growth, seek wisdom, and be
                 excellent in your delieverables."
               </h2>
-              <p>
+              {/* <p>
                 After a long and productive time in Web2, Mosadoluwa Fasasi
                 transitioned full-time into Web3 in Q1 2024. Below are his
                 adventures from his last engagement in Web2 to his current
                 emphasis in Web3.{" "}
-              </p>
+              </p> */}
               <div className="flex flex-col gap-y-10 my-10 md:w-[95%] sm:w-[98%]">
                 <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
                   <div className="w-[100px] sm:w-[40px]">
