@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Bio from "./pages/About/Bio";
 import Career from "./pages/About/Career";
 import Media from "./components/Media/Media";
+import Ebook from "./components/Ebook/Ebook";
 import Influence from "./pages/Blog/Influence";
 import IntoTheMind from "./pages/Blog/IntoTheMind";
 import Desci from "./pages/Publication/Desci";
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="blog/into-the-mind" element={<IntoTheMind />} />
           <Route path="publication/a-case-for-desci" element={<Desci />} /> 
         </Route>
+        <Route path="/a-map-made-for-the-dark" element={<Ebook />} />
       </Routes>
     </Router>
   );
