@@ -50,7 +50,7 @@ const Ebook = () => {
                         </div>
                     </div>
                 </section>
-                <div className="w-[47%] flex items-center justify-center absolute top-0 right-0 lg:w-full lg:h-full lg:z-1 lg:opacity-50">
+                <div className="w-[47%] flex items-center justify-center absolute top-1 right-0 lg:w-full lg:h-full lg:z-1 lg:opacity-50">
                     <img
                         className="bio__about__hero__img h-[1000px]"
                         src="/hero.webp"

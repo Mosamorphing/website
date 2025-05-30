@@ -17,6 +17,7 @@ import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
 import mentors from "../../../public/mentors.jpg";
+import squareCover from "../../../public/squareCover.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -66,6 +67,14 @@ const Media = () => {
         "From Memes to Millions: Rididng the Hottest Crypto Trends in 2024. Memecoins have been all the rage, but can you really become a millionaire from it? ",
       image: bitget,
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
+      category: "Speakings",
+    },    
+    {
+      title: "A Map made for the Dark: 6 Curated Patterns for those Navigating the Unknwon",
+      description:
+        "There’s a chance you’re navigating an arc in your story where you wish someone had just handed you a manual. Guidance helps, but the truth is: [...]",
+      image: squareCover,
+      link: "https://selar.com/odp1f2",
       category: "Speakings",
     },
         {
