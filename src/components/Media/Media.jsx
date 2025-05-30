@@ -75,7 +75,7 @@ const Media = () => {
         "There’s a chance you’re navigating an arc in your story where you wish someone had just handed you a manual. Guidance helps, but the truth is: [...]",
       image: squareCover,
       link: "https://selar.com/odp1f2",
-      category: "Speakings",
+      category: "Publications",
     },
         {
       title: "From The Morphing—500",
