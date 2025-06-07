@@ -17,6 +17,7 @@ import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
 import mentors from "../../../public/mentors.jpg";
+import desciRising from "../../../public/desci-rising.jpeg";
 import squareCover from "../../../public/squareCover.png";
 import Footer from "../Footer";
 
@@ -61,6 +62,14 @@ const Media = () => {
       link: "https://peopledao.mirror.xyz/z8baQHZII3KLgJwNBN8bAq3gNdFPc9c2D-H4UwWKQgk",
       category: "Features",
     },
+        {
+      title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
+      description:
+        "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
+      image: desciRising,
+      link: "https://x.com/i/spaces/1lPJqMRLzMnJb",
+      category: "Speakings",
+    }, 
     {
       title: "AskMeAnything Session with Bitget Wallet",
       description:
@@ -77,7 +86,7 @@ const Media = () => {
       link: "https://selar.com/odp1f2",
       category: "Publications",
     },
-        {
+       {
       title: "From The Morphing—500",
       description:
         "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
