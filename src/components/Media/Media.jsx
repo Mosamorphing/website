@@ -65,7 +65,7 @@ const Media = () => {
         {
       title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
       description:
-        "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
+        "Mosadoluwa Fasasi sat with Jelani Clarke, co-founder of DeSci World, to discuss the DeSci movement in Nigeria, the origin story, the impact so far, and what the future holds.",
       image: desciRising,
       link: "https://x.com/i/spaces/1lPJqMRLzMnJb",
       category: "Speakings",
