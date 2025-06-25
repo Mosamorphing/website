@@ -34,11 +34,10 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    DeSci NG (Dec 2024 till date): <br /> An innovation hub built on
+                    DeSci NG (Dec 2024 till date): <br /> De(centralised) Sci(ence) Nigeria is an innovation hub built on
                     the ideals of Decentralised Science. Mosadoluwa Fasasi coordinates
-                    this hub with the goal of increasing the quality of
-                    education in Nigeria and accelerating innovation via
-                    academia, research and public good projects. To check out
+                    this hub to increase the nation's collective knowledge bank and accelerate innovation via
+                    academia, research and context-fitting solutions. To check out
                     DeSci NG, click{" "}
                     <a
                       className="underline"
