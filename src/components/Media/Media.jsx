@@ -16,6 +16,7 @@ import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
+import newsletter from "../../../public/newsletter.png";
 import mentors from "../../../public/mentors.jpg";
 import desciRising from "../../../public/desci-rising.jpeg";
 import squareCover from "../../../public/squareCover.png";
@@ -166,6 +167,14 @@ const Media = () => {
       image: independence,
       link: "https://peopledao.mirror.xyz/lqEBxnYUKSa3bSV2UpaXlEbb3TBv5iLdgmIjMDt3XBU",
       category: "Features",
+    },
+        {
+      title: "Newsletter on Blockchain and its offerings",
+      description:
+        "My latest piece reflects on the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
+      image: newsletter,
+      link: "https://themorphing500.substack.com/",
+      category: "Publications",
     },
     {
       title: "AI and Creative Writers: The fate of Global Creatives",
