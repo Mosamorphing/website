@@ -117,7 +117,7 @@ const Media = () => {
       description:
         "We have enough gaps in our existence already. Things only worsen when we fail to understand how we can synchronise our [...]",
       image: work,
-      link: "https://themoveee.com/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/",
+      link: "https://moveee.co/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/",
       category: "Publications",
     },
     {
@@ -133,7 +133,7 @@ const Media = () => {
       description:
         "The community at PeopleDAO is an example of how technology can aid the fundraising process. It’s not a solution [...]",
       image: peopledao,
-      link: "https://themoveee.com/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/",
+      link: "https://moveee.co/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/",
       category: "Publications",
     },
     {
@@ -149,7 +149,7 @@ const Media = () => {
       description:
         "One of the reasons why it appears that Gen-Zs lack the ability to collaborate with traditional institutions is mistrust.[...]",
       image: genz,
-      link: "https://themoveee.com/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/",
+      link: "https://moveee.co/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/",
       category: "Publication",
     },
     {
@@ -157,7 +157,7 @@ const Media = () => {
       description:
         "More than being a part of the global village, Africa is a hybrid continent. This is not just because it has 54 countries and thousands of ethnic groups,[...]",
       image: placeholder,
-      link: "https://themoveee.com/africa-will-become-another-west/",
+      link: "https://moveee.co/africa-will-become-another-west/",
       category: "Publications",
     },
     {
