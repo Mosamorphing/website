@@ -19,21 +19,7 @@ const Bio = () => {
                 pointer. Godspeed, my friend!"
               </h2>
               <p>
-                Mosadoluwa Fasasi is the Principal at {""}
-                <a
-                  href="https://www.linkedin.com/company/the-morphing%E2%80%94500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "#e63946" }}
-                >
-                  The Morphing—500
-                </a>
-                , a life and enterprise consult. There, he helps individuals and enterprises morph from their
-                current levels to their desired levels through guided insights
-                and visioning.
-              </p>
-              <p>
-                He is an adventurous serial entrepreneur with a proven track
+                Mosadoluwa Fasasi is an adventurous high-performing professional with a proven track
                 record of managing and creating user-centred experiences across
                 diverse industries. With a solid background in writing &
                 communication, design & visuals, and technical domains, he has
@@ -50,14 +36,21 @@ const Bio = () => {
               <p>
                 Combining creativity, technical acumen and a deep understanding
                 of customer needs, he drives project, product and business
-                excellence wherever you find him.{" "}
+                excellence wherever you find him.{" "}      
+                He is also the Principal at {""}
+                <a
+                  href="https://www.linkedin.com/company/the-morphing%E2%80%94500"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "#e63946" }}
+                >
+                  The Morphing—500
+                </a>
+                , a life and enterprise consult. There, he helps individuals and enterprises morph from their
+                current levels to their desired levels through data-guided insights, visioning and cross-functional skillsets.
               </p>
               <p>
-                He has been identified by many adjectives: Sage, Rebel, Genius,
-                Psychologist, Counsellor; he answers them all.
-              </p>
-              <p>
-                To see some of his entrepreneurial adventures, click {""}
+                To see some of his professional adventures, click {""}
                 <a
                   href="/career"
                   style={{ textDecoration: "none", color: "#e63946" }}

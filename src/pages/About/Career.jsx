@@ -18,12 +18,12 @@ const Career = () => {
                 "The journey is the reward. Embrace growth, seek wisdom, and be
                 excellent in your delieverables."
               </h2>
-              <p>
+              {/* <p>
                 After a long and productive time in Web2, Mosadoluwa Fasasi
                 transitioned full-time into Web3 in Q1 2024. Below are his
                 adventures from his last engagement in Web2 to his current
                 emphasis in Web3.{" "}
-              </p>
+              </p> */}
               <div className="flex flex-col gap-y-10 my-10 md:w-[95%] sm:w-[98%]">
                 <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
                   <div className="w-[100px] sm:w-[40px]">
@@ -34,16 +34,15 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    DeSci NG (Dec 2024 till date): <br /> A community built on
-                    the ideals of Decentralised Science. Mosadoluwa Fasasi leads
-                    this community with the goal of increasing the quality of
-                    education in Nigeria and accelerating innovation via
-                    academia, research and public good projects. To check out
+                    DeSci NG (Dec 2024 till date): <br /> De(centralised) Sci(ence) Nigeria is an innovation hub built on
+                    the ideals of Decentralised Science. Mosadoluwa Fasasi coordinates
+                    this hub to increase the nation's collective knowledge bank and accelerate innovation via
+                    academia, research and context-fitting solutions. To check out
                     DeSci NG, click{" "}
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://linktr.ee/DeSci_NG"
+                      href="https://desci.ng/"
                     >
                       here
                     </a>
@@ -60,15 +59,24 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Multisightapp (Dec 2023 till date): <br /> An analytics tool
-                    for Multisignature wallet and teams. Mosadoluwa Fasasi is a
+                    Multisightapp (Dec 2023 till date): <br /> A performance analytics
+                    product for individuals and teams using Multisignature wallet. Mosadoluwa Fasasi is a
                     co-builder at Multisightapp. They got into the Safe
-                    Ecosystem grant in 2022 and have shipped an MVP. To check
+                    Ecosystem grant in 2022, produced a                    <a
+                    className="underline"
+                    target="_blank"
+                    href="https://github.com/bartosjiri/multisig-signer-incentives/blob/main/outcomes/document/README.md"
+                    >
+                    handbook on multisig wallets for Web3 projects and individuals
+                    </a>
+                    ,
+                    and have continued to refine 
+                    their analytics tool. To check
                     out Multisightapp, click{" "}
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://x.com/multisightapp"
+                      href="https://multisight.app/"
                     >
                       here
                     </a>
@@ -86,13 +94,13 @@ const Career = () => {
                   <p className="flex-1 mt-[10px] sm:mt-[4px]">
                     WTF Academy Africa (Jan 2023 till date): <br /> An
                     open-source Web3 university onboarding Web2 talent.
-                    Mosadoluwa Fasasi leads this project and since Q2 2023, his
+                    Mosadoluwa Fasasi coordinates this project and since Q2 2023, his
                     team has reached over 100 talent. To see one of their
                     pop-ups in 2024, click{" "}
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://www.linkedin.com/feed/update/urn:li:activity:7195716748053008384"
+                      href="https://www.linkedin.com/company/wtf-academy-africa/"
                     >
                       here
                     </a>
@@ -113,8 +121,8 @@ const Career = () => {
                     PeopleDAO (August 2022 - Dec 2024): <br /> A meta-dao that
                     incubates public good projects. Mosadoluwa Fasasi worked as
                     a generalist member and rose to the administrative level
-                    through his exceptional contributions which he was also
-                    awarded for. During his first few months of engagement at
+                    through his exceptional contributions, for which he was also
+                    awarded. During his first few months of engagement at
                     PeopleDAO, he was quickly recognized as a{" "}
                     <span className="text-[#e63946]">''Rising Star''</span>, and
                     went on to become a{" "}

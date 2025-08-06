@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
+import moveee1 from "../../../public/moveee1.png";
 import work from "../../../public/work.webp";
 import peopledao from "../../../public/peopledao.jpeg";
 import influence from "../../../public/influence.webp";
@@ -15,6 +16,10 @@ import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
+import newsletter from "../../../public/newsletter.png";
+import mentors from "../../../public/mentors.jpg";
+import desciRising from "../../../public/desci-rising.jpeg";
+import squareCover from "../../../public/squareCover.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -43,6 +48,14 @@ const Media = () => {
       category: "Publications",
     },
     {
+      title: "A Revolutionary Future for Scientific Research through Decentralized Science",
+      description:
+        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
+      image: moveee1,
+      link: "https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
+      category: "Features",
+    },
+    {
       title: "Artist Talk: Q&A with Daniel Sheldon, For The People NFT",
       description:
         "You can draw parallels between web3 and the American Revolution. Both reject old power structures. Both were a reaction to a deeply felt unfairness and a yearning [...]",
@@ -50,6 +63,14 @@ const Media = () => {
       link: "https://peopledao.mirror.xyz/z8baQHZII3KLgJwNBN8bAq3gNdFPc9c2D-H4UwWKQgk",
       category: "Features",
     },
+        {
+      title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
+      description:
+        "Mosadoluwa Fasasi sat with Jelani Clarke, co-founder of DeSci World, to discuss the DeSci movement in Nigeria, the origin story, the impact so far, and what the future holds.",
+      image: desciRising,
+      link: "https://x.com/i/spaces/1lPJqMRLzMnJb",
+      category: "Speakings",
+    }, 
     {
       title: "AskMeAnything Session with Bitget Wallet",
       description:
@@ -57,8 +78,16 @@ const Media = () => {
       image: bitget,
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
       category: "Speakings",
+    },    
+    {
+      title: "A Map made for the Dark: 6 Curated Patterns for those Navigating the Unknwon",
+      description:
+        "There’s a chance you’re navigating an arc in your story where you wish someone had just handed you a manual. Guidance helps, but the truth is: [...]",
+      image: squareCover,
+      link: "https://selar.com/odp1f2",
+      category: "Publications",
     },
-        {
+       {
       title: "From The Morphing—500",
       description:
         "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
@@ -89,6 +118,14 @@ const Media = () => {
         "We have enough gaps in our existence already. Things only worsen when we fail to understand how we can synchronise our [...]",
       image: work,
       link: "https://moveee.co/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/",
+      category: "Publications",
+    },
+    {
+      title: "Why the Best Mentors Today Don’t Call Themselves Mentors",
+      description:
+        "Mosadoluwa Fasasi explores the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]",
+      image: mentors,
+      link: "https://themoveee.com/why-the-best-mentors-today-dont-call-themselves-mentors/",
       category: "Publications",
     },
     {
@@ -130,6 +167,14 @@ const Media = () => {
       image: independence,
       link: "https://peopledao.mirror.xyz/lqEBxnYUKSa3bSV2UpaXlEbb3TBv5iLdgmIjMDt3XBU",
       category: "Features",
+    },
+        {
+      title: "Newsletter on Blockchain and its offerings",
+      description:
+        "My latest piece reflects on the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
+      image: newsletter,
+      link: "https://themorphing500.substack.com/",
+      category: "Publications",
     },
     {
       title: "AI and Creative Writers: The fate of Global Creatives",
