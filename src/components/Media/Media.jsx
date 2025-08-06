@@ -52,7 +52,7 @@ const Media = () => {
       description:
         "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
       image: moveee1,
-      link: "https://themoveee.com/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
+      link: "https://themoveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
       category: "Features",
     },
     {
@@ -125,7 +125,7 @@ const Media = () => {
       description:
         "Mosadoluwa Fasasi explores the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]",
       image: mentors,
-      link: "https://themoveee.com/why-the-best-mentors-today-dont-call-themselves-mentors/",
+      link: "https://themoveee.co/why-the-best-mentors-today-dont-call-themselves-mentors/",
       category: "Publications",
     },
     {
