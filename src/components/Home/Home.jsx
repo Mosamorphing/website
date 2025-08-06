@@ -53,7 +53,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.com/africa-will-become-another-west/"
+                    href="https://moveee.co/africa-will-become-another-west/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -78,7 +78,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.com/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/"
+                    href="https://moveee.co/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -104,7 +104,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.com/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
+                    href="https://moveee.co/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -130,7 +130,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.com/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/"
+                    href="https://moveee.co/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
