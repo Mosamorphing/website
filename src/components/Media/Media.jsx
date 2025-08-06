@@ -125,7 +125,7 @@ const Media = () => {
       description:
         "Mosadoluwa Fasasi explores the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]",
       image: mentors,
-      link: "https://themoveee.com/why-the-best-mentors-today-dont-call-themselves-mentors/",
+      link: "https://themoveee.co/why-the-best-mentors-today-dont-call-themselves-mentors/",
       category: "Publications",
     },
     {
