@@ -55,7 +55,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
+                    href="https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
@@ -132,7 +132,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://themoveee.co/why-the-best-mentors-today-dont-call-themselves-mentors/"
+                    href="https://moveee.co/why-the-best-mentors-today-dont-call-themselves-mentors/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
