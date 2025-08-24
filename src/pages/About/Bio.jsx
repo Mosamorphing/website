@@ -20,22 +20,22 @@ const Bio = () => {
               </h2>
               <p>
                 Mosadoluwa Fasasi is an adventurous high-performing professional with a proven track
-                record of managing and creating user-centred experiences across
+                record of managing and creating human-centered experiences across
                 diverse industries. With a solid background in writing &
                 communication, design & visuals, and technical domains, he has
                 hands-on experience leading and collaborating with
                 cross-functional AGILE teams.
               </p>
               <p>
-                His versatile background includes successful stints in the
+                His versatile background include successful stints in the
                 fashion, fintech, design, education, communications, and
                 blockchain industries, making him adept at navigating various
                 sectors to deliver cutting-edge solutions that resonate with
-                users.
+                different stakeholders.
               </p>
               <p>
                 Combining creativity, technical acumen and a deep understanding
-                of customer needs, he drives project, product and business
+                of human-centered design, he drives project, product and business
                 excellence wherever you find him.{" "}      
                 He is also the Principal at {""}
                 <a
