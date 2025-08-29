@@ -19,35 +19,19 @@ const Bio = () => {
                 pointer. Godspeed, my friend!"
               </h2>
               <p>
-                Mosadoluwa Fasasi is an adventurous high-performing professional with a proven track
-                record of managing and creating human-centered experiences across
-                diverse industries. With a solid background in writing &
-                communication, design & visuals, and technical domains, he has
-                hands-on experience leading and collaborating with
-                cross-functional AGILE teams.
+Mosadoluwa Fasasi is a Solutions Architect and the Founder-Operator at De(centralised) Sci(ence) Nigeria (DeSci NG), an initiative building open, decentralised research infrastructure for Africa. 
               </p>
               <p>
-                His versatile background include successful stints in the
-                fashion, fintech, design, education, communications, and
-                blockchain industries, making him adept at navigating various
-                sectors to deliver cutting-edge solutions that resonate with
-                different stakeholders.
+In 2023, he served on the administrative team at People Decentralised Autonomous Organisation, where he helped steer historic projects, including their bid (attempted twice) to collectively own a physical copy of the U.S. Declaration of Independence. At PeopleDAO, he was recognised as a 
+At PeopleDAO, he was recognised as a 
+<span style={{ color: "#e63946" }}> “Rising Star” </span> 
+and was a 
+<span style={{ color: "#e63946" }}> 3x Contributor of the Month </span> 
+for accelerating incubated projects and delivering value
               </p>
               <p>
-                Combining creativity, technical acumen and a deep understanding
-                of human-centered design, he drives project, product and business
-                excellence wherever you find him.{" "}      
-                He is also the Principal at {""}
-                <a
-                  href="https://www.linkedin.com/company/the-morphing%E2%80%94500"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "#e63946" }}
-                >
-                  The Morphing—500
-                </a>
-                , a life and enterprise consult. There, he helps individuals and enterprises morph from their
-                current levels to their desired levels through data-guided insights, visioning and cross-functional skillsets.
+Before venturing into the blockchain ecosystem, Mosadoluwa Fasasi wore many hats as an operator in the Nigerian startup ecosystem, delivering human-centred experiences and unlocking value for diverse stakeholders. With a background in Science Education, he now bridges his expertise in blockchain to champion DeSci. His work focuses on positioning Africa as an active contributor to global knowledge production through open science and research.
+
               </p>
               <p>
                 To see some of his professional adventures, click {""}
