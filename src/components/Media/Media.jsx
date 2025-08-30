@@ -19,6 +19,7 @@ import morphing500 from "../../../public/morphing500.png";
 import newsletter from "../../../public/newsletter.png";
 import mentors from "../../../public/mentors.jpg";
 import desciRising from "../../../public/desci-rising.jpeg";
+import web3lagosconf from "../../../public/web3lagosconf.jpeg";
 import squareCover from "../../../public/squareCover.png";
 import Footer from "../Footer";
 
@@ -63,6 +64,26 @@ const Media = () => {
       link: "https://peopledao.mirror.xyz/z8baQHZII3KLgJwNBN8bAq3gNdFPc9c2D-H4UwWKQgk",
       category: "Features",
     },
+{
+  title: "A Case for DeSci in Africa (Web3Lagos Conference)",
+  description: (
+    <span>
+      <q>A Case for DeSci in Africa</q> was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Watch on YouTube{" "}
+      <a
+        href="https://youtu.be/cXvHHf48txw"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="media-link-underline"
+      >
+        here
+      </a>
+      .
+    </span>
+  ),
+  image: web3lagosconf,
+  link: "https://youtu.be/cXvHHf48txw",
+  category: "Speakings",
+},
         {
       title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
       description:

@@ -99,6 +99,15 @@
   color: #e2e2e2;
 }
 
+.media-link-underline {
+  text-decoration: underline;
+  color: inherit;
+  transition: color 0.2s;
+}
+.media-link-underline:hover {
+  color: #e63946;
+}
+
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .filter-bar {
