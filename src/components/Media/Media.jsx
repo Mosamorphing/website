@@ -21,6 +21,7 @@ import mentors from "../../../public/mentors.jpg";
 import desciRising from "../../../public/desci-rising.jpeg";
 import web3lagosconf from "../../../public/web3lagosconf.jpeg";
 import squareCover from "../../../public/squareCover.png";
+import olhenry from "../../../public/olhenry.jpeg";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -57,6 +58,14 @@ const Media = () => {
       category: "Features",
     },
     {
+      title: "Extra Edition: A Case for DeSci in Africa",
+      description:
+        "A guest editorial by Mosadoluwa Fasasi of DeSci Nigeria on Michel Bauwen's Substack: Fourth Generation Civilization. On the history of Decentralized Science and [...]",
+      image: olhenry,
+      link: "https://open.substack.com/pub/4thgenerationcivilization/p/extra-edition-a-case-for-desci-in?r=tpito&utm_campaign=post&utm_medium=web",
+      category: "Features",
+    },
+        {
       title: "Artist Talk: Q&A with Daniel Sheldon, For The People NFT",
       description:
         "You can draw parallels between web3 and the American Revolution. Both reject old power structures. Both were a reaction to a deeply felt unfairness and a yearning [...]",
