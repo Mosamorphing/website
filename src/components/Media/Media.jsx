@@ -22,6 +22,7 @@ import desciRising from "../../../public/desci-rising.jpeg";
 import web3lagosconf from "../../../public/web3lagosconf.jpeg";
 import squareCover from "../../../public/squareCover.png";
 import olhenry from "../../../public/olhenry.jpeg";
+import coordination from "../../../public/coordination.jpeg";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -62,18 +63,18 @@ const Media = () => {
       description:
         "A guest editorial by Mosadoluwa Fasasi of DeSci Nigeria on Michel Bauwen's Substack: Fourth Generation Civilization. On the history of Decentralized Science and [...]",
       image: olhenry,
-      link: "https://open.substack.com/pub/4thgenerationcivilization/p/extra-edition-a-case-for-desci-in?r=tpito&utm_campaign=post&utm_medium=web",
+      link: "https://open.substack.com/pub/4thgenerationcivilization/p/extra-edition-a-case-for-desci-in",
       category: "Features",
     },
         {
-      title: "Artist Talk: Q&A with Daniel Sheldon, For The People NFT",
+      title: "The Frontier of Human Coordination Has Moved East",
       description:
-        "You can draw parallels between web3 and the American Revolution. Both reject old power structures. Both were a reaction to a deeply felt unfairness and a yearning [...]",
-      image: artist,
-      link: "https://peopledao.mirror.xyz/z8baQHZII3KLgJwNBN8bAq3gNdFPc9c2D-H4UwWKQgk",
+        "A Review of Chor Pharn’s “Coordination Limit” Series by Mosadoluwa Fasasi on Michel Bauwens' Substack: Fourth Generation Civilization. The series is an attempt to [...]",
+      image: coordination,
+      link: "https://open.substack.com/pub/4thgenerationcivilization/p/the-frontier-of-human-coordination",
       category: "Features",
     },
-{
+    {
   title: "A Case for DeSci in Africa (Web3Lagos Conference)",
   description: (
     <span>
@@ -93,6 +94,7 @@ const Media = () => {
   link: "https://youtu.be/cXvHHf48txw",
   category: "Speakings",
 },
+
         {
       title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
       description:
@@ -101,6 +103,15 @@ const Media = () => {
       link: "https://x.com/i/spaces/1lPJqMRLzMnJb",
       category: "Speakings",
     }, 
+        {
+      title: "Artist Talk: Q&A with Daniel Sheldon, For The People NFT",
+      description:
+        "You can draw parallels between web3 and the American Revolution. Both reject old power structures. Both were a reaction to a deeply felt unfairness and a yearning [...]",
+      image: artist,
+      link: "https://peopledao.mirror.xyz/z8baQHZII3KLgJwNBN8bAq3gNdFPc9c2D-H4UwWKQgk",
+      category: "Features",
+    },
+
     {
       title: "AskMeAnything Session with Bitget Wallet",
       description:
@@ -204,7 +215,7 @@ const Media = () => {
         "My latest piece reflects on the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
       image: newsletter,
       link: "https://themorphing500.substack.com/",
-      category: "Publications",
+      category: "Blog",
     },
     {
       title: "AI and Creative Writers: The fate of Global Creatives",
