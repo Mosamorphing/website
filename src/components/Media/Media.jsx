@@ -23,6 +23,7 @@ import web3lagosconf from "../../../public/web3lagosconf.jpeg";
 import squareCover from "../../../public/squareCover.png";
 import olhenry from "../../../public/olhenry.jpeg";
 import coordination from "../../../public/coordination.jpeg";
+import memetics from "../../../public/memetics.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -48,6 +49,14 @@ const Media = () => {
         "Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]",
        image: multi,
       link: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
+      category: "Publications",
+    },
+                {
+      title: "Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation",
+      description: 
+        "Meme coins on Solana reflect the same forces shaping financial behaviour across Nigeria and Africa: a youth-driven digital culture, the search for alternative economic [...]",
+       image: memetics,
+      link: "https://desci.ng/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation",
       category: "Publications",
     },
     {
