@@ -24,6 +24,7 @@ import squareCover from "../../../public/squareCover.png";
 import olhenry from "../../../public/olhenry.jpeg";
 import coordination from "../../../public/coordination.jpeg";
 import memetics from "../../../public/memetics.png";
+import magic from "../../../public/magic.jpeg";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -81,6 +82,14 @@ const Media = () => {
         "A Review of Chor Pharn’s “Coordination Limit” Series by Mosadoluwa Fasasi on Michel Bauwens' Substack: Fourth Generation Civilization. The series is an attempt to [...]",
       image: coordination,
       link: "https://open.substack.com/pub/4thgenerationcivilization/p/the-frontier-of-human-coordination",
+      category: "Features",
+    },
+            {
+      title: "Anthropological Reflections on the Monetary System",
+      description:
+        "Fourth Generation Civilization: The end-of-year article by Mosadoluwa Fasasi is followed by an extensive collection of quotes to help us think about the multiple aspects of [...]",
+      image: magic,
+      link: "https://open.substack.com/pub/4thgenerationcivilization/p/anthropological-reflections-on-the",
       category: "Features",
     },
     {
