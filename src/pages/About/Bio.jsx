@@ -19,7 +19,7 @@ const Bio = () => {
                 pointer. Godspeed, my friend!"
               </h2>
               <p>
-Mosadoluwa Fasasi is a Solutions Architect and the Founder-Operator at De(centralised) Sci(ence) Nigeria (DeSci NG), an initiative building open, decentralised research infrastructure for Africa. 
+Mosadoluwa Fasasi is a Solutions Architect. Founder & Executive Director at De(centralised) Sci(ence) Nigeria (DeSci NG), an initiative building open, decentralised research infrastructure for Africa. 
               </p>
               <p>
 In 2023, he served on the administrative team at People Decentralised Autonomous Organisation, where he helped steer historic projects, including their bid (attempted twice) to collectively own a physical copy of the Constitution of the United States. At PeopleDAO, he was recognised as a 
