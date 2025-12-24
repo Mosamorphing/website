@@ -35,7 +35,7 @@ const Career = () => {
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
                     DeSci NG (Dec 2024 till date): <br /> De(centralised) Sci(ence) Nigeria is an innovation hub built on
-                    the ideals of Decentralised Science. Mosadoluwa Fasasi coordinates
+                    the ideals of Decentralised Science. Mosadoluwa Fasasi leads and coordinates
                     this hub to increase the nation's collective knowledge bank and accelerate innovation via
                     academia, research and context-fitting solutions. To check out
                     DeSci NG, click{" "}
@@ -59,7 +59,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Multisightapp (Dec 2023 till date): <br /> A performance analytics
+                    Multisightapp (Dec 2023 - Dec 2025): <br /> A performance analytics
                     product for individuals and teams using Multisignature wallet. Mosadoluwa Fasasi is a
                     co-builder at Multisightapp. They got into the Safe
                     Ecosystem grant in 2022, produced a                    <a
@@ -92,7 +92,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 mt-[10px] sm:mt-[4px]">
-                    WTF Academy Africa (Jan 2023 till date): <br /> An
+                    WTF Academy Africa (Jan 2023 - April 2025): <br /> An
                     open-source Web3 university onboarding Web2 talent.
                     Mosadoluwa Fasasi coordinates this project and since Q2 2023, his
                     team has reached over 100 talent. To see one of their
