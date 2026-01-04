@@ -43,7 +43,7 @@ const Home = () => {
       <div className="bg-white">
         <section className="layout__container xl:px-[60px] lg:px-[40px] 2xs:px-[20px] py-20 md:py-14 2xs:py-10">
           <h2 className="text-[45px] md:text-[32px] 2xs:text-[20px] text-black">
-            Features on The Moveee Magazine
+            Featured on The Moveee Magazine
           </h2>
           <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
             {/* Feature 1 */}

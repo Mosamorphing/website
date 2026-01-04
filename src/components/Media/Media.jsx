@@ -44,19 +44,19 @@ const Media = () => {
       path: "/media/publication/a-case-for-desci",
       category: "Publications",
     },
-        {
+    {
       title: "Introduction to Multisignature Wallets",
-      description: 
+      description:
         "Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]",
-       image: multi,
+      image: multi,
       link: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
       category: "Publications",
     },
-                {
+    {
       title: "Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation",
-      description: 
+      description:
         "Meme coins on Solana reflect the same forces shaping financial behaviour across Nigeria and Africa: a youth-driven digital culture, the search for alternative economic [...]",
-       image: memetics,
+      image: memetics,
       link: "https://desci.ng/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation",
       category: "Publications",
     },
@@ -76,7 +76,7 @@ const Media = () => {
       link: "https://open.substack.com/pub/4thgenerationcivilization/p/extra-edition-a-case-for-desci-in",
       category: "Features",
     },
-        {
+    {
       title: "The Frontier of Human Coordination Has Moved East",
       description:
         "A Review of Chor Pharn’s “Coordination Limit” Series by Mosadoluwa Fasasi on Michel Bauwens' Substack: Fourth Generation Civilization. The series is an attempt to [...]",
@@ -84,7 +84,7 @@ const Media = () => {
       link: "https://open.substack.com/pub/4thgenerationcivilization/p/the-frontier-of-human-coordination",
       category: "Features",
     },
-            {
+    {
       title: "Anthropological Reflections on the Monetary System",
       description:
         "Fourth Generation Civilization: The end-of-year article by Mosadoluwa Fasasi is followed by an extensive collection of quotes to help us think about the multiple aspects of [...]",
@@ -93,35 +93,35 @@ const Media = () => {
       category: "Features",
     },
     {
-  title: "A Case for DeSci in Africa (Web3Lagos Conference)",
-  description: (
-    <span>
-      <q>A Case for DeSci in Africa</q> was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Watch on YouTube{" "}
-      <a
-        href="https://youtu.be/cXvHHf48txw"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="media-link-underline"
-      >
-        here
-      </a>
-      .
-    </span>
-  ),
-  image: web3lagosconf,
-  link: "https://youtu.be/cXvHHf48txw",
-  category: "Speakings",
-},
+      title: "A Case for DeSci in Africa (Web3Lagos Conference)",
+      description: (
+        <span>
+          <q>A Case for DeSci in Africa</q> was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Watch on YouTube{" "}
+          <a
+            href="https://youtu.be/cXvHHf48txw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-link-underline"
+          >
+            here
+          </a>
+          .
+        </span>
+      ),
+      image: web3lagosconf,
+      link: "https://youtu.be/cXvHHf48txw",
+      category: "Speakings",
+    },
 
-        {
+    {
       title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
       description:
         "Mosadoluwa Fasasi sat with Jelani Clarke, co-founder of DeSci World, to discuss the DeSci movement in Nigeria, the origin story, the impact so far, and what the future holds.",
       image: desciRising,
       link: "https://x.com/i/spaces/1lPJqMRLzMnJb",
       category: "Speakings",
-    }, 
-        {
+    },
+    {
       title: "Artist Talk: Q&A with Daniel Sheldon, For The People NFT",
       description:
         "You can draw parallels between web3 and the American Revolution. Both reject old power structures. Both were a reaction to a deeply felt unfairness and a yearning [...]",
@@ -137,7 +137,7 @@ const Media = () => {
       image: bitget,
       link: "https://x.com/BitgetWallet/status/1767430845487595903?s=20",
       category: "Speakings",
-    },    
+    },
     {
       title: "A Map made for the Dark: 6 Curated Patterns for those Navigating the Unknwon",
       description:
@@ -146,7 +146,7 @@ const Media = () => {
       link: "https://selar.com/odp1f2",
       category: "Publications",
     },
-       {
+    {
       title: "From The Morphing—500",
       description:
         "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
@@ -154,7 +154,7 @@ const Media = () => {
       link: "https://open.spotify.com/show/3m8buR1Sm29ydeEIfa3Avt?si=2be26911d10447b5",
       category: "Speakings",
     },
-            {
+    {
       title: "Breaking Barriers in Education",
       description:
         "Mosadoluwa Fasasi joined ThriveRise Africa to discuss ways to reshape education and the research culture in Nigeria through the latest advancement in technology.",
@@ -227,12 +227,32 @@ const Media = () => {
       link: "https://peopledao.mirror.xyz/lqEBxnYUKSa3bSV2UpaXlEbb3TBv5iLdgmIjMDt3XBU",
       category: "Features",
     },
-        {
-      title: "Newsletter on Blockchain and its offerings",
+    {
+      title: "A milestone, the first fifty",
+      description: (
+        <span>
+          On{' '}
+          <a
+            href="https://desci.ng/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-link-underline"
+          >
+            {"DeSci Nigeria's"}
+          </a>{' '}
+          first fifty paper uploads, Dialogues, and our enduring focus.
+        </span>
+      ),
+      image: olhenry,
+      link: "https://open.substack.com/pub/themorphing500/p/intermission-a-milestone-the-first",
+      category: "Blog",
+    },
+    {
+      title: "Reflections of a fallout",
       description:
-        "My latest piece reflects on the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
-      image: newsletter,
-      link: "https://themorphing500.substack.com/",
+        "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
+      image: olhenry,
+      link: "https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners",
       category: "Blog",
     },
     {
@@ -262,9 +282,8 @@ const Media = () => {
             {tabs?.map((filter) => (
               <button
                 key={filter}
-                className={`filter-btn ${
-                  activeFilter === filter ? "active" : ""
-                }`}
+                className={`filter-btn ${activeFilter === filter ? "active" : ""
+                  }`}
                 onClick={() => handleFilterClick(filter)}
               >
                 {filter}
