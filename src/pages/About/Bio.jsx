@@ -19,18 +19,38 @@ const Bio = () => {
                 pointer. Godspeed, my friend!"
               </h2>
               <p>
-Mosadoluwa Fasasi is a Solutions Architect. Founder & Executive Director at De(centralised) Sci(ence) Nigeria (DeSci NG), an initiative building open, decentralised research infrastructure for Africa. 
+                Mosadoluwa Fasasi is a Solutions Architect. Founder & Executive Director at{" "}
+                <a
+                  href="https://nubianresearch.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "#e63946" }}
+                >
+                  Nubian Research (fka DeSci Nigeria)
+                </a>
+                , an initiative building open, decentralised research infrastructure
+                for Africa.{" "}
               </p>
               <p>
-In 2023, he served on the administrative team at People Decentralised Autonomous Organisation, where he helped steer historic projects, including their bid (attempted twice) to collectively own a physical copy of the Constitution of the United States. At PeopleDAO, he was recognised as a 
-<span style={{ color: "#e63946" }}> “Rising Star” </span> 
-and a 
-<span style={{ color: "#e63946" }}> 3x Contributor of the Month </span> 
-for accelerating incubated projects and delivering value across the DAO. 
+                In 2023, he served on the administrative team at People
+                Decentralised Autonomous Organisation, where he helped steer
+                historic projects, including their bid (attempted twice) to
+                collectively own a physical copy of the Constitution of the United
+                States. At PeopleDAO, he was recognised as a
+                <span style={{ color: "#e63946" }}> “Rising Star” </span>
+                and a
+                <span style={{ color: "#e63946" }}> 3x Contributor of the Month </span>
+                for accelerating incubated projects and delivering value across the
+                DAO.
               </p>
               <p>
-Before venturing into the blockchain ecosystem, Mosadoluwa Fasasi wore many hats as an operator in the Nigerian startup ecosystem, delivering human-centred experiences and unlocking value for diverse stakeholders. With a background in Science Education, he now bridges his expertise in blockchain to champion DeSci. His work focuses on positioning Africa as an active contributor to global knowledge production through open science and research.
-
+                Before venturing into the blockchain ecosystem, Mosadoluwa Fasasi
+                wore many hats as an operator in the Nigerian startup ecosystem,
+                delivering human-centred experiences and unlocking value for
+                diverse stakeholders. With a background in Science Education, he
+                now bridges his expertise in blockchain to decentralise knowledge.
+                His work focuses on positioning Africa as an active contributor to
+                global knowledge production through open science and research.
               </p>
               <p>
                 To see some of his professional adventures, click {""}
