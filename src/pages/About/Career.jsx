@@ -34,7 +34,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Nubian (Dec 2024 - present): <br /> Formerly known as "Decentralized Science Nigeria", Nubian is Africa's first decentralized research infrastructure, making African research open and globally accessible, forever. Check out
+                    Nubian · (presently) <br /> Formerly known as "Decentralized Science Nigeria", Nubian is Africa's first decentralized research infrastructure, making African research open and globally accessible, forever. Check out
                     Nubian {" "}
                     <a
                       className="underline"
@@ -56,7 +56,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Multisightapp (Dec 2023 - Dec 2025): <br /> A performance analytics
+                    Multisightapp · (previously) <br /> A performance analytics
                     product for individuals and teams using Multisignature wallet. Mosadoluwa Fasasi is a
                     co-builder at Multisightapp. They got into the Safe
                     Ecosystem grant in 2022, produced a                    <a
@@ -89,21 +89,36 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 mt-[10px] sm:mt-[4px]">
-                    WTF Academy Africa (Jan 2023 - April 2025): <br /> An
-                    open-source Web3 university onboarding Web2 talent.
-                    Mosadoluwa Fasasi coordinates this project and since Q2 2023, his
-                    team has reached over 100 talent. To see one of their
-                    pop-ups in 2024, click{" "}
+                    WTF Academy · (previously) <br /> 
+                    An open-source blockchain university. Mosadoluwa Fasasi was a core contributor, developing and maintaining technical learning resources. Some of the major ones include{' '}
                     <a
                       className="underline"
                       target="_blank"
-                      href="https://www.linkedin.com/company/wtf-academy-africa/"
+                      rel="noopener noreferrer"
+                      href="https://github.com/WTFAcademy/WTF-Ethers/tree/main/en"
                     >
-                      here
+                      Ethers.js
                     </a>
-                    {""}. They recently struck a partnership with The Family of
-                    Students, Naija's largest community of students online, to
-                    continue to drive their mission forward.
+                    ,{' '}
+                    <a
+                      className="underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://x.com/WTFAcademy_/status/1727735822269747318"
+                    >
+                      Huff
+                    </a>
+                    , and{' '}
+                    <a
+                      className="underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/WTFAcademy/WTF-Solidity/tree/main/Languages/en"
+                    >
+                      Solidity
+                    </a>
+                    .
+                    His work helped broaden access to the academy’s curriculum beyond Mandarin-speaking developers and supported its expansion into West Africa.
                   </p>
                 </div>
                 <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
@@ -115,7 +130,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    PeopleDAO (August 2022 - Dec 2024): <br /> A meta-dao that
+                    PeopleDAO · (previously) <br /> A meta-dao that
                     incubates public good projects. Mosadoluwa Fasasi worked as
                     a generalist member and rose to the administrative level
                     through his exceptional contributions, for which he was also
@@ -157,7 +172,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Techsemester | Talntsapp (Jan 2023 - Apr 2024): <br /> An
+                    Techsemester | Talntsapp · (previously) <br /> An
                     ed-tech startup with a digital product for creators.
                     Mosadoluwa Fasasi worked as a generalist within a small team
                     of builders. His role varied over time. Some of the
