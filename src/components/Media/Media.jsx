@@ -57,7 +57,7 @@ const Media = () => {
       description:
         "Meme coins on Solana reflect the same forces shaping financial behaviour across Nigeria and Africa: a youth-driven digital culture, the search for alternative economic [...]",
       image: memetics,
-      link: "https://desci.ng/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation",
+      link: "https://nubianresearch.com/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation",
       category: "Publications",
     },
     {

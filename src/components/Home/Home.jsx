@@ -6,9 +6,9 @@ import hero from "/hero.webp"; // Correct path for hero image
 // import placeholder from "/placeholder.webp"; 
 import placeholder1 from "/placeholder1.jpeg"; 
 // import moveee1 from "/moveee1.png";
-import genz from "/genz.webp"; // Correct path for genz image
+import multi1 from "/multi1.png"; // Correct path for genz image
 import work from "/work.webp"; // Correct path for work image
-import mentors from "/mentors.jpg"; // Correct path for mentors image
+import memetics from "/memetics.png"; // Correct path for mentors image
 import Footer from "../Footer";
 
 const Home = () => {
@@ -43,7 +43,7 @@ const Home = () => {
       <div className="bg-white">
         <section className="layout__container xl:px-[60px] lg:px-[40px] 2xs:px-[20px] py-20 md:py-14 2xs:py-10">
           <h2 className="text-[45px] md:text-[32px] 2xs:text-[20px] text-black">
-            Featured on The Moveee Magazine
+            Featured Pieces 
           </h2>
           <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
             {/* Feature 1 */}
@@ -75,24 +75,21 @@ const Home = () => {
             <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
               <div
                 className="feature-image"
-                style={{ backgroundImage: `url(${genz})` }}
+                style={{ backgroundImage: `url(${multi1})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://moveee.co/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/"
+                    href="https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    Gen-Z, Startups, and the Art of Collaboration in Modern Work
-                    Culture
+                    Introduction to Multisignature Wallets
                   </a>
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
-                  One of the reasons why it appears that Gen-Zs lack the ability
-                  to collaborate with traditional institutions is mistrust.
-                  Gen-Zs have grown up in a time of unprecedented [...]
+                  Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]
                 </p>
               </div>
             </div>
@@ -127,21 +124,21 @@ const Home = () => {
             <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
               <div
                 className="feature-image"
-                style={{ backgroundImage: `url(${mentors})` }}
+                style={{ backgroundImage: `url(${memetics})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://moveee.co/why-the-best-mentors-today-dont-call-themselves-mentors/"
+                    href="https://nubianresearch.com/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    Why the Best Mentors Today Don’t Call Themselves Mentors
+                    Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation
                   </a>
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
-                In this piece, Mosadoluwa Fasasi meticulously examines the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]
+                Meme coins on Solana reflect the same forces shaping financial behaviour across Nigeria and Africa: a youth-driven digital culture, the search for alternative economic [...]
                 </p>
               </div>
             </div>
