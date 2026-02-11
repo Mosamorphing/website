@@ -7,7 +7,7 @@ import hero from "/hero.webp"; // Correct path for hero image
 import placeholder1 from "/placeholder1.jpeg"; 
 // import moveee1 from "/moveee1.png";
 import multi1 from "/multi1.png"; // Correct path for genz image
-import work from "/work.webp"; // Correct path for work image
+import olhenry from "/olhenry.jpeg"; // Correct path for work image
 import memetics from "/memetics.png"; // Correct path for mentors image
 import Footer from "../Footer";
 
@@ -98,24 +98,22 @@ const Home = () => {
             <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
               <div
                 className="feature-image"
-                style={{ backgroundImage: `url(${work})` }}
+                style={{ backgroundImage: `url(${olhenry})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://moveee.co/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
+                    href="https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    The Work Culture and the New Breed: What the Old Wineskin
-                    Means for the New Wine
+                    Reflections of a fallout
                   </a>
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
-                  We have enough gaps in our existence already. Things only
-                  worsen when we fail to understand how we can synchronise our
-                  [...]
+                  On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. 
+                  It's about trust, ideals, and the messy business of  [...]
                 </p>
               </div>
             </div>

@@ -162,13 +162,24 @@ const Media = () => {
       link: "https://www.linkedin.com/posts/mosadoluwa-fasasi-4008b81a9_if-you-innovate-long-enough-its-only-a-activity-7285915623857999875-sPXl?utm_source=share&utm_medium=member_desktop",
       category: "Speakings",
     },
-    {
-      title:
-        "On knowing the influences that shape your life and being true to yourself.",
-      description:
-        "To accurately apply a person’s judgment, point of view or “authoritative advice” on an issue to your life, you’ve got to know them in their entirety [...]",
-      image: influence,
-      path: "/media/blog/on-influences",
+        {
+      title: "A milestone, the first fifty",
+      description: (
+        <span>
+          On{' '}
+          <a
+            href="https://desci.ng/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-link-underline"
+          >
+            {"Nubian's"}
+          </a>{' '}
+          first fifty paper uploads, Dialogues, and our enduring focus.
+        </span>
+      ),
+      image: olhenry,
+      link: "https://open.substack.com/pub/themorphing500/p/intermission-a-milestone-the-first",
       category: "Blog",
     },
     {
@@ -195,12 +206,12 @@ const Media = () => {
       link: "https://moveee.co/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/",
       category: "Publications",
     },
-    {
-      title: "Into the Mind of 4 Gen-X Yoruba Men and a Gen-Z observer",
+        {
+      title: "Reflections of a fallout",
       description:
-        "The fearful and troubling thought is that what if these dividing beliefs begin to spread like wildfire amongst the Gen-Z as well? As I [...]",
-      image: into,
-      path: "/media/blog/into-the-mind",
+        "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
+      image: olhenry,
+      link: "https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners",
       category: "Blog",
     },
     {
@@ -227,34 +238,24 @@ const Media = () => {
       link: "https://peopledao.mirror.xyz/lqEBxnYUKSa3bSV2UpaXlEbb3TBv5iLdgmIjMDt3XBU",
       category: "Features",
     },
-    {
-      title: "A milestone, the first fifty",
-      description: (
-        <span>
-          On{' '}
-          <a
-            href="https://desci.ng/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="media-link-underline"
-          >
-            {"DeSci Nigeria's"}
-          </a>{' '}
-          first fifty paper uploads, Dialogues, and our enduring focus.
-        </span>
-      ),
-      image: olhenry,
-      link: "https://open.substack.com/pub/themorphing500/p/intermission-a-milestone-the-first",
-      category: "Blog",
-    },
-    {
-      title: "Reflections of a fallout",
+        {
+      title:
+        "On knowing the influences that shape your life and being true to yourself.",
       description:
-        "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
-      image: olhenry,
-      link: "https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners",
+        "To accurately apply a person’s judgment, point of view or “authoritative advice” on an issue to your life, you’ve got to know them in their entirety [...]",
+      image: influence,
+      path: "/media/blog/on-influences",
       category: "Blog",
     },
+        {
+      title: "Into the Mind of 4 Gen-X Yoruba Men and a Gen-Z observer",
+      description:
+        "The fearful and troubling thought is that what if these dividing beliefs begin to spread like wildfire amongst the Gen-Z as well? As I [...]",
+      image: into,
+      path: "/media/blog/into-the-mind",
+      category: "Blog",
+    },
+
     {
       title: "AI and Creative Writers: The fate of Global Creatives",
       description:
@@ -270,7 +271,7 @@ const Media = () => {
       ? features
       : features.filter((feature) => feature.category === activeFilter);
 
-  const tabs = ["All", "Publications", "Speakings", "Features", "Blog"];
+  const tabs = ["All", "Blog", "Features", "Publications", "Speakings"];
 
   return (
     <div className="min-h-[93.5dvh] flex-1 flex flex-col justify-between">
