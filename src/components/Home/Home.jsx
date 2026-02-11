@@ -103,7 +103,7 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
                   <a
-                    href="https://moveee.co/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/"
+                    href="https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
