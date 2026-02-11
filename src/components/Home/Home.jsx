@@ -113,7 +113,7 @@ const Home = () => {
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
                   On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. 
-                  It's about trust, ideals, and the messy business of  [...]",
+                  It's about trust, ideals, and the messy business of  [...]
                 </p>
               </div>
             </div>
