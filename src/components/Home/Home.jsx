@@ -73,7 +73,7 @@ const Home = () => {
                         {/* Feature 2 */}
             <a
               className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771875757549"
+              href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
