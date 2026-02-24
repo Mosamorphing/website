@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
@@ -16,7 +16,7 @@ import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 import morphing500 from "../../../public/morphing500.png";
-import newsletter from "../../../public/newsletter.png";
+// ...existing imports...
 import mentors from "../../../public/mentors.jpg";
 import desciRising from "../../../public/desci-rising.jpeg";
 import web3lagosconf from "../../../public/web3lagosconf.jpeg";
@@ -25,6 +25,7 @@ import olhenry from "../../../public/olhenry.jpeg";
 import coordination from "../../../public/coordination.jpeg";
 import memetics from "../../../public/memetics.png";
 import magic from "../../../public/magic.jpeg";
+import escher from "../../../public/escher.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -52,6 +53,22 @@ const Media = () => {
       link: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
       category: "Publications",
     },
+        {
+      title: "Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation",
+      description:
+        "This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]",
+      image: escher,
+      link: "https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771875757549",
+      category: "Publications",
+    },
+        {
+      title: "A Revolutionary Future for Scientific Research through Decentralized Science",
+      description:
+        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
+      image: moveee1,
+      link: "https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
+      category: "Features",
+    },
     {
       title: "Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation",
       description:
@@ -59,14 +76,6 @@ const Media = () => {
       image: memetics,
       link: "https://nubianresearch.com/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation",
       category: "Publications",
-    },
-    {
-      title: "A Revolutionary Future for Scientific Research through Decentralized Science",
-      description:
-        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
-      image: moveee1,
-      link: "https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
-      category: "Features",
     },
     {
       title: "Extra Edition: A Case for DeSci in Africa",
@@ -94,20 +103,8 @@ const Media = () => {
     },
     {
       title: "A Case for DeSci in Africa (Web3Lagos Conference)",
-      description: (
-        <span>
-          <q>A Case for DeSci in Africa</q> was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Watch on YouTube{" "}
-          <a
-            href="https://youtu.be/cXvHHf48txw"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="media-link-underline"
-          >
-            here
-          </a>
-          .
-        </span>
-      ),
+      description:
+        "A Case for DeSci in Africa was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Watch on YouTube.",
       image: web3lagosconf,
       link: "https://youtu.be/cXvHHf48txw",
       category: "Speakings",
@@ -164,20 +161,8 @@ const Media = () => {
     },
         {
       title: "A milestone, the first fifty",
-      description: (
-        <span>
-          On{' '}
-          <a
-            href="https://desci.ng/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="media-link-underline"
-          >
-            {"Nubian's"}
-          </a>{' '}
-          first fifty paper uploads, Dialogues, and our enduring focus.
-        </span>
-      ),
+      description:
+        "On Nubian's first fifty paper uploads, Dialogues, and our enduring focus.",
       image: olhenry,
       link: "https://open.substack.com/pub/themorphing500/p/intermission-a-milestone-the-first",
       category: "Blog",
@@ -295,38 +280,26 @@ const Media = () => {
           {/* Features Section */}
           <section className="media-features-section mt-8">
             <div className="media-features-grid">
-              {filteredFeatures.map((feature, index) => (
-                <div key={index} className="media-feature-item">
-                  <div
-                    className="media-feature-image"
-                    style={{ backgroundImage: `url(${feature.image})` }}
-                  ></div>
-                  <div className="media-feature-text">
-                    <h3 className="media-feature-title">
-                      {feature.path ? (
-                        <Link
-                          to={feature.path}
-                          style={{ textDecoration: "none", color: "inherit" }}
-                        >
-                          {feature.title}
-                        </Link>
-                      ) : (
-                        <a
-                          href={feature.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ textDecoration: "none", color: "inherit" }}
-                        >
-                          {feature.title}
-                        </a>
-                      )}
-                    </h3>
-                    <p className="media-feature-description">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              {filteredFeatures.map((feature, index) => {
+                const isInternal = Boolean(feature.path);
+                const Wrapper = isInternal ? Link : "a";
+                const wrapperProps = isInternal
+                  ? { to: feature.path, style: { textDecoration: "none", color: "inherit" } }
+                  : { href: feature.link, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none", color: "inherit" } };
+
+                return (
+                  <Wrapper key={index} className="media-feature-item" {...wrapperProps}>
+                    <div
+                      className="media-feature-image"
+                      style={{ backgroundImage: `url(${feature.image})` }}
+                    ></div>
+                    <div className="media-feature-text">
+                      <h3 className="media-feature-title">{feature.title}</h3>
+                      <p className="media-feature-description">{feature.description}</p>
+                    </div>
+                  </Wrapper>
+                );
+              })}
             </div>
           </section>
         </div>

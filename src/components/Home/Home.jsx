@@ -1,4 +1,4 @@
-import React from "react";
+// React import not required with new JSX transform
 import { Link } from "react-router-dom";
 
 import "./home.css"; // Custom CSS for the home page
@@ -8,7 +8,7 @@ import placeholder1 from "/placeholder1.jpeg";
 // import moveee1 from "/moveee1.png";
 import multi1 from "/multi1.png"; // Correct path for genz image
 import olhenry from "/olhenry.jpeg"; // Correct path for work image
-import memetics from "/memetics.png"; // Correct path for mentors image
+import escher from "/escher.png"; // Correct path for mentors image
 import Footer from "../Footer";
 
 const Home = () => {
@@ -47,21 +47,20 @@ const Home = () => {
           </h2>
           <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
             {/* Feature 1 */}
-            <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+            <a
+              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              href="https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <div
                 className="feature-image"
                 style={{ backgroundImage: `url(${placeholder1})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
-                  <a
-                    href="https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    A Revolutionary Future for Scientific Research through Decentralized Science
-                  </a>
+                  A Revolutionary Future for Scientific Research through Decentralized Science
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
                   Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, 
@@ -69,77 +68,76 @@ const Home = () => {
                   inquiry, and its [...]
                 </p>
               </div>
-            </div>
+            </a>
 
-            {/* Feature 2 */}
-            <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+                        {/* Feature 2 */}
+            <a
+              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771875757549"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div
+                className="feature-image"
+                style={{ backgroundImage: `url(${escher})` }}
+              ></div>
+              <div className="feature-text">
+                <h3 className="text-[20px] 2xs:text-base text-black">
+                  {"Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation"}
+                </h3>
+                <p className="text-sm text-[#666] mt-[10px]">
+                {"This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]"}
+                </p>
+              </div>
+            </a>
+
+            {/* Feature 3 */}
+            <a
+              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              href="https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <div
                 className="feature-image"
                 style={{ backgroundImage: `url(${multi1})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
-                  <a
-                    href="https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    Introduction to Multisignature Wallets
-                  </a>
+                  Introduction to Multisignature Wallets
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
                   Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]
                 </p>
               </div>
-            </div>
+            </a>
 
-            {/* Feature 3 */}
-            <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
+            {/* Feature 4 */}
+            <a
+              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              href="https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <div
                 className="feature-image"
                 style={{ backgroundImage: `url(${olhenry})` }}
               ></div>
               <div className="feature-text">
                 <h3 className="text-[20px] 2xs:text-base text-black">
-                  <a
-                    href="https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    Reflections of a fallout
-                  </a>
+                  Reflections of a fallout
                 </h3>
                 <p className="text-sm text-[#666] mt-[10px]">
                   On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. 
-                  It's about trust, ideals, and the messy business of  [...]
+                  {"It's about trust, ideals, and the messy business of  [...]"}
                 </p>
               </div>
-            </div>
+            </a>
 
-            {/* Feature 4 */}
-            <div className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center">
-              <div
-                className="feature-image"
-                style={{ backgroundImage: `url(${memetics})` }}
-              ></div>
-              <div className="feature-text">
-                <h3 className="text-[20px] 2xs:text-base text-black">
-                  <a
-                    href="https://nubianresearch.com/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation
-                  </a>
-                </h3>
-                <p className="text-sm text-[#666] mt-[10px]">
-                Meme coins on Solana reflect the same forces shaping financial behaviour across Nigeria and Africa: a youth-driven digital culture, the search for alternative economic [...]
-                </p>
-              </div>
-            </div>
+
           </div>
         </section>
       </div>
