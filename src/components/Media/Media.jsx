@@ -58,7 +58,7 @@ const Media = () => {
       description:
         "This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]",
       image: escher,
-      link: "https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771875757549",
+      link: "https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472",
       category: "Publications",
     },
         {
