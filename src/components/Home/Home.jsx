@@ -48,7 +48,7 @@ const Home = () => {
           <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
             {/* Feature 1 */}
             <a
-              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
               href="https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
               target="_blank"
               rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const Home = () => {
 
                         {/* Feature 2 */}
             <a
-              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
               href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
               target="_blank"
               rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const Home = () => {
 
             {/* Feature 3 */}
             <a
-              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
               href="https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets"
               target="_blank"
               rel="noopener noreferrer"
@@ -116,7 +116,7 @@ const Home = () => {
 
             {/* Feature 4 */}
             <a
-              className="w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
               href="https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners"
               target="_blank"
               rel="noopener noreferrer"
