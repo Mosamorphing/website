@@ -120,6 +120,31 @@ p {
   color: #666;
 }
 
+/* Card nudge effect (desktop only). Applies a small upward nudge and shadow on hover/focus
+   without changing color. Use the `card-nudge` class on the anchor that wraps a card. */
+.card-nudge {
+  display: block; /* ensure anchor wraps block content */
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 769px) {
+  .card-nudge:hover,
+  .card-nudge:focus {
+    /* subtle upward nudge only — no shadow to avoid showing the card rectangle */
+    transform: translateY(-5px);
+    /* intentionally no box-shadow here */
+  }
+
+  .card-nudge:focus-visible {
+    /* keep an accessible focus ring but make it subtle */
+    outline: 2px solid rgba(230, 57, 70, 0.12);
+    outline-offset: 6px;
+    border-radius: 6px;
+  }
+}
+
 /* Footer Section */
 .footer-section {
   display: flex;

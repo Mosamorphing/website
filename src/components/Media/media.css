@@ -39,7 +39,7 @@
 
 /* Features Section */
 .media-features-section {
-  /* padding: 20px 100px; */
+  padding: 20px 100px;
 }
 
 .media-features-section h2 {
@@ -108,6 +108,27 @@
   color: #e63946;
 }
 
+/* Card nudge effect for media cards (desktop only) — small upward nudge, no shadow */
+.card-nudge {
+  display: block;
+  transition: transform 0.28s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 769px) {
+  .card-nudge:hover,
+  .card-nudge:focus {
+    transform: translateY(-5px);
+  }
+
+  .card-nudge:focus-visible {
+    outline: 2px solid rgba(230, 57, 70, 0.12);
+    outline-offset: 6px;
+    border-radius: 6px;
+  }
+}
+
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
   .filter-bar {
@@ -123,7 +144,7 @@
   }
 
   .media-features-section {
-    /* padding: 20px; */
+    padding: 20px;
   }
 
   .media-features-grid {

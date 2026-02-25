@@ -288,7 +288,7 @@ const Media = () => {
                   : { href: feature.link, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none", color: "inherit" } };
 
                 return (
-                  <Wrapper key={index} className="media-feature-item" {...wrapperProps}>
+                  <Wrapper key={index} className="card-nudge media-feature-item" {...wrapperProps}>
                     <div
                       className="media-feature-image"
                       style={{ backgroundImage: `url(${feature.image})` }}
