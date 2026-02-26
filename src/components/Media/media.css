@@ -157,7 +157,7 @@
   }
 
   .media-feature-title {
-    font-size: 1.2rem;
+    font-size: 1rem; /* match Home's mobile title size */
   }
 
   .media-feature-description {
