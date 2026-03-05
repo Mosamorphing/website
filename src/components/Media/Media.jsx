@@ -78,6 +78,14 @@ const Media = () => {
       category: "Publications",
     },
     {
+      title: "Intermission: An evolved identity, and a new partner",
+      description:
+        'From "DeSci NG" to "Nubian", and our partnership with NuNet for peer-to-peer computing',
+      image: olhenry,
+      link: "https://open.substack.com/pub/themorphing500/p/intermission-an-evolved-identity",
+      category: "Blog",
+    },
+   {
       title: "Extra Edition: A Case for DeSci in Africa",
       description:
         "A guest editorial by Mosadoluwa Fasasi of DeSci Nigeria on Michel Bauwen's Substack: Fourth Generation Civilization. On the history of Decentralized Science and [...]",
@@ -85,6 +93,7 @@ const Media = () => {
       link: "https://open.substack.com/pub/4thgenerationcivilization/p/extra-edition-a-case-for-desci-in",
       category: "Features",
     },
+
     {
       title: "The Frontier of Human Coordination Has Moved East",
       description:
