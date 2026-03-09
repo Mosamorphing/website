@@ -29,7 +29,7 @@ const Bio = () => {
                   Nubian Research (fka DeSci Nigeria)
                 </a>
                 , an initiative building open, decentralised research infrastructure
-                for Africa.{" "}
+                for the underserved.{" "}
               </p>
               <p>
                 In 2023, he served on the administrative team at People
@@ -49,7 +49,7 @@ const Bio = () => {
                 delivering human-centred experiences and unlocking value for
                 diverse stakeholders. With a background in Science Education, he
                 now bridges his expertise in blockchain to decentralise knowledge.
-                His work focuses on positioning Africa as an active contributor to
+                His work focuses on positioning regions of the global south as an active contributor to
                 global knowledge production through open science and research.
               </p>
               <p>
