@@ -34,7 +34,7 @@ const Career = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Nubian · (presently) <br /> Formerly known as "Decentralized Science Nigeria", Nubian is the premier decentralized research infrastructure for underserved researchers. Check out
+                    Nubian · (presently) <br /> Formerly known as "Decentralized Science Nigeria", Nubian is an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline. Check out
                     Nubian {" "}
                     <a
                       className="underline"

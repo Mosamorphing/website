@@ -28,8 +28,7 @@ const Bio = () => {
                 >
                   Nubian Research (fka DeSci Nigeria)
                 </a>
-                , an initiative building open, decentralised research infrastructure
-                for the underserved.{" "}
+                , an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline.{" "}
               </p>
               <p>
                 In 2023, he served on the administrative team at People
