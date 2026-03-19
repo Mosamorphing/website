@@ -6,7 +6,8 @@ const Desci = () => {
   return (
     <>
       <div className="publication">
-        <h1>A Case for Decentralized Science.</h1>
+        <h1>A Case for Decentralized Science</h1>
+        <p className="publication-date">December 2024</p>
         <p>
           The emergence of memecoins has sparked significant debate,
           particularly regarding their implications for the scientific

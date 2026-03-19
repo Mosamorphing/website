@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
@@ -29,10 +28,28 @@ import escher from "../../../public/escher.png";
 import Footer from "../Footer";
 
 const Media = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const tabs = [
+    { label: "All", value: "all" },
+    { label: "Blog", value: "blog" },
+    { label: "Features", value: "features" },
+    { label: "Publications", value: "publications" },
+    { label: "Speakings", value: "speakings" },
+  ];
+  const activeTabValue = searchParams.get("tab")?.toLowerCase() ?? "all";
+  const activeFilter =
+    tabs.find((tab) => tab.value === activeTabValue)?.label ?? "All";
 
-  const handleFilterClick = (filter) => {
-    setActiveFilter(filter);
+  const handleFilterClick = (tabValue) => {
+    const nextParams = new URLSearchParams(searchParams);
+
+    if (tabValue === "all") {
+      nextParams.delete("tab");
+    } else {
+      nextParams.set("tab", tabValue);
+    }
+
+    setSearchParams(nextParams, { replace: true });
   };
 
   // Features data
@@ -234,7 +251,7 @@ const Media = () => {
     },
         {
       title:
-        "On knowing the influences that shape your life and being true to yourself.",
+        "On knowing the influences that shape your life and being true to yourself",
       description:
         "To accurately apply a person’s judgment, point of view or “authoritative advice” on an issue to your life, you’ve got to know them in their entirety [...]",
       image: influence,
@@ -265,8 +282,6 @@ const Media = () => {
       ? features
       : features.filter((feature) => feature.category === activeFilter);
 
-  const tabs = ["All", "Blog", "Features", "Publications", "Speakings"];
-
   return (
     <div className="min-h-[93.5dvh] flex-1 flex flex-col justify-between">
       <div className="media-wrapper layout__container">
@@ -274,14 +289,14 @@ const Media = () => {
         <div className="media-section pt-8">
           {/* Filter Bar */}
           <div className="filter-bar overflow-x-auto px-4">
-            {tabs?.map((filter) => (
+            {tabs.map((tab) => (
               <button
-                key={filter}
-                className={`filter-btn ${activeFilter === filter ? "active" : ""
+                key={tab.value}
+                className={`filter-btn ${activeFilter === tab.label ? "active" : ""
                   }`}
-                onClick={() => handleFilterClick(filter)}
+                onClick={() => handleFilterClick(tab.value)}
               >
-                {filter}
+                {tab.label}
               </button>
             ))}
           </div>

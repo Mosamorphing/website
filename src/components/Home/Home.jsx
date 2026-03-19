@@ -1,4 +1,4 @@
-// React import not required with new JSX transform
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./home.css"; // Custom CSS for the home page
@@ -12,29 +12,68 @@ import escher from "/escher.png"; // Correct path for mentors image
 import Footer from "../Footer";
 
 const Home = () => {
+  const heroSectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = heroSectionRef.current;
+
+    if (!section || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return undefined;
+    }
+
+    let frameId = 0;
+
+    const updateHeroShift = () => {
+      frameId = 0;
+      const shift = Math.min(window.scrollY * 0.08, 18);
+      section.style.setProperty("--hero-shift", `${shift}px`);
+    };
+
+    const queueHeroShift = () => {
+      if (frameId) return;
+      frameId = window.requestAnimationFrame(updateHeroShift);
+    };
+
+    updateHeroShift();
+    window.addEventListener("scroll", queueHeroShift, { passive: true });
+    window.addEventListener("resize", queueHeroShift);
+
+    return () => {
+      if (frameId) {
+        window.cancelAnimationFrame(frameId);
+      }
+      window.removeEventListener("scroll", queueHeroShift);
+      window.removeEventListener("resize", queueHeroShift);
+      section.style.removeProperty("--hero-shift");
+    };
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
-      <section className="flex h-auto lg:h-[78vh] xs:h-[92vh] items-center justify-between layout__container relative overflow-hidden">
-        <div className="z-[10] mt-[-150px] sm:mt-[-80px]">
-          <h1 className="text-[53px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight owner__name">
+      <section
+        ref={heroSectionRef}
+        className="hero-section flex h-auto lg:h-[78vh] xs:h-[92vh] items-center justify-between layout__container relative overflow-hidden"
+      >
+        <div className="hero-copy z-[10] mt-[-150px] sm:mt-[-80px]">
+          <h1 className="hero-reveal hero-reveal-delay-1 text-[53px] lg:text-[50px] 2xs:text-[40px] xs:text-[32px] mb-[10px] leading-tight owner__name">
             MOSADOLUWA FASASI
           </h1>
-          <h2 className="text-[40px] lg:text-[30px] 2xs:text-[25px] xs:text-[23px] font-[200] mb-5 2xs:mb-3 leading-tight">
+          <h2 className="hero-reveal hero-reveal-delay-2 text-[40px] lg:text-[30px] 2xs:text-[25px] xs:text-[23px] font-[200] mb-5 2xs:mb-3 leading-tight">
             Adventurer, Thinker, Doer.
           </h2>
 {/*           <h3 className="text-[25px] 2xs:text-base font-[200] mb-5 leading-tight">
             Principal, The Morphing—500
           </h3> */}
-          <Link to="/bio">
+          <Link to="/bio" className="hero-reveal hero-reveal-delay-3 hero-cta-wrap">
             <button className="about-me-btn">About Me</button>
           </Link>
         </div>
-        <div className="w-1/2 lg:absolute lg:bottom-0 lg:left-0 lg:w-full lg:h-[78vh] xs:h-[92vh] 2xs:z-1 lg:opacity-50 2xs:flex 2xs:justify-center object-cover bg-top h-auto mr-[50px]">
+        <div className="hero-image-shell w-1/2 lg:absolute lg:bottom-0 lg:left-0 lg:w-full lg:h-[78vh] xs:h-[92vh] 2xs:z-1 lg:opacity-50 2xs:flex 2xs:justify-center object-cover bg-top h-auto mr-[50px]">
           <img
             src={hero}
             alt="Hero"
-            className="w-full h-auto max-h-full object-cover"
+            className="hero-image w-full h-auto max-h-full object-cover"
           />
         </div>
       </section>

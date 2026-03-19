@@ -9,8 +9,9 @@ const Influence = () => {
       <div className="blog-article">
         <h1>
           On knowing the influences that shape your life and being true to
-          yourself.
+          yourself
         </h1>
+        <p className="blog-date">June 2024</p>
         <p>
           I remember how I’d just become more active on Twitter (especially
           design twitter) in 2018–2019 and how there were conversations around
@@ -161,7 +162,7 @@ const Influence = () => {
           So, that’s it my friends. Own every decision, and “to thyself, be
           true”.
         </p>
-        <p className="border-b pb-3">
+        <p className="border-b pb-6 !mb-6">
           I pray that the light will always guide you. Till some other time,
           blessings.
         </p>

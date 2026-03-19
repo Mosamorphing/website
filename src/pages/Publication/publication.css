@@ -7,8 +7,16 @@
 
 .publication h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   color: #e63946;
+}
+
+.publication-date {
+  font-size: 0.9rem;
+  /* letter-spacing: 0.08em;
+  text-transform: uppercase; */
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 24px;
 }
 
 .publication p {
@@ -76,6 +84,11 @@
 @media (max-width: 768px) {
   .publication h1 {
     font-size: 1.5rem;
+  }
+
+  .publication-date {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
   }
 
   .publication p {

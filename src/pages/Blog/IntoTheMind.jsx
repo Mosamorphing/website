@@ -7,6 +7,7 @@ const IntoTheMind = () => {
     <>
       <div className="blog-article">
         <h1>Into the Mind of 4 Gen-X Yoruba Men and a Gen-Z Observer</h1>
+        <p className="blog-date">March 2023</p>
         <p>
           Earlier today under the rising hot weather, I had a musing and it goes
           thus:
@@ -131,13 +132,12 @@ const IntoTheMind = () => {
           canceled, that is no stream on their music and if there are no
           streams, that means no money to flex.
           </p>
-          <p className='border-b pb-[12px]'>
+          <p className="border-b pb-[24px] !mb-[24px]">
           Talks came around Dino Melaye and how he was also ‘funded’ in dollars
           by the Atiku group to influence and always raise a finger when he
           sensed foul plays.
         </p>
         
-      
         <p>
           It was a long journey and after listening to all of these quietly, I
           was drained. I was teased here and there but I replied no word. After
