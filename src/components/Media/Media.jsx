@@ -25,6 +25,8 @@ import coordination from "../../../public/coordination.jpeg";
 import memetics from "../../../public/memetics.png";
 import magic from "../../../public/magic.jpeg";
 import escher from "../../../public/escher.png";
+import nubian from "../../../public/nubian.png";
+import partners from "../../../public/partners.png";
 import Footer from "../Footer";
 
 const Media = () => {
@@ -54,12 +56,28 @@ const Media = () => {
 
   // Features data
   const features = [
-    {
-      title: "A Case for Decentralized Science",
+            {
+      title: "Nubian x NuNet: Inside the Partnership",
       description:
-        "The emergence of memecoins has sparked significant debate, particularly regarding their implications for the scientific community. Critics often dismiss memecoins as frivolous [...]",
-      image: desci,
-      path: "/media/publication/a-case-for-desci",
+        "Featuring Dr. Em Lenartowicz (Decentralized Governance Architect and Lead, NuNet) and Mosadoluwa Fasasi (Executive Director, Nubian Research), this conversation explores their work and growing partnership. Click to watch on YouTube.",
+      image: partners,
+      link: "https://youtu.be/_bWzxDDr9X0",
+      category: "Speakings",
+    },
+    {
+      title: "A Case for DeSci in Africa (Web3Lagos Conference)",
+      description:
+        "A Case for DeSci in Africa was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Click to watch on YouTube.",
+      image: web3lagosconf,
+      link: "https://youtu.be/cXvHHf48txw",
+      category: "Speakings",
+    },
+        {
+      title: "Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation",
+      description:
+        "This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]",
+      image: escher,
+      link: "https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472",
       category: "Publications",
     },
     {
@@ -70,21 +88,21 @@ const Media = () => {
       link: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
       category: "Publications",
     },
-        {
-      title: "Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation",
-      description:
-        "This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]",
-      image: escher,
-      link: "https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472",
-      category: "Publications",
-    },
-        {
+    {
       title: "A Revolutionary Future for Scientific Research through Decentralized Science",
       description:
         "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
       image: moveee1,
       link: "https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
       category: "Features",
+    },
+        {
+      title: "A Case for Decentralized Science",
+      description:
+        "The emergence of memecoins has sparked significant debate, particularly regarding their implications for the scientific community. Critics often dismiss memecoins as frivolous [...]",
+      image: desci,
+      path: "/media/publication/a-case-for-desci",
+      category: "Publications",
     },
     {
       title: "Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation",
@@ -102,7 +120,7 @@ const Media = () => {
       link: "https://open.substack.com/pub/themorphing500/p/intermission-an-evolved-identity",
       category: "Blog",
     },
-   {
+    {
       title: "Extra Edition: A Case for DeSci in Africa",
       description:
         "A guest editorial by Mosadoluwa Fasasi of DeSci Nigeria on Michel Bauwen's Substack: Fourth Generation Civilization. On the history of Decentralized Science and [...]",
@@ -110,7 +128,14 @@ const Media = () => {
       link: "https://open.substack.com/pub/4thgenerationcivilization/p/extra-edition-a-case-for-desci-in",
       category: "Features",
     },
-
+        {
+      title: "Nubian Is Rewriting Africa’s Research Future Through Its Digital Repository",
+      description:
+        "In our exclusive conversation with Mosadoluwa Fasasi, Founder of Nubian Research, he walked us through the inspiration behind the repository, their mission to support academic and independent [...]",
+      image: nubian,
+      link: "https://themoveee.com/nubian-is-rewriting-africas-research-future-through-its-digital-repository",
+      category: "Features",
+    },
     {
       title: "The Frontier of Human Coordination Has Moved East",
       description:
@@ -127,15 +152,6 @@ const Media = () => {
       link: "https://open.substack.com/pub/4thgenerationcivilization/p/anthropological-reflections-on-the",
       category: "Features",
     },
-    {
-      title: "A Case for DeSci in Africa (Web3Lagos Conference)",
-      description:
-        "A Case for DeSci in Africa was delivered by Mosadoluwa Fasasi at the Web3Lagos Conference (2025). Watch on YouTube.",
-      image: web3lagosconf,
-      link: "https://youtu.be/cXvHHf48txw",
-      category: "Speakings",
-    },
-
     {
       title: "DeSci Rising (Ep 8) ft. DeSci Nigeria",
       description:
@@ -185,7 +201,7 @@ const Media = () => {
       link: "https://www.linkedin.com/posts/mosadoluwa-fasasi-4008b81a9_if-you-innovate-long-enough-its-only-a-activity-7285915623857999875-sPXl?utm_source=share&utm_medium=member_desktop",
       category: "Speakings",
     },
-        {
+    {
       title: "A milestone, the first fifty",
       description:
         "On Nubian's first fifty paper uploads, Dialogues, and our enduring focus.",
@@ -217,7 +233,7 @@ const Media = () => {
       link: "https://moveee.co/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/",
       category: "Publications",
     },
-        {
+    {
       title: "Reflections of a fallout",
       description:
         "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
@@ -249,7 +265,7 @@ const Media = () => {
       link: "https://peopledao.mirror.xyz/lqEBxnYUKSa3bSV2UpaXlEbb3TBv5iLdgmIjMDt3XBU",
       category: "Features",
     },
-        {
+    {
       title:
         "On knowing the influences that shape your life and being true to yourself",
       description:
@@ -258,7 +274,7 @@ const Media = () => {
       path: "/media/blog/on-influences",
       category: "Blog",
     },
-        {
+    {
       title: "Into the Mind of 4 Gen-X Yoruba Men and a Gen-Z observer",
       description:
         "The fearful and troubling thought is that what if these dividing beliefs begin to spread like wildfire amongst the Gen-Z as well? As I [...]",
