@@ -9,7 +9,6 @@ import Career from "./pages/About/Career";
 import Media from "./components/Media/Media";
 import Ebook from "./components/Ebook/Ebook";
 import Influence from "./pages/Blog/Influence";
-import IntoTheMind from "./pages/Blog/IntoTheMind";
 import Desci from "./pages/Publication/Desci";
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
         <Route path="media">
           <Route index element={<Media />} />
           <Route path="blog/on-influences" element={<Influence />} />
-          <Route path="blog/into-the-mind" element={<IntoTheMind />} />
           <Route path="publication/a-case-for-desci" element={<Desci />} /> 
         </Route>
         <Route path="/a-map-made-for-the-dark" element={<Ebook />} />

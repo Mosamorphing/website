@@ -6,7 +6,6 @@ import moveee1 from "../../../public/moveee1.png";
 import work from "../../../public/work.webp";
 import peopledao from "../../../public/peopledao.jpeg";
 import influence from "../../../public/influence.webp";
-import into from "../../../public/into.webp";
 import bitget from "../../../public/bitget.jpeg";
 import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
@@ -272,14 +271,6 @@ const Media = () => {
         "To accurately apply a person’s judgment, point of view or “authoritative advice” on an issue to your life, you’ve got to know them in their entirety [...]",
       image: influence,
       path: "/media/blog/on-influences",
-      category: "Blog",
-    },
-    {
-      title: "Into the Mind of 4 Gen-X Yoruba Men and a Gen-Z observer",
-      description:
-        "The fearful and troubling thought is that what if these dividing beliefs begin to spread like wildfire amongst the Gen-Z as well? As I [...]",
-      image: into,
-      path: "/media/blog/into-the-mind",
       category: "Blog",
     },
 
