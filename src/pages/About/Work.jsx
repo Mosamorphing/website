@@ -259,8 +259,8 @@ const Work = () => {
                 <div className="work-contact-grid">
                   <div className="work-contact-copy">
                     <h2 id="work-contact-title">
-                      Available for thoughtful work with teams building with
-                      intent.
+                      Available for thoughtful work with individuals and teams
+                      building with intent.
                     </h2>
                   </div>
                   <form
