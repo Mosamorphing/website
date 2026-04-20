@@ -319,7 +319,7 @@ const Work = () => {
                       aria-live="polite"
                     >
                       {contactStatus === "sent" &&
-                        "Sent. Thanks for reaching out."}
+                        "Sent. Thank you for reaching out."}
                       {contactStatus === "error" &&
                         "Something slipped. Please try again in a moment."}
                     </p>
