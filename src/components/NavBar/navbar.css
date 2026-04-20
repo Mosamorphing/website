@@ -212,6 +212,18 @@
     opacity: 1;
     transform: translateY(-1px);
   }
+
+  .nav-socials a:focus {
+    color: inherit;
+    outline: none;
+    transform: none;
+  }
+
+  .nav-socials a:focus-visible {
+    color: #e63946;
+    outline: none;
+    transform: translateY(-1px);
+  }
 }
 
 /* Desktop styles */
@@ -277,6 +289,18 @@
   .nav-socials a:hover {
     color: #e63946;
     opacity: 1;
+    transform: translateY(-1px);
+  }
+
+  .nav-socials a:focus {
+    color: inherit;
+    outline: none;
+    transform: none;
+  }
+
+  .nav-socials a:focus-visible {
+    color: #e63946;
+    outline: none;
     transform: translateY(-1px);
   }
 }
