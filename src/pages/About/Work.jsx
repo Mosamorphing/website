@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./work.css";
 import multisight from "../../../public/multisight.png";
 import wtf from "../../../public/wtf.png";
@@ -5,7 +6,47 @@ import desci from "../../../public/2b.png";
 import peopleDao from "../../../public/pdao.png";
 import techSemester from "../../../public/ts.png";
 
+const encodeFormData = (data) =>
+  new URLSearchParams(data).toString();
+
 const Work = () => {
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [contactStatus, setContactStatus] = useState("idle");
+
+  const handleContactChange = (event) => {
+    const { name, value } = event.target;
+
+    setContactForm((currentForm) => ({
+      ...currentForm,
+      [name]: value,
+    }));
+  };
+
+  const handleContactSubmit = async (event) => {
+    event.preventDefault();
+    setContactStatus("sending");
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodeFormData({
+          "form-name": "work-contact",
+          ...contactForm,
+        }),
+      });
+
+      setContactForm({ name: "", email: "", message: "" });
+      setContactStatus("sent");
+    } catch {
+      setContactStatus("error");
+    }
+  };
+
   return (
     <div className="min-h-[93.5dvh] flex flex-col justify-between">
       <div className="relative overflow-hidden">
@@ -213,6 +254,78 @@ const Work = () => {
                   </p>
                 </div>
               </div>
+              <section className="work-contact" aria-labelledby="work-contact-title">
+                <p className="work-section-label">Reach out</p>
+                <div className="work-contact-grid">
+                  <div className="work-contact-copy">
+                    <h2 id="work-contact-title">
+                      Available for thoughtful work with teams building with
+                      intent.
+                    </h2>
+                  </div>
+                  <form
+                    className="work-contact-form"
+                    name="work-contact"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={handleContactSubmit}
+                  >
+                    <input type="hidden" name="form-name" value="work-contact" />
+                    <p className="hidden">
+                      <label>
+                        Don’t fill this out if you’re human:
+                        <input name="bot-field" />
+                      </label>
+                    </p>
+                    <label>
+                      <span>What should I call you?</span>
+                      <input
+                        type="text"
+                        name="name"
+                        value={contactForm.name}
+                        onChange={handleContactChange}
+                        autoComplete="name"
+                        required
+                      />
+                    </label>
+                    <label>
+                      <span>Where can I reach you?</span>
+                      <input
+                        type="email"
+                        name="email"
+                        value={contactForm.email}
+                        onChange={handleContactChange}
+                        autoComplete="email"
+                        required
+                      />
+                    </label>
+                    <label>
+                      <span>What’s on your mind?</span>
+                      <textarea
+                        name="message"
+                        value={contactForm.message}
+                        onChange={handleContactChange}
+                        rows="5"
+                        required
+                      />
+                    </label>
+                    <button type="submit" disabled={contactStatus === "sending"}>
+                      {contactStatus === "sending" ? "Sending..." : "Send message →"}
+                    </button>
+                    <p
+                      className="work-contact-status"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      {contactStatus === "sent" &&
+                        "Sent. I’ll read this soon."}
+                      {contactStatus === "error" &&
+                        "Something slipped. Please try again in a moment."}
+                    </p>
+                  </form>
+                </div>
+              </section>
             </div>
           </div>
         </section>

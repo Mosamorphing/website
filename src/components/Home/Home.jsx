@@ -64,7 +64,7 @@ const Home = () => {
             Principal, The Morphing—500
           </h3> */}
           <Link to="/work" className="hero-reveal hero-reveal-delay-3 hero-cta-wrap">
-            <button className="about-me-btn">About Me</button>
+            <span className="about-me-btn">About me →</span>
           </Link>
         </div>
         <div className="hero-image-shell w-1/2 lg:absolute lg:bottom-0 lg:left-0 lg:w-full lg:h-[78vh] xs:h-[92vh] 2xs:z-1 lg:opacity-50 2xs:flex 2xs:justify-center object-cover bg-top h-auto mr-[50px]">
@@ -77,8 +77,8 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <div className="bg-white">
-        <section className="layout__container xl:px-[60px] lg:px-[40px] 2xs:px-[28px] py-20 md:py-14 2xs:py-10">
+      <div className="home-features-band bg-white">
+        <section className="layout__container xl:px-[60px] lg:px-[40px] 2xs:px-[28px] pt-14 pb-20 md:pt-12 md:pb-14 2xs:pt-10 2xs:pb-10">
           <h2 className="text-[34px] md:text-[30px] 2xs:text-[18px] text-black">
             Featured Pieces 
           </h2>
@@ -186,8 +186,10 @@ const Home = () => {
               </div>
             </a>
 
-
           </div>
+          <Link to="/media" className="home-more-link">
+            More in media →
+          </Link>
         </section>
       </div>
     </>

@@ -44,17 +44,21 @@ p {
 }
 
 .about-me-btn {
-  background-color: #e63946; /* Red button */
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
   color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  display: inline-flex;
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 0 0 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .about-me-btn:hover {
-  background-color: #d62828; /* Darker red on hover */
+  border-color: #e63946;
+  color: #e63946;
 }
 
 .home-image img {
@@ -113,6 +117,12 @@ p {
   animation: hero-image-settle 1.15s cubic-bezier(0.2, 0.8, 0.2, 1) 0.12s
     forwards;
   will-change: transform, opacity;
+}
+
+.home-features-band {
+  margin-top: -56px;
+  position: relative;
+  z-index: 3;
 }
 
 @keyframes hero-rise {
@@ -186,6 +196,23 @@ p {
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.home-more-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  color: black;
+  display: inline-flex;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 34px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.home-more-link:hover {
+  border-color: #e63946;
+  color: #e63946;
 }
 
 .feature-text a {
@@ -282,6 +309,10 @@ p {
   .features-grid {
     grid-template-columns: 1fr; /* Single column */
     gap: 20px; /* Adjust gap */
+  }
+
+  .home-features-band {
+    margin-top: -36px;
   }
 
 }
