@@ -1,6 +1,4 @@
-import React from "react";
 import "./publication.css";
-import Footer from "../../components/Footer";
 
 const Desci = () => {
   return (
@@ -20,7 +18,7 @@ const Desci = () => {
           Originally coined by evolutionary biologist, Richard Dawkins, in his
           1976 book “The Selfish Gene”. Dawkins described memes as units of
           cultural transmission, akin to genes in biological evolution, capable
-          of replicating and evolving through social interactions. 
+          of replicating and evolving through social interactions.
         
         </p>
         <p>
@@ -37,13 +35,13 @@ const Desci = () => {
         <p>
           Also, prominent figures in the cryptocurrency space have weighed in on
           this prevailing issue. Vitalik Buterin, co-founder of Ethereum, in his
-          piece ‘’What else could memecoins be?’’ holds a broad perspective.
+          piece “What else could memecoins be?” holds a broad perspective.
           Rather than dismissing the entire concept of memecoins, he recognizes
           how important they have become to a vast majority but expresses a
           desire for higher-quality projects that contribute to the entire
           ecosystem through public good. Similarly, Changpeng Zhao (CZ), former
           CEO of Binance recently tweeted “I am not against memes, but meme
-          coins are getting "a little" weird now. Let's build real applications
+          coins are getting “a little” weird now. Let’s build real applications
           using blockchain.”
         </p>
         <p>
@@ -54,7 +52,7 @@ const Desci = () => {
           highlights that while the philosophical premise behind DeSci is
           commendable — aiming for a better scientific system — many projects
           fall short and just ride the hype train for ulterior motives. His call
-          for "no scams" in the DeSci space emphasises the necessity for ethical
+          for “no scams” in the DeSci space emphasises the necessity for ethical
           investing and clear communication within the community.
         </p>
         <p>
@@ -128,7 +126,7 @@ const Desci = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              "I am not against memes'' - CZ
+              “I am not against memes” - CZ
             </a>
           </li>
           <li>
@@ -137,12 +135,11 @@ const Desci = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              "No scam" - Tarun Chitra
+              “No scam” - Tarun Chitra
             </a>
           </li>
         </ol>
       </div>
-      <Footer />
     </>
   );
 };

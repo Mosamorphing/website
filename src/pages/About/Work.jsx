@@ -1,40 +1,70 @@
-import React from "react";
-import "./career.css"; //
-import Footer from "../../components/Footer";
+import "./work.css";
 import multisight from "../../../public/multisight.png";
 import wtf from "../../../public/wtf.png";
 import desci from "../../../public/2b.png";
 import peopleDao from "../../../public/pdao.png";
 import techSemester from "../../../public/ts.png";
 
-const Career = () => {
+const Work = () => {
   return (
     <div className="min-h-[93.5dvh] flex flex-col justify-between">
       <div className="relative overflow-hidden">
-        <section className="w-[1400px] mx-[auto] xl:w-full xl:pl-[60px] lg:pl-[40px] 2xs:pl-[20px] flex">
-          <div className="career-content w-[90%] lg:w-full">
-            <div className="career-text mb-10 z-[999]">
-              <h2>
-                "The journey is the reward. Embrace growth, seek wisdom, and be
-                excellent in your delieverables."
-              </h2>
-              {/* <p>
-                After a long and productive time in Web2, Mosadoluwa Fasasi
-                transitioned full-time into Web3 in Q1 2024. Below are his
-                adventures from his last engagement in Web2 to his current
-                emphasis in Web3.{" "}
-              </p> */}
-              <div className="flex flex-col gap-y-10 my-10 md:w-[95%] sm:w-[98%]">
-                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
-                  <div className="w-[100px] sm:w-[40px]">
+        <section className="layout__container flex">
+          <div className="work-content">
+            <div className="work-text mb-10 z-[999]">
+              <div className="work-intro">
+                <p>
+                  Mosadoluwa Fasasi is a Solutions Architect. Founder & Executive
+                  Director at{" "}
+                  <a
+                    href="https://nubianresearch.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "#e63946" }}
+                  >
+                    Nubian Research (fka DeSci Nigeria)
+                  </a>
+                  , an open-access decentralised research infrastructure that
+                  welcomes scholarly contributions from every discipline.{" "}
+                </p>
+                <p>
+                  In 2023, he served on the administrative team at People
+                  Decentralised Autonomous Organisation, where he helped steer
+                  historic projects, including their bid (attempted twice) to
+                  collectively own a physical copy of the Constitution of the
+                  United States. At PeopleDAO, he was recognised as a
+                  <span style={{ color: "#e63946" }}> “Rising Star” </span>
+                  and a
+                  <span style={{ color: "#e63946" }}>
+                    {" "}
+                    3x Contributor of the Month{" "}
+                  </span>
+                  for accelerating incubated projects and delivering value
+                  across the DAO.
+                </p>
+                <p>
+                  Before venturing into the blockchain ecosystem, Mosadoluwa
+                  Fasasi wore many hats as an operator in the Nigerian startup
+                  ecosystem, delivering human-centred experiences and unlocking
+                  value for diverse stakeholders. With a background in Science
+                  Education, he now bridges his expertise in blockchain to
+                  decentralise knowledge. His work focuses on positioning
+                  regions of the global south as an active contributor to global
+                  knowledge production through open science and research.
+                </p>
+              </div>
+              <div className="work-roles flex flex-col my-8 md:w-[95%] sm:w-[98%]">
+                <p className="work-section-label">Most recent work affiliations</p>
+                <div className="work-role-item flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="work-logo">
                     <img
                       src={desci}
                       alt="desci-ng"
-                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-cover"
+                      className="work-logo-img object-cover"
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Nubian · (presently) <br /> Formerly known as "Decentralized Science Nigeria", Nubian is an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline. Check out
+                    Nubian · (presently) <br /> Formerly known as &quot;Decentralized Science Nigeria&quot;, Nubian is an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline. Check out
                     Nubian {" "}
                     <a
                       className="underline"
@@ -47,12 +77,12 @@ const Career = () => {
                   </p>
                 </div>
 
-                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
-                  <div className="w-[100px] sm:w-[40px]">
+                <div className="work-role-item flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="work-logo">
                     <img
                       src={multisight}
                       alt="multisight"
-                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
+                      className="work-logo-img object-contain"
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
@@ -80,12 +110,12 @@ const Career = () => {
                     {""}.
                   </p>
                 </div>
-                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
-                  <div className="w-[100px] sm:w-[40px]">
+                <div className="work-role-item flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="work-logo">
                     <img
                       src={wtf}
                       alt="wtf academy"
-                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
+                      className="work-logo-img object-contain"
                     />
                   </div>
                   <p className="flex-1 mt-[10px] sm:mt-[4px]">
@@ -121,12 +151,12 @@ const Career = () => {
                     His work helped broaden access to the academy’s curriculum beyond Mandarin-speaking developers and supported its expansion into West Africa.
                   </p>
                 </div>
-                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
-                  <div className="w-[100px] sm:w-[40px]">
+                <div className="work-role-item flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="work-logo">
                     <img
                       src={peopleDao}
                       alt="people dao"
-                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
+                      className="work-logo-img object-contain"
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
@@ -136,10 +166,10 @@ const Career = () => {
                     through his exceptional contributions, for which he was also
                     awarded. During his first few months of engagement at
                     PeopleDAO, he was quickly recognized as a{" "}
-                    <span className="text-[#e63946]">''Rising Star''</span>, and
+                    <span className="text-[#e63946]">“Rising Star”</span>, and
                     went on to become a{" "}
                     <span className="text-[#e63946]">
-                      3x ''Contributor of the Month''
+                      3x “Contributor of the Month”
                     </span>
                     . He operated in various roles, led and collaborated with
                     cross-functional teams to support and accelerate incubated
@@ -163,12 +193,12 @@ const Career = () => {
                     {""}.
                   </p>
                 </div>
-                <div className="flex gap-x-5 sm:gap-x-5 gap-y-3">
-                  <div className="w-[100px] sm:w-[40px]">
+                <div className="work-role-item flex gap-x-5 sm:gap-x-5 gap-y-3">
+                  <div className="work-logo">
                     <img
                       src={techSemester}
                       alt="tech semester"
-                      className="w-[60px] h-[60px] sm:w-[35px] sm:h-[35px] object-contain"
+                      className="work-logo-img object-contain"
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
@@ -186,18 +216,9 @@ const Career = () => {
             </div>
           </div>
         </section>
-        <div className="w-[47%] flex items-center justify-center absolute top-0 right-0 lg:w-full lg:h-full lg:z-1 lg:opacity-50">
-          <img
-            className="career__about__hero__img h-[2000px]"
-            src="/hero.webp"
-            alt="Hero"
-          />
-        </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
 
-export default Career;
+export default Work;

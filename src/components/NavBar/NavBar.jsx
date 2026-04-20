@@ -1,11 +1,39 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
 import "./navbar.css";
-import logo from "../../../public/logo.png";
-import hamburgerIcon from "../../../public/hamburgerIcon.png"; // Ensure you have the correct path
+
+const socialLinks = [
+  {
+    label: "GitHub",
+    href: "https://github.com/Mosamorphing",
+    Icon: FaGithub,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/mofasasi",
+    Icon: FaInstagram,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/mosadoluwa-fasasi-4008b81a9/",
+    Icon: FaLinkedinIn,
+  },
+  {
+    label: "X",
+    href: "https://x.com/mofasasi",
+    Icon: FaXTwitter,
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,41 +43,58 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const closeOnScroll = () => {
+      setIsOpen(false);
+    };
+
+    const closeOnOutsideTap = (event) => {
+      if (navRef.current?.contains(event.target)) return;
+      setIsOpen(false);
+    };
+
+    window.addEventListener("scroll", closeOnScroll, {
+      once: true,
+      passive: true,
+    });
+    document.addEventListener("pointerdown", closeOnOutsideTap);
+
+    return () => {
+      window.removeEventListener("scroll", closeOnScroll);
+      document.removeEventListener("pointerdown", closeOnOutsideTap);
+    };
+  }, [isOpen]);
+
   return (
     <div className="bg-[#151414] sticky top-0 right-0 z-[999999999]">
-      <nav className="navbar layout__container py-[30px]">
-        {/* Logo */}
-        <a href="/">
-          <img src={logo} alt="logo" className="logo" />
-        </a>
+      <nav ref={navRef} className="navbar layout__container py-[30px]">
+        <button
+          className="mobile-nav-toggle"
+          type="button"
+          aria-expanded={isOpen}
+          aria-controls="primary-navigation"
+          onClick={toggleMenu}
+        >
+          Index {isOpen ? "-" : "+"}
+        </button>
 
         {/* Menu */}
         <div className="">
-          <div className={`menu ${isOpen ? "open" : ""}`}>
+          <div
+            id="primary-navigation"
+            className={`menu ${isOpen ? "open" : ""}`}
+          >
             <ul className="menu-list">
               <li className="menu-item">
                 <Link to="/" onClick={closeMenu}>
                   Home
                 </Link>
               </li>
-              <li className="menu-item dropdown block sm:hidden">
-                <span>About</span>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link to="/bio" onClick={closeMenu}>
-                      Bio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/career" onClick={closeMenu}>
-                      Career
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="menu-item hidden sm:block">
-                <Link to="/career" onClick={closeMenu}>
-                  Career
+              <li className="menu-item">
+                <Link to="/work" onClick={closeMenu}>
+                  Work
                 </Link>
               </li>
               <li className="menu-item">
@@ -61,14 +106,19 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Send a Mail Button */}
-        <button className="desktopMenuBtn">
-          <a href="mailto:someone@example.com">Send a Mail</a>
-        </button>
-
-        {/* Hamburger Icon */}
-        <div className="hamburger" onClick={toggleMenu}>
-          <img src={hamburgerIcon} alt="menu" className="hamburger-icon" />
+        <div className="nav-socials" aria-label="Social links">
+          {socialLinks.map(({ label, href, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              title={label}
+            >
+              <Icon aria-hidden="true" focusable="false" />
+            </a>
+          ))}
         </div>
       </nav>
     </div>

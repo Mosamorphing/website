@@ -6,13 +6,14 @@
 }
 
 .publication h1 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   margin-bottom: 8px;
   color: #e63946;
 }
 
 .publication-date {
   font-size: 0.9rem;
+  font-style: italic;
   /* letter-spacing: 0.08em;
   text-transform: uppercase; */
   color: rgba(255, 255, 255, 0.72);
@@ -20,8 +21,8 @@
 }
 
 .publication p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.75;
   margin-bottom: 15px;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .references h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   color: white;
 }
@@ -44,7 +45,8 @@
 }
 
 .references li {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
   margin-bottom: 15px;
 }
 
@@ -70,7 +72,7 @@
   }
 
   .publication h1 {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 
   .references h3 {
@@ -82,8 +84,17 @@
 }
 
 @media (max-width: 768px) {
+  .publication {
+    padding: 32px 28px 0;
+  }
+
+  .references {
+    padding: 20px 28px;
+  }
+
   .publication h1 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    line-height: 1.25;
   }
 
   .publication-date {
@@ -92,11 +103,17 @@
   }
 
   .publication p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
   .references h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     color: white;
+  }
+
+  .references li {
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
 }
