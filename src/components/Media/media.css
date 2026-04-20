@@ -5,26 +5,28 @@
 }
 
 .filter-bar {
-  display: flex; /* Use flexbox for horizontal alignment */
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-  padding: 13px 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 0 auto; /* Center the filter bar */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 34px;
+  margin: 0 0 34px;
+  padding: 0;
 }
 
 .filter-btn {
-  background: none;
+  display: inline-flex;
+  align-items: flex-start;
+  background: transparent;
   border: none;
   outline: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.58);
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
+  letter-spacing: 0;
+  line-height: 1.2;
+  padding: 0;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .filter-btn:hover {
@@ -32,14 +34,13 @@
 }
 
 .filter-btn.active {
-  color: #e63946;
-  font-weight: bold;
-  transform: scale(1.1);
+  color: white;
+  font-weight: 500;
 }
 
 /* Features Section */
 .media-features-section {
-  padding: 20px 100px;
+  padding: 20px 0 52px;
 }
 
 .media-features-section h2 {
@@ -78,9 +79,27 @@
 }
 
 .media-feature-title {
-  font-size: 20px;
+  display: inline;
+  font-size: 18px;
   font-weight: 420;
   color: white;
+}
+
+.external-link-indicator {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.68);
+  height: 0.8em;
+  width: 0.8em;
+  line-height: 1;
+  margin-left: 6px;
+  transform: translateY(-0.28em);
+  vertical-align: baseline;
+}
+
+.external-link-indicator svg {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .media-feature-title a {
@@ -96,7 +115,7 @@
 .media-feature-description {
   margin-top: 10px;
   font-size: 14px;
-  color: #e2e2e2;
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .media-link-underline {
@@ -133,18 +152,25 @@
 @media (max-width: 768px) {
   .filter-bar {
     width: 100%;
-    gap: 10px; /* Adjust gap for mobile */
-    width: 100%; /* Allow full width on mobile */
+    gap: 24px;
+    margin-bottom: 28px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
   }
 
   .filter-btn {
-    flex: 1 1 auto; /* Allow buttons to grow and shrink */
-    text-align: center;
-    font-size: 14px; /* Reduce font size for mobile */
+    flex: 0 0 auto;
+    font-size: 13px;
+    text-align: left;
   }
 
   .media-features-section {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .media-features-grid {
@@ -157,10 +183,11 @@
   }
 
   .media-feature-title {
-    font-size: 1rem; /* match Home's mobile title size */
+    font-size: 15px;
   }
 
   .media-feature-description {
-    font-size: 0.9rem;
+    font-size: 13px;
+    line-height: 1.55;
   }
 }

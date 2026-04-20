@@ -1,7 +1,5 @@
-import React from "react";
 import seek from "../../../public/seek.webp";
 import "./blog.css";
-import Footer from "../../components/Footer";
 
 const Influence = () => {
   return (
@@ -169,8 +167,8 @@ const Influence = () => {
 
         <p> Postscript: </p>
         <p>
-          - "Ada" - first female child in Igbo land <br />- If you're wondering
-          what the 1st rule behind my bible was, it reads "Seek God". Image
+          - “Ada” - first female child in Igbo land <br />- If you’re wondering
+          what the 1st rule behind my bible was, it reads “Seek God”. Image
           attached below.
         </p>
         <div style={{ textAlign: "center", marginTop: "20px" }}>
@@ -181,8 +179,6 @@ const Influence = () => {
           />
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

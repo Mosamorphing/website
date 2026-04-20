@@ -11,9 +11,12 @@
   z-index: 99999;
 }
 
-.logo {
-  object-fit: cover;
-  width: 2.5rem;
+.nav-socials {
+  display: none;
+}
+
+.mobile-nav-toggle {
+  display: none;
 }
 
 .menu {
@@ -33,42 +36,12 @@
   text-decoration: none;
   color: white;
   padding: 5px 10px;
-  transition: background-color 0.3s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .menu-item a:hover {
-  background-color: #444;
+  color: #e63946;
 }
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  padding: 0;
-  list-style: none;
-  z-index: 10;
-}
-
-.dropdown-menu li {
-  margin: 5px 0;
-}
-
-.dropdown-menu li a {
-  display: block;
-  padding: 5px 10px;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #555;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 .desktopMenuBtn {
   background: white;
   color: black;
@@ -101,81 +74,158 @@
   .navbar {
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
     min-height: 6.5vh;
+    padding-top: 26px;
+    padding-bottom: 20px;
   }
 
-  .logo {
-    width: 2rem; /* Adjust logo size */
-    margin-bottom: 0;
+  .mobile-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s ease;
+  }
+
+  @media (hover: hover) {
+    .mobile-nav-toggle:hover {
+      color: #e63946;
+    }
+  }
+
+  .mobile-nav-toggle:focus {
+    color: white;
+    outline: none;
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    color: #e63946;
+    outline: none;
   }
 
   .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: auto; /* Adjust width to fit content */
+    width: 100vw;
     position: absolute;
-    top: 80px; /* Position directly under the hamburger icon */
-    right: 20px; /* Align to the right */
-    background-color: transparent; /* Remove background color */
+    top: 100%;
+    left: 50%;
+    margin-left: -50vw;
+    background-color: #151414;
     z-index: 1001;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 28px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition:
+      max-height 0.28s ease,
+      opacity 0.24s ease,
+      padding-bottom 0.28s ease,
+      transform 0.28s ease,
+      visibility 0s linear 0.28s;
+    visibility: hidden;
   }
 
   .menu.open {
-    display: flex;
+    max-height: 220px;
+    opacity: 1;
+    padding-bottom: 22px;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+    visibility: visible;
   }
 
   .menu-list {
-    background-color: #444;
-    width: 150px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: flex-center; /* Align items to the left */
-    list-style: none; /* Remove the dot in front of the list items */
-    padding: 10px 10px;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    border-radius: 8px;
-    text-align: center;
-    gap: 8px;
+    text-align: left;
+    gap: 10px;
   }
 
   .menu-item {
     width: 100%;
-    background-color: #222;
-    border-radius: 4px;
+    background-color: transparent;
+    border-radius: 0;
     border-bottom: 1px solid transparent;
   }
 
   .menu-item a {
-    font-size: 1rem;
-    text-align: center;
-    width: 100%; /* Ensure full width */
-    display: block; /* Ensure block display */
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .menu-item a:hover {
+    background-color: transparent;
+    color: #e63946;
   }
 
   .menu-item:hover {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid transparent;
   }
 
   .hamburger {
-    display: flex;
-    align-items: center;
-  }
-
-  .hamburger-icon {
-    width: 25px;
-    height: 25px;
+    display: none;
   }
 
   .desktopMenuBtn {
     display: none; /* Hide the Send a Mail button on mobile */
   }
+
+  .nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+  }
+
+  .nav-socials a {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    font-size: 16px;
+    line-height: 1;
+    opacity: 0.9;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .nav-socials a:hover {
+    color: #e63946;
+    opacity: 1;
+    transform: translateY(-1px);
+  }
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
   .hamburger {
     display: none; /* Hide the hamburger icon on desktop */
+  }
+
+  .mobile-nav-toggle {
+    display: none;
   }
 
   .menu {
@@ -192,17 +242,41 @@
   }
 
   .menu-item {
-    margin: 0 10px;
+    margin: 0 18px 0 0;
   }
 
   .menu-item a {
-    font-size: 1rem;
+    font-size: 15px;
     text-align: center;
     width: auto;
     display: inline-block;
+    padding: 0;
   }
 
   .desktopMenuBtn {
-    display: flex; /* Show the Send a Mail button on desktop */
+    display: none;
+  }
+
+  .nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: white;
+  }
+
+  .nav-socials a {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    font-size: 18px;
+    line-height: 1;
+    opacity: 0.9;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .nav-socials a:hover {
+    color: #e63946;
+    opacity: 1;
+    transform: translateY(-1px);
   }
 }

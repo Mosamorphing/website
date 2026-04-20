@@ -1,4 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
+import { HiArrowUpRight } from "react-icons/hi2";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
@@ -6,7 +7,6 @@ import moveee1 from "../../../public/moveee1.png";
 import work from "../../../public/work.webp";
 import peopledao from "../../../public/peopledao.jpeg";
 import influence from "../../../public/influence.webp";
-import into from "../../../public/into.webp";
 import bitget from "../../../public/bitget.jpeg";
 import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
@@ -14,7 +14,6 @@ import multi from "../../../public/multi.png";
 import tr2 from "../../../public/tr2.png";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
-import morphing500 from "../../../public/morphing500.png";
 // ...existing imports...
 import mentors from "../../../public/mentors.jpg";
 import desciRising from "../../../public/desci-rising.jpeg";
@@ -27,20 +26,48 @@ import magic from "../../../public/magic.jpeg";
 import escher from "../../../public/escher.png";
 import nubian from "../../../public/nubian.png";
 import partners from "../../../public/partners.png";
-import Footer from "../Footer";
+
+const getFeatureId = (title) =>
+  title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+const displayOrder = {
+  all: {
+    "a-case-for-decentralized-science": 4.5,
+  },
+  blog: {
+    "a-case-for-decentralized-science": 3,
+    "on-knowing-the-influences-that-shape-your-life-and-being-true-to-yourself": 4,
+  },
+};
+
+const orderFeatures = (items, view) => {
+  const viewOrder = displayOrder[view] ?? {};
+
+  return items
+    .map((feature, index) => ({ feature, index }))
+    .sort((a, b) => {
+      const aOrder = viewOrder[getFeatureId(a.feature.title)] ?? a.index;
+      const bOrder = viewOrder[getFeatureId(b.feature.title)] ?? b.index;
+
+      return aOrder - bOrder;
+    })
+    .map(({ feature }) => feature);
+};
 
 const Media = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const tabs = [
-    { label: "All", value: "all" },
-    { label: "Blog", value: "blog" },
-    { label: "Features", value: "features" },
-    { label: "Publications", value: "publications" },
-    { label: "Speakings", value: "speakings" },
+    { label: "All", value: "all", category: null },
+    { label: "Notes", value: "blog", category: "Blog" },
+    { label: "Features", value: "features", category: "Features" },
+    { label: "Publications", value: "publications", category: "Publications" },
+    { label: "Talks", value: "speakings", category: "Speakings" },
   ];
   const activeTabValue = searchParams.get("tab")?.toLowerCase() ?? "all";
-  const activeFilter =
-    tabs.find((tab) => tab.value === activeTabValue)?.label ?? "All";
+  const activeTab = tabs.find((tab) => tab.value === activeTabValue) ?? tabs[0];
 
   const handleFilterClick = (tabValue) => {
     const nextParams = new URLSearchParams(searchParams);
@@ -95,14 +122,6 @@ const Media = () => {
       image: moveee1,
       link: "https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/",
       category: "Features",
-    },
-        {
-      title: "A Case for Decentralized Science",
-      description:
-        "The emergence of memecoins has sparked significant debate, particularly regarding their implications for the scientific community. Critics often dismiss memecoins as frivolous [...]",
-      image: desci,
-      path: "/media/publication/a-case-for-desci",
-      category: "Publications",
     },
     {
       title: "Memes on the Solana Blockchain: A Cultural, Economic and Technical Investigation",
@@ -178,20 +197,12 @@ const Media = () => {
       category: "Speakings",
     },
     {
-      title: "A Map made for the Dark: 6 Curated Patterns for those Navigating the Unknwon",
+      title: "A Map Made for the Dark: 6 Curated Patterns for Those Navigating the Unknown",
       description:
         "There’s a chance you’re navigating an arc in your story where you wish someone had just handed you a manual. Guidance helps, but the truth is: [...]",
       image: squareCover,
       link: "https://selar.com/odp1f2",
       category: "Publications",
-    },
-    {
-      title: "From The Morphing—500",
-      description:
-        "From The Morphing—500 with Mosadoluwa Fasasi brings you curated insights for life and enterprise. Join impactful conversations that shape your journey and inspire you to achieve your best.",
-      image: morphing500,
-      link: "https://open.spotify.com/show/3m8buR1Sm29ydeEIfa3Avt?si=2be26911d10447b5",
-      category: "Speakings",
     },
     {
       title: "Breaking Barriers in Education",
@@ -200,6 +211,7 @@ const Media = () => {
       image: tr2,
       link: "https://www.linkedin.com/posts/mosadoluwa-fasasi-4008b81a9_if-you-innovate-long-enough-its-only-a-activity-7285915623857999875-sPXl?utm_source=share&utm_medium=member_desktop",
       category: "Speakings",
+      hideExternalIndicator: true,
     },
     {
       title: "A milestone, the first fifty",
@@ -247,7 +259,7 @@ const Media = () => {
         "One of the reasons why it appears that Gen-Zs lack the ability to collaborate with traditional institutions is mistrust.[...]",
       image: genz,
       link: "https://moveee.co/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/",
-      category: "Publication",
+      category: "Publications",
     },
     {
       title: "Will Africa Become Another West?",
@@ -266,20 +278,20 @@ const Media = () => {
       category: "Features",
     },
     {
+      title: "A Case for Decentralized Science",
+      description:
+        "The emergence of memecoins has sparked significant debate, particularly regarding their implications for the scientific community. Critics often dismiss memecoins as frivolous [...]",
+      image: desci,
+      path: "/media/publication/a-case-for-desci",
+      category: "Blog",
+    },
+    {
       title:
         "On knowing the influences that shape your life and being true to yourself",
       description:
         "To accurately apply a person’s judgment, point of view or “authoritative advice” on an issue to your life, you’ve got to know them in their entirety [...]",
       image: influence,
       path: "/media/blog/on-influences",
-      category: "Blog",
-    },
-    {
-      title: "Into the Mind of 4 Gen-X Yoruba Men and a Gen-Z observer",
-      description:
-        "The fearful and troubling thought is that what if these dividing beliefs begin to spread like wildfire amongst the Gen-Z as well? As I [...]",
-      image: into,
-      path: "/media/blog/into-the-mind",
       category: "Blog",
     },
 
@@ -290,51 +302,75 @@ const Media = () => {
       image: writers,
       link: "https://www.linkedin.com/feed/update/urn:li:activity:7033530236898029568/",
       category: "Speakings",
+      hideExternalIndicator: true,
     },
   ];
 
-  const filteredFeatures =
-    activeFilter === "All"
-      ? features
-      : features.filter((feature) => feature.category === activeFilter);
+  const filteredFeatures = orderFeatures(
+    activeTab.category
+      ? features.filter((feature) => feature.category === activeTab.category)
+      : features,
+    activeTab.value
+  );
 
   return (
     <div className="min-h-[93.5dvh] flex-1 flex flex-col justify-between">
       <div className="media-wrapper layout__container">
         {/* Media Section */}
-        <div className="media-section pt-8">
-          {/* Filter Bar */}
-          <div className="filter-bar overflow-x-auto px-4">
-            {tabs.map((tab) => (
-              <button
-                key={tab.value}
-                className={`filter-btn ${activeFilter === tab.label ? "active" : ""
-                  }`}
-                onClick={() => handleFilterClick(tab.value)}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-
+        <div className="media-section pt-2">
           {/* Features Section */}
-          <section className="media-features-section mt-8">
+          <section className="media-features-section">
+            <div className="filter-bar" aria-label="Media filters">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.value}
+                  className={`filter-btn ${
+                    activeTab.value === tab.value ? "active" : ""
+                  }`}
+                  aria-pressed={activeTab.value === tab.value}
+                  onClick={() => handleFilterClick(tab.value)}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
             <div className="media-features-grid">
-              {filteredFeatures.map((feature, index) => {
+              {filteredFeatures.map((feature) => {
                 const isInternal = Boolean(feature.path);
+                const alreadySignalsExternal = feature.description
+                  ?.toLowerCase()
+                  .includes("click to watch on youtube");
+                const showExternalIndicator =
+                  !isInternal &&
+                  !alreadySignalsExternal &&
+                  !feature.hideExternalIndicator;
                 const Wrapper = isInternal ? Link : "a";
                 const wrapperProps = isInternal
                   ? { to: feature.path, style: { textDecoration: "none", color: "inherit" } }
                   : { href: feature.link, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none", color: "inherit" } };
 
                 return (
-                  <Wrapper key={index} className="card-nudge media-feature-item" {...wrapperProps}>
+                  <Wrapper
+                    key={getFeatureId(feature.title)}
+                    className="card-nudge media-feature-item"
+                    {...wrapperProps}
+                  >
                     <div
                       className="media-feature-image"
                       style={{ backgroundImage: `url(${feature.image})` }}
                     ></div>
                     <div className="media-feature-text">
-                      <h3 className="media-feature-title">{feature.title}</h3>
+                      <h3 className="media-feature-title">
+                        {feature.title}
+                        {showExternalIndicator && (
+                          <span
+                            className="external-link-indicator"
+                            aria-hidden="true"
+                          >
+                            <HiArrowUpRight focusable="false" />
+                          </span>
+                        )}
+                      </h3>
                       <p className="media-feature-description">{feature.description}</p>
                     </div>
                   </Wrapper>
@@ -343,10 +379,7 @@ const Media = () => {
             </div>
           </section>
         </div>
-
-        {/* Footer Section */}
       </div>
-      <Footer />
     </div>
   );
 };

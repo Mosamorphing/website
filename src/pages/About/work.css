@@ -1,0 +1,241 @@
+/* Work Section */
+.work-content {
+  width: 100%;
+}
+
+.work-text {
+  padding-top: 28px;
+  flex: 1;
+  line-height: 1.6;
+}
+
+.work-intro {
+  margin-bottom: 42px;
+  width: 100%;
+}
+
+.work-intro p {
+  font-size: clamp(28px, 2.8vw, 40px);
+  font-weight: 250;
+  line-height: 1.22;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.work-roles {
+  margin-left: clamp(48px, 8vw, 128px);
+  max-width: 980px;
+}
+
+.work-section-label {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.work-role-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 24px 0;
+}
+
+.work-role-item:last-child {
+  padding-bottom: 0;
+}
+
+.work-logo {
+  flex: 0 0 72px;
+}
+
+.work-logo-img {
+  height: 42px;
+  width: 42px;
+}
+
+.work-roles p {
+  font-size: 16px;
+  font-weight: 250;
+  line-height: 1.65;
+  width: 100%;
+}
+
+.work-contact {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 64px 0 20px clamp(48px, 8vw, 128px);
+  max-width: 980px;
+  padding-top: 24px;
+}
+
+.work-contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: 56px;
+}
+
+.work-contact-copy h2 {
+  font-size: clamp(26px, 2.4vw, 36px);
+  font-weight: 250;
+  line-height: 1.22;
+  margin: 0 0 18px;
+}
+
+.work-contact-copy a {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.work-contact-copy a:hover {
+  color: #e63946;
+}
+
+.work-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.work-contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.work-contact-form span {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.work-contact-form input,
+.work-contact-form textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0;
+  color: white;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+  padding: 0 0 10px;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+
+.work-contact-form textarea {
+  resize: vertical;
+}
+
+.work-contact-form input:focus,
+.work-contact-form textarea:focus {
+  border-color: #e63946;
+}
+
+.work-contact-form button {
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 4px;
+  padding: 0 0 4px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.work-contact-form button:hover {
+  border-color: #e63946;
+  color: #e63946;
+}
+
+.work-contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.work-contact-status {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  line-height: 1.45;
+  min-height: 19px;
+}
+
+@media (max-width: 1280px) {
+  .work-content {
+    position: relative;
+  }
+
+  .work-text {
+    max-width: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .work-intro p {
+    font-size: 24px;
+    line-height: 1.32;
+  }
+
+  .work-roles {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .work-contact {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-text {
+    padding-top: 28px;
+  }
+
+  .work-intro p {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .work-roles p {
+    font-size: 15px;
+    font-weight: 250;
+    padding-right: 5px;
+  }
+
+  .work-logo {
+    flex-basis: 44px;
+  }
+
+  .work-logo-img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .work-contact {
+    margin-top: 48px;
+  }
+
+  .work-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .work-contact-copy h2 {
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+  .work-contact-form input,
+  .work-contact-form textarea {
+    font-size: 15px;
+  }
+}

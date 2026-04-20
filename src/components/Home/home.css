@@ -44,17 +44,21 @@ p {
 }
 
 .about-me-btn {
-  background-color: #e63946; /* Red button */
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
   color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  display: inline-flex;
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 0 0 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .about-me-btn:hover {
-  background-color: #d62828; /* Darker red on hover */
+  border-color: #e63946;
+  color: #e63946;
 }
 
 .home-image img {
@@ -115,6 +119,12 @@ p {
   will-change: transform, opacity;
 }
 
+.home-features-band {
+  margin-top: -56px;
+  position: relative;
+  z-index: 3;
+}
+
 @keyframes hero-rise {
   from {
     opacity: 0;
@@ -171,6 +181,40 @@ p {
   text-align: left;
 }
 
+.home-external-link-indicator {
+  display: inline-block;
+  color: #666;
+  height: 0.8em;
+  width: 0.8em;
+  line-height: 1;
+  margin-left: 6px;
+  transform: translateY(-0.28em);
+  vertical-align: baseline;
+}
+
+.home-external-link-indicator svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.home-more-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  color: black;
+  display: inline-flex;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 34px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.home-more-link:hover {
+  border-color: #e63946;
+  color: #e63946;
+}
+
 .feature-text a {
   text-decoration: none; /* Removes underline */
   color: black; /* Explicit initial color */
@@ -210,45 +254,6 @@ p {
     outline-offset: 6px;
     border-radius: 6px;
   }
-}
-
-/* Footer Section */
-.footer-section {
-  display: flex;
-  justify-content: center;
-  padding: 50px 50px;
-  background-color: white; /* Matches the overall design */
-  color: white;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center; /* Vertically align the line and links */
-  gap: 30px; /* Space between the line and links */
-  width: 100%; /* Ensure content stretches across */
-  max-width: 1200px; /* Optional: limit max width */
-}
-
-.footer-line {
-  flex: 2; /* Allow the line to stretch to fill available space */
-  height: 0.8px;
-  background-color: black;
-}
-
-.footer-links {
-  display: flex;
-  gap: 30px; /* Space between links */
-}
-
-.footer-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #e63946; /* Highlight color on hover */
 }
 
 /* Media Queries for Mobile */
@@ -306,14 +311,10 @@ p {
     gap: 20px; /* Adjust gap */
   }
 
-  .footer-section {
-    padding: 20px;
+  .home-features-band {
+    margin-top: -36px;
   }
 
-  .footer-content {
-    flex-direction: column; /* Stack content vertically */
-    gap: 20px; /* Adjust gap */
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
