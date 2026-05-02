@@ -26,6 +26,26 @@
   margin-bottom: 15px;
 }
 
+.publication .media-link-underline {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.publication .media-link-underline:visited {
+  color: inherit;
+}
+
+.publication .media-link-underline:focus {
+  color: inherit;
+  outline: none;
+}
+
+.publication .media-link-underline:focus-visible {
+  color: #e63946;
+  outline: none;
+}
+
 .publication-inline-image {
   margin: 20px 0 24px;
   text-align: center;
@@ -65,24 +85,34 @@
 .references li a {
   color: white; /* Same color as headings */
   text-decoration: underline;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
-.references li a:hover {
-  color: #e63946; /* Slightly lighter hover color */
-  text-decoration: underline;
+.references li a:visited {
+  color: white;
 }
 
 .references li a:focus {
   color: white;
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .references li a:focus-visible {
   color: #e63946;
   outline: none;
   text-decoration: underline;
+}
+
+@media (hover: hover) {
+  .publication .media-link-underline:hover {
+    color: #e63946;
+  }
+
+  .references li a:hover {
+    color: #e63946; /* Slightly lighter hover color */
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 1280px) {
