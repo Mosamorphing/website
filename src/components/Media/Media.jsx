@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
@@ -99,12 +99,12 @@ const Media = () => {
       link: "https://youtu.be/cXvHHf48txw",
       category: "Speakings",
     },
-        {
+    {
       title: "Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation",
       description:
         "This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]",
       image: escher,
-      link: "https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472",
+      path: "/media/publication/the-sonata-puzzle-and-the-vowel-adaptation",
       category: "Publications",
     },
     {
@@ -344,6 +344,7 @@ const Media = () => {
                   !isInternal &&
                   !alreadySignalsExternal &&
                   !feature.hideExternalIndicator;
+                const showInternalIndicator = isInternal;
                 const Wrapper = isInternal ? Link : "a";
                 const wrapperProps = isInternal
                   ? { to: feature.path, style: { textDecoration: "none", color: "inherit" } }
@@ -362,6 +363,14 @@ const Media = () => {
                     <div className="media-feature-text">
                       <h3 className="media-feature-title">
                         {feature.title}
+                        {showInternalIndicator && (
+                          <span
+                            className="internal-link-indicator"
+                            aria-hidden="true"
+                          >
+                            <HiArrowRight focusable="false" />
+                          </span>
+                        )}
                         {showExternalIndicator && (
                           <span
                             className="external-link-indicator"

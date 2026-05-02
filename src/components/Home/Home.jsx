@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 import "./home.css"; // Custom CSS for the home page
@@ -111,11 +111,9 @@ const Home = () => {
             </a>
 
                         {/* Feature 2 */}
-            <a
+            <Link
               className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
-              target="_blank"
-              rel="noopener noreferrer"
+              to="/media/publication/the-sonata-puzzle-and-the-vowel-adaptation"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <div
@@ -125,15 +123,15 @@ const Home = () => {
               <div className="feature-text">
                 <h3 className="text-[18px] 2xs:text-[15px] text-black">
                   {"Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation"}
-                  <span className="home-external-link-indicator" aria-hidden="true">
-                    <HiArrowUpRight focusable="false" />
+                  <span className="home-internal-link-indicator" aria-hidden="true">
+                    <HiArrowRight focusable="false" />
                   </span>
                 </h3>
                 <p className="text-[13px] leading-[1.55] text-[#666] mt-[10px]">
                 {"This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]"}
                 </p>
               </div>
-            </a>
+            </Link>
 
             {/* Feature 3 */}
             <a

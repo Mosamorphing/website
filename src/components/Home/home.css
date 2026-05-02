@@ -192,6 +192,18 @@ p {
   vertical-align: baseline;
 }
 
+.home-internal-link-indicator {
+  display: inline-block;
+  color: #666;
+  height: 0.8em;
+  width: 0.8em;
+  line-height: 1;
+  margin-left: 6px;
+  transform: translateY(-0.1em);
+  vertical-align: baseline;
+}
+
+.home-internal-link-indicator svg,
 .home-external-link-indicator svg {
   display: block;
   height: 100%;

@@ -26,6 +26,18 @@
   margin-bottom: 15px;
 }
 
+.blog-inline-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.blog-inline-image img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: inline-block;
+}
+
 .blog-article h2 {
   font-size: 1.4rem;
   line-height: 1.6;
@@ -41,9 +53,14 @@
 }
 
 @media (max-width: 1280px) {
+  .blog-article {
+    max-width: 1000px;
+  }
+
   .blog-article h1 {
     font-size: 1.85rem;
   }
+
   .blog-article h2 {
     font-size: 1.25rem;
     line-height: 1.6;
@@ -77,6 +94,11 @@
     font-size: 0.95rem;
     line-height: 1.7;
   }
+
+  .blog-inline-image {
+    margin-top: 18px;
+  }
+
   .styled-blockquote {
     font-size: 0.95rem;
     line-height: 1.7;

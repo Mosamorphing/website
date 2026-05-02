@@ -96,6 +96,18 @@
   vertical-align: baseline;
 }
 
+.internal-link-indicator {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.68);
+  height: 0.8em;
+  width: 0.8em;
+  line-height: 1;
+  margin-left: 6px;
+  transform: translateY(-0.1em);
+  vertical-align: baseline;
+}
+
+.internal-link-indicator svg,
 .external-link-indicator svg {
   display: block;
   height: 100%;

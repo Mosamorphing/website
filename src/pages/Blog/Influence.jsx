@@ -171,12 +171,8 @@ const Influence = () => {
           what the 1st rule behind my bible was, it reads “Seek God”. Image
           attached below.
         </p>
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
-          <img
-            src={seek}
-            alt="First Rule from the Bible - Seek God"
-            style={{ maxWidth: "100%", height: "auto", borderRadius: "8px" }}
-          />
+        <div className="blog-inline-image">
+          <img src={seek} alt="First Rule from the Bible - Seek God" />
         </div>
       </div>
     </>

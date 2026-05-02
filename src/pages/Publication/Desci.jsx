@@ -5,7 +5,17 @@ const Desci = () => {
     <>
       <div className="publication">
         <h1>A Case for Decentralized Science</h1>
-        <p className="publication-date">December 2024</p>
+        <p className="publication-date">
+          December 2024 · originally published on{" "}
+          <a
+            className="media-link-underline"
+            href="https://x.com/mofasasi/status/1867001626440912950"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter(X)
+          </a>
+        </p>
         <p>
           The emergence of memecoins has sparked significant debate,
           particularly regarding their implications for the scientific

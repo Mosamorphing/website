@@ -7,6 +7,7 @@ import Work from "./pages/About/Work";
 import Media from "./components/Media/Media";
 import Influence from "./pages/Blog/Influence";
 import Desci from "./pages/Publication/Desci";
+import Sonata from "./pages/Publication/Sonata";
 
 const App = () => {
   return (
@@ -18,7 +19,11 @@ const App = () => {
         <Route path="media">
           <Route index element={<Media />} />
           <Route path="blog/on-influences" element={<Influence />} />
-          <Route path="publication/a-case-for-desci" element={<Desci />} /> 
+          <Route path="publication/a-case-for-desci" element={<Desci />} />
+          <Route
+            path="publication/the-sonata-puzzle-and-the-vowel-adaptation"
+            element={<Sonata />}
+          />
         </Route>
       </Routes>
     </Router>
