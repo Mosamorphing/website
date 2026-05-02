@@ -22,7 +22,7 @@ const Sonata = () => {
       </p>
       <p>
         While reading <em>Godel, Escher, Bach</em> by Douglas Hofstadter, I
-        came across something called the Sonata Puzzle. There are many ideas to
+        came across a puzzle in the session <em> Sonata for Unaccompanied Achilles</em>. There are many ideas to
         explore in the book, but for this note, I am focusing on how the puzzle
         introduces the idea of figure and ground.
       </p>
