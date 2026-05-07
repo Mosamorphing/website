@@ -131,6 +131,14 @@ const Media = () => {
       link: "https://nubianresearch.com/paper/memes-on-the-solana-blockchain-a-cultural-economic-and-technical-investigation",
       category: "Publications",
     },
+        {
+      title: "Intermission: Better tools, harder questions",
+      description:
+        'On coordination, pan-african scientific computing convening, and other recent progressions.',
+      image: olhenry,
+      link: "https://open.substack.com/pub/themorphing500/p/intermission-better-tools-harder",
+      category: "Blog",
+    },
     {
       title: "Intermission: An evolved identity, and a new partner",
       description:
