@@ -63,8 +63,8 @@ const Work = () => {
                   In 2023, he served on the administrative team at People
                   Decentralised Autonomous Organisation, where he helped steer
                   historic projects, including their bid (attempted twice) to
-                  collectively own a physical copy of the Constitution of the
-                  United States. At PeopleDAO, he was recognised as a
+                  collectively own a physical copy of the United States
+                  Constitution. At PeopleDAO, he was recognised as a
                   <span style={{ color: "#e63946" }}> “Rising Star” </span>
                   and a
                   <span style={{ color: "#e63946" }}>
