@@ -56,16 +56,7 @@ const Work = () => {
               <div className="work-intro">
                 <p>
                   Mosadoluwa Fasasi is a Solutions Architect. Founder & Executive
-                  Director at{" "}
-                  <a
-                    href="https://nubianresearch.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none", color: "#e63946" }}
-                  >
-                    Nubian Research (fka DeSci Nigeria)
-                  </a>
-                  , an open-access decentralised research infrastructure that
+                  Director at Nubian Research (fka DeSci Nigeria), an open-access decentralised research infrastructure that
                   welcomes scholarly contributions from every discipline.{" "}
                 </p>
                 <p>
@@ -108,7 +99,7 @@ const Work = () => {
                     Nubian · (presently) <br /> Formerly known as &quot;Decentralized Science Nigeria&quot;, Nubian is an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline. Check out
                     Nubian {" "}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       href="https://nubianresearch.com/"
                     >
@@ -130,8 +121,9 @@ const Work = () => {
                     Multisightapp · (previously) <br /> A performance analytics
                     product for individuals and teams using Multisignature wallet. Mosadoluwa Fasasi is a
                     co-builder at Multisightapp. They got into the Safe
-                    Ecosystem grant in 2022, produced a                    <a
-                    className="underline"
+                    Ecosystem grant in 2022, produced a{" "}
+                    <a
+                    className="work-inline-link"
                     target="_blank"
                     href="https://github.com/bartosjiri/multisig-signer-incentives/blob/main/outcomes/document/README.md"
                     >
@@ -142,7 +134,7 @@ const Work = () => {
                     their analytics tool. To check
                     out Multisightapp, click{" "}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       href="https://multisight.app/"
                     >
@@ -163,7 +155,7 @@ const Work = () => {
                     WTF Academy · (previously) <br /> 
                     An open-source blockchain university. Mosadoluwa Fasasi was a core contributor, developing and maintaining technical learning resources. Some of the major ones include{' '}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://github.com/WTFAcademy/WTF-Ethers/tree/main/en"
@@ -172,7 +164,7 @@ const Work = () => {
                     </a>
                     ,{' '}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://x.com/WTFAcademy_/status/1727735822269747318"
@@ -181,7 +173,7 @@ const Work = () => {
                     </a>
                     , and{' '}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://github.com/WTFAcademy/WTF-Solidity/tree/main/Languages/en"
@@ -217,7 +209,7 @@ const Work = () => {
                     projects. Some of the projects he accelerated includes;
                     We&apos;re Gonna Buy The Constitution (WAGBTC), found{" "}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       href="https://constitutiondao2.com/"
                     >
@@ -225,7 +217,7 @@ const Work = () => {
                     </a>
                     , and The Lost Children of Benin City, found{" "}
                     <a
-                      className="underline"
+                      className="work-inline-link"
                       target="_blank"
                       href="https://giveth.io/project/documentary-about-nigerian-human-trafficking?tab=updates#:~:text=dedicated%20team(Ariel%20%26-,Mosa,-)%20on%20the%20PeopleDAO"
                     >

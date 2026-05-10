@@ -222,7 +222,7 @@ const Media = () => {
       hideExternalIndicator: true,
     },
     {
-      title: "A milestone, the first fifty",
+      title: "Intermission: A milestone, the first fifty",
       description:
         "On Nubian's first fifty paper uploads, Dialogues, and our enduring focus.",
       image: olhenry,
@@ -254,7 +254,7 @@ const Media = () => {
       category: "Publications",
     },
     {
-      title: "Reflections of a fallout",
+      title: "Intermission: Reflections of a fallout",
       description:
         "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
       image: olhenry,

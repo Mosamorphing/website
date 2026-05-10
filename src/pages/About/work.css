@@ -22,6 +22,30 @@
   width: 100%;
 }
 
+.work-inline-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.work-inline-link:hover {
+  border-color: #e63946;
+  color: #e63946;
+}
+
+.work-inline-link:focus {
+  border-color: rgba(255, 255, 255, 0.42);
+  color: inherit;
+  outline: none;
+}
+
+.work-inline-link:focus-visible {
+  border-color: #e63946;
+  color: #e63946;
+  outline: none;
+}
+
 .work-roles {
   margin-left: clamp(48px, 8vw, 128px);
   max-width: 980px;
