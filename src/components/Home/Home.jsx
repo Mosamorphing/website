@@ -86,7 +86,7 @@ const Home = () => {
             {/* Feature 1 */}
             <a
               className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              href="https://moveee.co/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science/"
+              href="https://www.themoveee.com/magazine/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
