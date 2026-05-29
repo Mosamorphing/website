@@ -56,7 +56,7 @@ const Work = () => {
               <div className="work-intro">
                 <p>
                   Mosadoluwa Fasasi is a Solutions Architect. Founder & Executive
-                  Director at Nubian Research (fka DeSci Nigeria), an open-access decentralised research infrastructure that
+                  Director at Nubian Research, an open-access decentralised research infrastructure that
                   welcomes scholarly contributions from every discipline.{" "}
                 </p>
                 <p>
