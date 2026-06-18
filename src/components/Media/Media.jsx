@@ -6,7 +6,6 @@ import {
   SiYoutubemusic,
 } from "react-icons/si";
 import "./media.css";
-import twoB from "../../../public/2b.png";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
 import moveee1 from "../../../public/moveee1.png";
@@ -93,7 +92,7 @@ const Media = () => {
       title: "Dialogues by Nubian Research",
       description:
         "Engaging scholars and researchers to pull back the curtain on the questions shaping their studies, the inferences they are making, and, importantly, why it matters in everyday life.",
-      image: twoB,
+      image: olhenry,
       category: "Speakings",
       listenLinks: [
         {
