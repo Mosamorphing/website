@@ -52,6 +52,36 @@
   margin: 20px 0; /* Add vertical spacing */
 }
 
+.blog-related-note {
+  margin-top: 26px;
+}
+
+.blog-article .media-link-underline {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.blog-article .media-link-underline:visited {
+  color: inherit;
+}
+
+.blog-article .media-link-underline:focus {
+  color: inherit;
+  outline: none;
+}
+
+.blog-article .media-link-underline:focus-visible {
+  color: #e63946;
+  outline: none;
+}
+
+@media (hover: hover) {
+  .blog-article .media-link-underline:hover {
+    color: #e63946;
+  }
+}
+
 @media (max-width: 1280px) {
   .blog-article {
     max-width: 1000px;

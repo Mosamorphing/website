@@ -44,7 +44,8 @@ const Sonata = () => {
       <p>
         A simple example is the hand. When we look at a hand, we see the palm
         and the fingers. But when the fingers are spread out, we also begin to
-        see the shapes between them. Not "empty space" as we often tag it, but an essential part of the structure.
+        see the shapes between them. Not &quot;empty space&quot; as we often
+        tag it, but an essential part of the structure.
       </p>
       <p>This is the same idea that led me to the Vowel Adaptation.</p>
       <div className="publication-inline-image">

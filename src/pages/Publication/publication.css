@@ -5,6 +5,10 @@
   color: white;
 }
 
+.publication:last-child {
+  padding-bottom: 20px;
+}
+
 .publication h1 {
   font-size: 2.1rem;
   margin-bottom: 8px;
@@ -140,6 +144,10 @@
 @media (max-width: 768px) {
   .publication {
     padding: 32px 28px 0;
+  }
+
+  .publication:last-child {
+    padding-bottom: 20px;
   }
 
   .references {

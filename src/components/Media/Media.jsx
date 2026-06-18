@@ -1,6 +1,12 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
+import {
+  SiApplepodcasts,
+  SiSpotify,
+  SiYoutubemusic,
+} from "react-icons/si";
 import "./media.css";
+import twoB from "../../../public/2b.png";
 import placeholder from "../../../public/placeholder.webp";
 import genz from "../../../public/genz.webp";
 import moveee1 from "../../../public/moveee1.png";
@@ -83,7 +89,31 @@ const Media = () => {
 
   // Features data
   const features = [
-            {
+    {
+      title: "Dialogues by Nubian Research",
+      description:
+        "Engaging scholars and researchers to pull back the curtain on the questions shaping their studies, the inferences they are making, and, importantly, why it matters in everyday life.",
+      image: twoB,
+      category: "Speakings",
+      listenLinks: [
+        {
+          label: "Apple Podcasts",
+          href: "https://podcasts.apple.com/us/podcast/dialogues-by-nubian-research/id1896858326",
+          Icon: SiApplepodcasts,
+        },
+        {
+          label: "Spotify",
+          href: "https://open.spotify.com/show/033qNN5emZt6TwiY7J9H2t",
+          Icon: SiSpotify,
+        },
+        {
+          label: "YouTube Music",
+          href: "https://music.youtube.com/playlist?list=PL3_Ti0VB2DdAy--K89AI2uyILGem3TmcB&si=ykM6g7PwRdBtBb7B",
+          Icon: SiYoutubemusic,
+        },
+      ],
+    },
+    {
       title: "Nubian x NuNet: Inside the Partnership",
       description:
         "Featuring Dr. Em Lenartowicz (Decentralized Governance Architect and Lead, NuNet) and Mosadoluwa Fasasi (Executive Director, Nubian Research), this conversation explores their work and growing partnership. Click to watch on YouTube.",
@@ -345,18 +375,22 @@ const Media = () => {
             <div className="media-features-grid">
               {filteredFeatures.map((feature) => {
                 const isInternal = Boolean(feature.path);
+                const hasListenLinks = Boolean(feature.listenLinks?.length);
                 const alreadySignalsExternal = feature.description
                   ?.toLowerCase()
                   .includes("click to watch on youtube");
                 const showExternalIndicator =
+                  !hasListenLinks &&
                   !isInternal &&
                   !alreadySignalsExternal &&
                   !feature.hideExternalIndicator;
                 const showInternalIndicator = isInternal;
-                const Wrapper = isInternal ? Link : "a";
+                const Wrapper = isInternal ? Link : feature.link ? "a" : "div";
                 const wrapperProps = isInternal
                   ? { to: feature.path, style: { textDecoration: "none", color: "inherit" } }
-                  : { href: feature.link, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none", color: "inherit" } };
+                  : feature.link
+                    ? { href: feature.link, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none", color: "inherit" } }
+                    : {};
 
                 return (
                   <Wrapper
@@ -389,6 +423,26 @@ const Media = () => {
                         )}
                       </h3>
                       <p className="media-feature-description">{feature.description}</p>
+                      {hasListenLinks && (
+                        <div className="media-feature-links" aria-label="Listen on">
+                          <span className="media-feature-links-label">Listen on</span>
+                          <div className="media-feature-link-icons">
+                            {feature.listenLinks.map(({ label, href, Icon }) => (
+                              <a
+                                key={label}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={label}
+                                title={label}
+                                className="media-feature-link-icon"
+                              >
+                                <Icon aria-hidden="true" focusable="false" />
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </Wrapper>
                 );
