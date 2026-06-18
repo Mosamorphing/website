@@ -78,11 +78,7 @@ const Work = () => {
                   Before venturing into the blockchain ecosystem, Mosadoluwa
                   Fasasi wore many hats as an operator in the Nigerian startup
                   ecosystem, delivering human-centred experiences and unlocking
-                  value for diverse stakeholders. With a background in Science
-                  Education, he now bridges his expertise in blockchain to
-                  decentralise knowledge. His work focuses on positioning
-                  regions of the global south as an active contributor to global
-                  knowledge production through open science and research.
+                  value for diverse stakeholders. Today, he continues to leverage his multi-disciplinary background to help individuals and teams build with intent.
                 </p>
               </div>
               <div className="work-roles flex flex-col my-8 md:w-[95%] sm:w-[98%]">
@@ -96,7 +92,7 @@ const Work = () => {
                     />
                   </div>
                   <p className="flex-1 -mt-2 sm:-mt-[6px]">
-                    Nubian · (presently) <br /> Formerly known as &quot;Decentralized Science Nigeria&quot;, Nubian is an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline. Check out
+                    Nubian · (presently) <br /> Formerly known as &quot;Decentralized Science Nigeria&quot;, Nubian is an open-access decentralised research infrastructure that welcomes scholarly contributions from every discipline and positions the global south as an active contributor to knowledge production through open-access. Check out
                     Nubian {" "}
                     <a
                       className="work-inline-link"
@@ -239,7 +235,7 @@ const Work = () => {
                     ed-tech startup with a digital product for creators.
                     Mosadoluwa Fasasi worked as a generalist within a small team
                     of builders. His role varied over time. Some of the
-                    designations were Scrum Master, Project Manager, and Content
+                    designations were Scrum Master, Project Manager, Curriculum Developer, and Content
                     Associate. Mosadoluwa contributed to key organization
                     decisions and helped achieve the milestone of the first 1000
                     users.
