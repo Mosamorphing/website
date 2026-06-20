@@ -74,6 +74,9 @@ const Sonata = () => {
         </a>
         .
       </p>
+      <small className="publication-copyright">
+        © 2026 The Morphing—500. All rights reserved.
+      </small>
     </div>
   );
 };

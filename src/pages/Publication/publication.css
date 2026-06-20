@@ -62,6 +62,27 @@
   display: inline-block;
 }
 
+.publication-related-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.publication-related-note {
+  margin-top: 0;
+}
+
+.publication-copyright {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.62rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  margin-top: 68px;
+  padding-bottom: 72px;
+}
+
 .references {
   padding: 20px 20px;
   max-width: 800px;
@@ -167,6 +188,12 @@
   .publication p {
     font-size: 0.95rem;
     line-height: 1.7;
+  }
+
+  .publication-copyright {
+    font-size: 0.58rem;
+    margin-top: 52px;
+    padding-bottom: 56px;
   }
 
   .publication-inline-image {

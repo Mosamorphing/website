@@ -149,6 +149,9 @@ const Desci = () => {
             </a>
           </li>
         </ol>
+        <small className="publication-copyright">
+          © 2026 The Morphing—500. All rights reserved.
+        </small>
       </div>
     </>
   );

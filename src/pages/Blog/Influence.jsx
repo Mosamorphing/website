@@ -160,32 +160,37 @@ const Influence = () => {
           So, that’s it my friends. Own every decision, and “to thyself, be
           true”.
         </p>
-        <p className="border-b pb-6 !mb-6">
+        <p>
           I pray that the light will always guide you. Till some other time,
           blessings.
         </p>
-
-        <p> Postscript: </p>
-        <p>
-          - “Ada” - first female child in Igbo land <br />- If you’re wondering
-          what the 1st rule behind my bible was, it reads “Seek God”.
-        </p>
-        <div className="blog-inline-image">
-          <img src={seek} alt="First Rule from the Bible - Seek God" />
+        <div className="blog-related-section">
+          <p> Postscript: </p>
+          <p>
+            - “Ada” - first female child in Igbo land <br />- If you’re
+            wondering what the 1st rule behind my bible was, it reads “Seek
+            God”.
+          </p>
+          <div className="blog-inline-image">
+            <img src={seek} alt="First Rule from the Bible - Seek God" />
+          </div>
+          <p className="blog-related-note">
+            - If this resonated, <em>A Map Made for the Dark</em> carries this
+            line of thought further.{" "}
+            <a
+              className="media-link-underline"
+              href="https://selar.com/odp1f2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Find it here
+            </a>
+            .
+          </p>
         </div>
-        <p className="blog-related-note">
-          - If this resonated, <em>A Map Made for the Dark</em> carries this
-          line of thought further.{" "}
-          <a
-            className="media-link-underline"
-            href="https://selar.com/odp1f2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Find it here
-          </a>
-          .
-        </p>
+        <small className="blog-copyright">
+          © 2026 The Morphing—500. All rights reserved.
+        </small>
       </div>
     </>
   );

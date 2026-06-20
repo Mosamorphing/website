@@ -1,4 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
 import { HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
 import {
   SiApplepodcasts,
@@ -42,7 +43,7 @@ const displayOrder = {
   all: {
     "a-case-for-decentralized-science": 4.5,
   },
-  blog: {
+  notes: {
     "a-case-for-decentralized-science": 3,
     "on-knowing-the-influences-that-shape-your-life-and-being-true-to-yourself": 4,
   },
@@ -66,13 +67,27 @@ const Media = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const tabs = [
     { label: "All", value: "all", category: null },
-    { label: "Notes", value: "blog", category: "Blog" },
+    { label: "Notes", value: "notes", category: "Blog" },
     { label: "Features", value: "features", category: "Features" },
     { label: "Publications", value: "publications", category: "Publications" },
-    { label: "Talks", value: "speakings", category: "Speakings" },
+    { label: "Talks", value: "talks", category: "Speakings" },
   ];
-  const activeTabValue = searchParams.get("tab")?.toLowerCase() ?? "all";
+  const rawTabValue = searchParams.get("tab")?.toLowerCase();
+  const activeTabValue =
+    rawTabValue === "blog"
+      ? "notes"
+      : rawTabValue === "speakings"
+        ? "talks"
+        : rawTabValue ?? "all";
   const activeTab = tabs.find((tab) => tab.value === activeTabValue) ?? tabs[0];
+
+  useEffect(() => {
+    if (!rawTabValue || rawTabValue === activeTabValue) return;
+
+    const nextParams = new URLSearchParams(searchParams);
+    nextParams.set("tab", activeTabValue);
+    setSearchParams(nextParams, { replace: true });
+  }, [activeTabValue, rawTabValue, searchParams, setSearchParams]);
 
   const handleFilterClick = (tabValue) => {
     const nextParams = new URLSearchParams(searchParams);
@@ -88,6 +103,14 @@ const Media = () => {
 
   // Features data
   const features = [
+    {
+      title: "The importance of contextual studies",
+      description:
+        "At the June 12 “Young, Bold, and Building” hangout by The Future Project, a question came up during the fishbowl conversation: Why do many Nigerians believe their vote does not count? [...]",
+      image: olhenry,
+      path: "/media/talks/the-importance-of-contextual-studies",
+      category: "Speakings",
+    },
     {
       title: "Dialogues by Nubian Research",
       description:
@@ -328,7 +351,7 @@ const Media = () => {
       description:
         "To accurately apply a person’s judgment, point of view or “authoritative advice” on an issue to your life, you’ve got to know them in their entirety [...]",
       image: influence,
-      path: "/media/blog/on-influences",
+      path: "/media/notes/on-influences",
       category: "Blog",
     },
 
