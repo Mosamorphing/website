@@ -18,7 +18,7 @@ p {
   justify-content: space-between;
   padding: 0 50px;
   margin-bottom: 0;
-  color: white; /* White text */
+  color: var(--text-on-dark); /* White text */
 }
 
 .home-content {
@@ -46,8 +46,8 @@ p {
 .about-me-btn {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
-  color: white;
+  border-bottom: 1px solid var(--border-dark-strong);
+  color: var(--text-on-dark);
   display: inline-flex;
   font-size: 15px;
   line-height: 1.2;
@@ -120,6 +120,7 @@ p {
 }
 
 .home-features-band {
+  background-color: var(--surface-light);
   margin-top: -56px;
   position: relative;
   z-index: 3;
@@ -151,7 +152,7 @@ p {
 
 /* Features Section */
 .features-section {
-  background-color: white;
+  background-color: var(--surface-light);
 }
 
 .features-grid {
@@ -168,12 +169,19 @@ p {
   align-items: center;
 }
 
-.feature-image {
+.feature-media {
+  background-color: var(--surface-placeholder);
+  height: 350px;
+  overflow: hidden;
   width: 100%;
-  height: 350px; /* Fixed height */
-  background-size: cover;
-  background-position: center;
-  background-color: #ccc; /* Fallback color */
+}
+
+.feature-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 .feature-text {
@@ -181,9 +189,18 @@ p {
   text-align: left;
 }
 
+.home-features-title,
+.feature-card-title {
+  color: var(--text-on-light);
+}
+
+.feature-card-description {
+  color: var(--text-on-light-muted);
+}
+
 .home-external-link-indicator {
   display: inline-block;
-  color: #666;
+  color: var(--text-on-light-muted);
   height: 0.8em;
   width: 0.8em;
   line-height: 1;
@@ -194,7 +211,7 @@ p {
 
 .home-internal-link-indicator {
   display: inline-block;
-  color: #666;
+  color: var(--text-on-light-muted);
   height: 0.8em;
   width: 0.8em;
   line-height: 1;
@@ -212,7 +229,7 @@ p {
 
 .home-more-link {
   border-bottom: 1px solid rgba(0, 0, 0, 0.38);
-  color: black;
+  color: var(--text-on-light);
   display: inline-flex;
   font-size: 15px;
   line-height: 1.2;
@@ -229,7 +246,7 @@ p {
 
 .feature-text a {
   text-decoration: none; /* Removes underline */
-  color: black; /* Explicit initial color */
+  color: var(--text-on-light); /* Explicit initial color */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
@@ -240,7 +257,7 @@ p {
 .feature-description {
   margin-top: 10px;
   font-size: 14px;
-  color: #666;
+  color: var(--text-on-light-muted);
 }
 
 /* Card nudge effect (desktop only). Applies a small upward nudge and shadow on hover/focus
@@ -284,7 +301,7 @@ p {
     padding-left: 20px; /* Add padding to the left */
     text-align: left; /* Align text to the left */
     /* background: rgba(0, 0, 0, 0.5);  */
-    color: white; /* Ensure text is readable */
+    color: var(--text-on-dark); /* Ensure text is readable */
     padding: 20px; /* Add padding */
     border-radius: 10px; /* Optional: Add border radius */
   }
@@ -321,6 +338,10 @@ p {
   .features-grid {
     grid-template-columns: 1fr; /* Single column */
     gap: 20px; /* Adjust gap */
+  }
+
+  .feature-media {
+    height: 200px;
   }
 
   .home-features-band {

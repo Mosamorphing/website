@@ -23,7 +23,7 @@
 }
 
 .work-inline-link {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+  border-bottom: 1px solid var(--border-dark-strong);
   color: inherit;
   text-decoration: none;
   transition: border-color 0.2s ease, color 0.2s ease;
@@ -35,7 +35,7 @@
 }
 
 .work-inline-link:focus {
-  border-color: rgba(255, 255, 255, 0.42);
+  border-color: var(--border-dark-strong);
   color: inherit;
   outline: none;
 }
@@ -52,7 +52,7 @@
 }
 
 .work-section-label {
-  color: rgba(255, 255, 255, 0.58);
+  color: var(--text-subtle-dark);
   font-size: 13px;
   font-weight: 400;
   line-height: 1.2;
@@ -60,7 +60,7 @@
 }
 
 .work-role-item {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid var(--border-dark-soft);
   padding: 24px 0;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .work-contact {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid var(--border-dark-soft);
   margin: 64px 0 20px clamp(48px, 8vw, 128px);
   max-width: 980px;
   padding-top: 24px;
@@ -105,7 +105,7 @@
 }
 
 .work-contact-copy a {
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--text-muted-dark);
   font-size: 14px;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -128,7 +128,7 @@
 }
 
 .work-contact-form span {
-  color: rgba(255, 255, 255, 0.58);
+  color: var(--text-subtle-dark);
   font-size: 13px;
   line-height: 1.2;
 }
@@ -137,9 +137,9 @@
 .work-contact-form textarea {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1px solid var(--border-dark-input);
   border-radius: 0;
-  color: white;
+  color: var(--text-on-dark);
   font: inherit;
   font-size: 16px;
   line-height: 1.5;
@@ -162,8 +162,8 @@
   align-self: flex-start;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
-  color: white;
+  border-bottom: 1px solid var(--border-dark-strong);
+  color: var(--text-on-dark);
   cursor: pointer;
   font-size: 14px;
   line-height: 1.2;
@@ -183,7 +183,7 @@
 }
 
 .work-contact-status {
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--text-muted-dark);
   font-size: 13px;
   line-height: 1.45;
   min-height: 19px;

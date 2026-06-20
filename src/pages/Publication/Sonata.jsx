@@ -49,7 +49,12 @@ const Sonata = () => {
       </p>
       <p>This is the same idea that led me to the Vowel Adaptation.</p>
       <div className="publication-inline-image">
-        <img src="/vowel.png" alt="Vowel Adaptation illustration" />
+        <img
+          src="/vowel.png"
+          alt="Vowel Adaptation illustration"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <p>
         When we look at the English alphabet and isolate the vowels, A, E, I,

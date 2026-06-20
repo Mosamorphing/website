@@ -8,7 +8,7 @@ import {
 } from "react-icons/si";
 import "./media.css";
 import placeholder from "../../../public/placeholder.webp";
-import genz from "../../../public/genz.webp";
+import genz from "../../../public/genz.jpeg";
 import moveee1 from "../../../public/moveee1.png";
 import work from "../../../public/work.webp";
 import peopledao from "../../../public/peopledao.jpeg";
@@ -17,7 +17,7 @@ import bitget from "../../../public/bitget.jpeg";
 import independence from "../../../public/independence.png";
 import desci from "../../../public/desci.png";
 import multi from "../../../public/multi.png";
-import tr2 from "../../../public/tr2.png";
+import tr2 from "../../../public/tr2.jpeg";
 import artist from "../../../public/artist.jpeg";
 import writers from "../../../public/writers.jpeg";
 // ...existing imports...
@@ -29,7 +29,7 @@ import olhenry from "../../../public/olhenry.jpeg";
 import coordination from "../../../public/coordination.jpeg";
 import memetics from "../../../public/memetics.png";
 import magic from "../../../public/magic.jpeg";
-import escher from "../../../public/escher.png";
+import escher from "../../../public/escher.jpeg";
 import nubian from "../../../public/nubian.png";
 import partners from "../../../public/partners.png";
 
@@ -395,7 +395,7 @@ const Media = () => {
               ))}
             </div>
             <div className="media-features-grid">
-              {filteredFeatures.map((feature) => {
+              {filteredFeatures.map((feature, index) => {
                 const isInternal = Boolean(feature.path);
                 const hasListenLinks = Boolean(feature.listenLinks?.length);
                 const alreadySignalsExternal = feature.description
@@ -420,10 +420,16 @@ const Media = () => {
                     className="card-nudge media-feature-item"
                     {...wrapperProps}
                   >
-                    <div
-                      className="media-feature-image"
-                      style={{ backgroundImage: `url(${feature.image})` }}
-                    ></div>
+                    <div className="media-feature-media">
+                      <img
+                        src={feature.image}
+                        alt={`Feature image for ${feature.title}`}
+                        className="media-feature-image"
+                        loading={index < 2 ? "eager" : "lazy"}
+                        decoding="async"
+                        fetchPriority={index === 0 ? "high" : "auto"}
+                      />
+                    </div>
                     <div className="media-feature-text">
                       <h3 className="media-feature-title">
                         {feature.title}

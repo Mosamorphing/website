@@ -172,7 +172,12 @@ const Influence = () => {
             God”.
           </p>
           <div className="blog-inline-image">
-            <img src={seek} alt="First Rule from the Bible - Seek God" />
+            <img
+              src={seek}
+              alt="First Rule from the Bible - Seek God"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <p className="blog-related-note">
             - If this resonated, <em>A Map Made for the Dark</em> carries this

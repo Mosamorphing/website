@@ -3,14 +3,53 @@ import { HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 import "./home.css"; // Custom CSS for the home page
-import hero from "/hero.webp"; // Correct path for hero image
+import hero from "/hero.webp"; // Restored hero image to preserve transparency
 import placeholder1 from "/placeholder1.jpeg"; 
 import multi1 from "/multi1.png"; // Correct path for genz image
 import olhenry from "/olhenry.jpeg"; // Correct path for work image
-import escher from "/escher.png"; // Correct path for mentors image
+import escher from "/escher.jpeg"; // Optimized feature image
 
 const Home = () => {
   const heroSectionRef = useRef(null);
+  const featuredPieces = [
+    {
+      title:
+        "A Revolutionary Future for Scientific Research through Decentralized Science",
+      description:
+        "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its [...]",
+      image: placeholder1,
+      alt: "Feature image for a DeSci interview",
+      href: "https://www.themoveee.com/magazine/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science",
+      kind: "external",
+    },
+    {
+      title: "Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation",
+      description:
+        "This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]",
+      image: escher,
+      alt: "Feature image for the Sonata Puzzle publication",
+      to: "/media/publication/the-sonata-puzzle-and-the-vowel-adaptation",
+      kind: "internal",
+    },
+    {
+      title: "Introduction to Multisignature Wallets",
+      description:
+        "Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]",
+      image: multi1,
+      alt: "Feature image for the multisignature wallets piece",
+      href: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
+      kind: "external",
+    },
+    {
+      title: "Reflections of a fallout",
+      description:
+        "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
+      image: olhenry,
+      alt: "Feature image for Reflections of a fallout",
+      href: "https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners",
+      kind: "external",
+    },
+  ];
 
   useEffect(() => {
     const section = heroSectionRef.current;
@@ -71,119 +110,84 @@ const Home = () => {
           <img
             src={hero}
             alt="Hero"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
             className="hero-image w-full h-auto max-h-full object-cover"
           />
         </div>
       </section>
 
       {/* Features Section */}
-      <div className="home-features-band bg-white">
+      <div className="home-features-band">
         <section className="layout__container xl:px-[60px] lg:px-[40px] 2xs:px-[28px] pt-14 pb-20 md:pt-12 md:pb-14 2xs:pt-10 2xs:pb-10">
-          <h2 className="text-[34px] md:text-[30px] 2xs:text-[18px] text-black">
+          <h2 className="home-features-title text-[34px] md:text-[30px] 2xs:text-[18px]">
             Featured Pieces 
           </h2>
           <div className="flex gap-x-[40px] gap-y-[40px] flex-wrap mt-8">
-            {/* Feature 1 */}
-            <a
-              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              href="https://www.themoveee.com/magazine/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div
-                className="feature-image"
-                style={{ backgroundImage: `url(${placeholder1})` }}
-              ></div>
-              <div className="feature-text">
-                <h3 className="text-[18px] 2xs:text-[15px] text-black">
-                  A Revolutionary Future for Scientific Research through Decentralized Science
-                  <span className="home-external-link-indicator" aria-hidden="true">
-                    <HiArrowUpRight focusable="false" />
-                  </span>
-                </h3>
-                <p className="text-[13px] leading-[1.55] text-[#666] mt-[10px]">
-                  Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, 
-                  shares insights into the essence of DeSci, its potential to revolutionize scientific 
-                  inquiry, and its [...]
-                </p>
-              </div>
-            </a>
+            {featuredPieces.map((piece) => {
+              const content = (
+                <>
+                  <div className="feature-media">
+                    <img
+                      src={piece.image}
+                      alt={piece.alt}
+                      className="feature-image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="feature-text">
+                    <h3 className="feature-card-title text-[18px] 2xs:text-[15px]">
+                      {piece.title}
+                      <span
+                        className={
+                          piece.kind === "internal"
+                            ? "home-internal-link-indicator"
+                            : "home-external-link-indicator"
+                        }
+                        aria-hidden="true"
+                      >
+                        {piece.kind === "internal" ? (
+                          <HiArrowRight focusable="false" />
+                        ) : (
+                          <HiArrowUpRight focusable="false" />
+                        )}
+                      </span>
+                    </h3>
+                    <p className="feature-card-description text-[13px] leading-[1.55] mt-[10px]">
+                      {piece.description}
+                    </p>
+                  </div>
+                </>
+              );
 
-                        {/* Feature 2 */}
-            <Link
-              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              to="/media/publication/the-sonata-puzzle-and-the-vowel-adaptation"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div
-                className="feature-image"
-                style={{ backgroundImage: `url(${escher})` }}
-              ></div>
-              <div className="feature-text">
-                <h3 className="text-[18px] 2xs:text-[15px] text-black">
-                  {"Douglas Hofstadter's Sonata Puzzle: The Vowel Adaptation"}
-                  <span className="home-internal-link-indicator" aria-hidden="true">
-                    <HiArrowRight focusable="false" />
-                  </span>
-                </h3>
-                <p className="text-[13px] leading-[1.55] text-[#666] mt-[10px]">
-                {"This paper explores the recursive puzzle within Douglas Hofstadter's \"GEB: An Eternal Golden Braid\", and extends it through an original vowel-based adaptation [...]"}
-                </p>
-              </div>
-            </Link>
+              if (piece.kind === "internal") {
+                return (
+                  <Link
+                    key={piece.title}
+                    className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+                    to={piece.to}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {content}
+                  </Link>
+                );
+              }
 
-            {/* Feature 3 */}
-            <a
-              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              href="https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div
-                className="feature-image"
-                style={{ backgroundImage: `url(${multi1})` }}
-              ></div>
-              <div className="feature-text">
-                <h3 className="text-[18px] 2xs:text-[15px] text-black">
-                  Introduction to Multisignature Wallets
-                  <span className="home-external-link-indicator" aria-hidden="true">
-                    <HiArrowUpRight focusable="false" />
-                  </span>
-                </h3>
-                <p className="text-[13px] leading-[1.55] text-[#666] mt-[10px]">
-                  Multisignature wallets are a popular tool among various web3 projects for the management of shared funds and assets, providing enhanced decentralization, security, [...]
-                </p>
-              </div>
-            </a>
-
-            {/* Feature 4 */}
-            <a
-              className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
-              href="https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <div
-                className="feature-image"
-                style={{ backgroundImage: `url(${olhenry})` }}
-              ></div>
-              <div className="feature-text">
-                <h3 className="text-[18px] 2xs:text-[15px] text-black">
-                  Reflections of a fallout
-                  <span className="home-external-link-indicator" aria-hidden="true">
-                    <HiArrowUpRight focusable="false" />
-                  </span>
-                </h3>
-                <p className="text-[13px] leading-[1.55] text-[#666] mt-[10px]">
-                  On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. 
-                  {"It's about trust, ideals, and the messy business of  [...]"}
-                </p>
-              </div>
-            </a>
-
+              return (
+                <a
+                  key={piece.title}
+                  className="card-nudge w-[22.5%] lg:w-[30%] md:w-[46%] 2xs:w-full flex flex-col items-center"
+                  href={piece.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  {content}
+                </a>
+              );
+            })}
           </div>
           <Link to="/media" className="home-more-link">
             More in media →

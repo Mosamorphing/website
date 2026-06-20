@@ -2,7 +2,7 @@
   padding: 40px 20px;
   max-width: 800px;
   margin: 0 auto;
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .blog-article h1 {
@@ -16,7 +16,7 @@
   font-style: italic;
   /* letter-spacing: 0.08em; */
   /* text-transform: uppercase; */
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--text-muted-dark);
   margin: 0 0 24px;
 }
 
@@ -45,15 +45,15 @@
 
 .styled-blockquote {
   font-size: 1.05rem;
-  border-left: 2px solid white; /* Black vertical line */
+  border-left: 2px solid var(--border-dark-medium); /* Black vertical line */
   padding-left: 16px; /* Space between the line and the text */
   font-style: italic; /* Optional for a classic blockquote look */
-  color: #ffffff; /* Text color */
+  color: var(--text-on-dark); /* Text color */
   margin: 20px 0; /* Add vertical spacing */
 }
 
 .blog-related-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--border-dark-medium);
   margin-top: 24px;
   padding-top: 24px;
 }
@@ -64,7 +64,7 @@
 
 .blog-copyright {
   display: block;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-subtle-dark);
   font-size: 0.62rem;
   font-weight: 400;
   line-height: 1.4;

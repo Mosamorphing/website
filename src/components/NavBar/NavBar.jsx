@@ -68,7 +68,10 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className="bg-[#151414] sticky top-0 right-0 z-[999999999]">
+    <div
+      className="sticky top-0 right-0 z-[999999999]"
+      style={{ backgroundColor: "var(--surface-dark)" }}
+    >
       <nav ref={navRef} className="navbar layout__container pt-[36px] pb-[28px]">
         <button
           className="mobile-nav-toggle"

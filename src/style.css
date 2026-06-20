@@ -7,9 +7,27 @@
   background: transparent;
 }
 
+:root {
+  --surface-dark: #151414;
+  --surface-light: #f3f1ec;
+  --text-on-dark: #f5f4f0;
+  --text-on-light: #171615;
+  --text-on-light-muted: rgba(23, 22, 21, 0.68);
+  --text-muted-dark: rgba(245, 244, 240, 0.7);
+  --text-subtle-dark: rgba(245, 244, 240, 0.58);
+  --border-dark-soft: rgba(245, 244, 240, 0.12);
+  --border-dark-medium: rgba(245, 244, 240, 0.18);
+  --border-dark-strong: rgba(245, 244, 240, 0.42);
+  --border-dark-input: rgba(245, 244, 240, 0.22);
+  --icon-muted-dark: rgba(245, 244, 240, 0.68);
+  --surface-placeholder: #c9c4bb;
+  --surface-light-shadow: rgba(23, 22, 21, 0.12);
+  --scrollbar-thumb: rgba(23, 22, 21, 0.36);
+}
+
 body {
-  background: #151414;
-  color: white;
+  background: var(--surface-dark);
+  color: var(--text-on-dark);
   overflow: hidden;
   overflow-y: auto;
 }

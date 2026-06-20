@@ -2,7 +2,7 @@
   padding: 40px 20px 0 20px;
   max-width: 800px;
   margin: 0 auto;
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .publication:last-child {
@@ -20,7 +20,7 @@
   font-style: italic;
   /* letter-spacing: 0.08em;
   text-transform: uppercase; */
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--text-muted-dark);
   margin: 0 0 24px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .publication-related-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--border-dark-medium);
   margin-top: 24px;
   padding-top: 24px;
 }
@@ -74,7 +74,7 @@
 
 .publication-copyright {
   display: block;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-subtle-dark);
   font-size: 0.62rem;
   font-weight: 400;
   line-height: 1.4;
@@ -87,13 +87,13 @@
   padding: 20px 20px;
   max-width: 800px;
   margin: 0 auto;
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .references h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .references ol {
@@ -108,17 +108,17 @@
 }
 
 .references li a {
-  color: white; /* Same color as headings */
+  color: var(--text-on-dark); /* Same color as headings */
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 
 .references li a:visited {
-  color: white;
+  color: var(--text-on-dark);
 }
 
 .references li a:focus {
-  color: white;
+  color: var(--text-on-dark);
   outline: none;
   text-decoration: underline;
 }
@@ -203,7 +203,7 @@
   .references h3 {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: white;
+    color: var(--text-on-dark);
   }
 
   .references li {
