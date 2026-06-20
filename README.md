@@ -1,85 +1,56 @@
-# Website Project
+# This website is organized around three core surfaces:
 
-This is a website project built with **React** and **Vite**. It includes a modular design with reusable components and structured pages for better maintainability and scalability.
+- `Home` for a concise introduction and selected featured pieces
+- `Work` for bio, affiliations, and contact
+- `Media` for notes, features, publications, and talks
 
-## Features
+## Stack
 
-- **Modular Components**:
-  - `NavBar`: Responsive navigation bar for seamless browsing.
-  - `Home`: The landing page component.
-  - `Media`: Media gallery or related features.
-- **Pages**:
-  - `About`: Information about the website or owner.
-  - `Blog`: Dynamic blog section.
-  - `Publication`: Publications or related content.
-- **Styling**: Global styles in `style.css`.
-- **Optimized for Performance**: Built with Vite for fast builds and hot module replacement (HMR).
+- React
+- Vite
+- React Router
+- CSS with a small shared palette/token system
+- Netlify for deployment and form handling
 
----
+## Notes
 
-## Project Structure
+- The navigation is route-based and lives in [src/App.jsx](/src/App.jsx).
+- `Home` and `Media` use image-card layouts tuned for lighter loading.
+- The contact form on `Work` is set up for Netlify Forms.
+- The design leans on a dark editorial surface with a softer off-white secondary band.
 
-```plaintext
-src/
-├── components/
-│   ├── Home/
-│   ├── Media/
-│   ├── NavBar/
-├── pages/
-│   ├── About/
-│   ├── Blog/
-│   ├── Publication/
-├── App.jsx
-├── main.jsx
-├── style.css
-public/
-node_modules/
+## Commands
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
----
+Start the local dev server:
 
-## Technologies Used
+```bash
+npm run dev
+```
 
-- **React**: Frontend library for building user interfaces.
-- **Vite**: Build tool for fast development and production builds.
-- **JavaScript (ES6)**: Core programming language.
-- **CSS**: Styling for the project.
+Run lint checks:
 
----
+```bash
+npm run lint
+```
 
-## Installation and Setup
+Build for production:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
+```bash
+npm run build
+```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+Preview the production build locally:
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Build the project for production:
-   ```bash
-   npm run build
-   ```
-
-5. Preview the production build:
-   ```bash
-   npm run preview
-   ```
-
----
+```bash
+npm run preview
+```
 
 ## Deployment
 
-This project is deployed using **Vercel**. To deploy:
-1. Link your project to Vercel via their dashboard.
-2. Push your changes to the main branch.
-3. Vercel automatically deploys your project.
+This site is deployed on Netlify.
