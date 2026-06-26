@@ -1,6 +1,8 @@
 import "./publication.css";
 
 const ContextualStudies = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="publication">
       <h1>The importance of contextual studies</h1>
@@ -74,7 +76,7 @@ const ContextualStudies = () => {
           .
         </p>
         <p className="publication-related-note">
-          To explore other avenues of co-creation, send us an email at{" "}
+          To explore other avenues of co-creation, write to us at{" "}
           <a
             className="media-link-underline"
             href="mailto:info.nubianresearch@gmail.com"
@@ -85,7 +87,7 @@ const ContextualStudies = () => {
         </p>
       </div>
       <small className="publication-copyright">
-        © 2026 Nubian Research. All rights reserved.
+        © {currentYear} Nubian Research. All rights reserved.
       </small>
     </div>
   );

@@ -1,6 +1,8 @@
 import "./publication.css";
 
 const Sonata = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="publication">
       <h1>The Sonata Puzzle and the Vowel Adaptation</h1>
@@ -80,7 +82,7 @@ const Sonata = () => {
         .
       </p>
       <small className="publication-copyright">
-        © 2026 The Morphing—500. All rights reserved.
+        © {currentYear} The Morphing—500. All rights reserved.
       </small>
     </div>
   );

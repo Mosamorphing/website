@@ -1,6 +1,8 @@
 import "./publication.css";
 
 const Desci = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="publication">
@@ -150,7 +152,7 @@ const Desci = () => {
           </li>
         </ol>
         <small className="publication-copyright">
-          © 2026 The Morphing—500. All rights reserved.
+          © {currentYear} The Morphing—500. All rights reserved.
         </small>
       </div>
     </>

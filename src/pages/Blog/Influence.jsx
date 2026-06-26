@@ -2,6 +2,8 @@ import seek from "../../../public/seek.webp";
 import "./blog.css";
 
 const Influence = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="blog-article">
@@ -194,7 +196,7 @@ const Influence = () => {
           </p>
         </div>
         <small className="blog-copyright">
-          © 2026 The Morphing—500. All rights reserved.
+          © {currentYear} The Morphing—500. All rights reserved.
         </small>
       </div>
     </>
