@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
+import RouteMetadata from "./components/Seo/RouteMetadata";
 
 // Import components
 import Home from "./components/Home/Home";
@@ -13,6 +14,7 @@ import ContextualStudies from "./pages/Publication/ContextualStudies";
 const App = () => {
   return (
     <Router>
+      <RouteMetadata />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
