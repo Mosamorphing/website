@@ -1,0 +1,60 @@
+name: Check Moveee Links
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  check-moveee-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify Moveee redirect targets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mapfile -t redirect_lines < <(grep '^/go/moveee-' public/_redirects || true)
+
+          if [ "${#redirect_lines[@]}" -eq 0 ]; then
+            echo "No Moveee redirects found in public/_redirects"
+            exit 1
+          fi
+
+          failed=0
+
+          for line in "${redirect_lines[@]}"; do
+            alias_path="$(awk '{print $1}' <<< "$line")"
+            target_url="$(awk '{print $2}' <<< "$line")"
+
+            echo "Checking $alias_path -> $target_url"
+
+            http_code="$(
+              curl \
+                --silent \
+                --show-error \
+                --location \
+                --output /dev/null \
+                --write-out '%{http_code}' \
+                --max-time 20 \
+                "$target_url"
+            )"
+
+            if [[ ! "$http_code" =~ ^[23][0-9][0-9]$ ]]; then
+              echo "Broken target for $alias_path: $target_url returned $http_code"
+              failed=1
+            else
+              echo "OK: $target_url returned $http_code"
+            fi
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            echo "One or more Moveee links failed."
+            exit 1
+          fi
+
+          echo "All Moveee links are reachable."

@@ -19,7 +19,7 @@ const Home = () => {
         "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its [...]",
       image: placeholder1,
       alt: "Feature image for a DeSci interview",
-      href: "https://www.themoveee.com/magazine/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science",
+      href: "/go/moveee-desci-feature",
       kind: "external",
     },
     {

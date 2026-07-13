@@ -172,7 +172,7 @@ const Media = () => {
       description:
         "Mosadoluwa Fasasi, a key figure in the DeSci movement and founder of DeSci NG, shares insights into the essence of DeSci, its potential to revolutionize scientific inquiry, and its transformative impact on global knowledge sharing.",
       image: moveee1,
-      link: "https://www.themoveee.com/magazine/mosadoluwa-fasasi-envisions-a-revolutionary-future-for-scientific-research-through-decentralized-science",
+      link: "/go/moveee-desci-feature",
       category: "Features",
     },
     {
@@ -212,7 +212,7 @@ const Media = () => {
       description:
         "In our exclusive conversation with Mosadoluwa Fasasi, Founder of Nubian Research, he walked us through the inspiration behind the repository, their mission to support academic and independent [...]",
       image: nubian,
-      link: "https://themoveee.com/nubian-is-rewriting-africas-research-future-through-its-digital-repository",
+      link: "/go/moveee-nubian-feature",
       category: "Features",
     },
     {
@@ -286,7 +286,7 @@ const Media = () => {
       description:
         "We have enough gaps in our existence already. Things only worsen when we fail to understand how we can synchronise our [...]",
       image: work,
-      link: "https://moveee.co/gen-z-startups-and-the-art-of-collaboration-in-modern-work-culture/",
+      link: "/go/moveee-work-culture",
       category: "Publications",
     },
     {
@@ -294,7 +294,7 @@ const Media = () => {
       description:
         "Mosadoluwa Fasasi explores the cultural shift around mentorship, how it has been evolving, and what it means in this age of infinite knowledge and [...]",
       image: mentors,
-      link: "https://moveee.co/why-the-best-mentors-today-dont-call-themselves-mentors/",
+      link: "/go/moveee-mentors",
       category: "Publications",
     },
     {
@@ -302,7 +302,7 @@ const Media = () => {
       description:
         "The community at PeopleDAO is an example of how technology can aid the fundraising process. It’s not a solution [...]",
       image: peopledao,
-      link: "https://moveee.co/peopledao-the-nigerian-community-implementing-nfts-in-tackling-human-trafficking/",
+      link: "/go/moveee-peopledao",
       category: "Publications",
     },
     {
@@ -318,7 +318,7 @@ const Media = () => {
       description:
         "One of the reasons why it appears that Gen-Zs lack the ability to collaborate with traditional institutions is mistrust.[...]",
       image: genz,
-      link: "https://moveee.co/the-work-culture-and-the-new-breed-what-the-old-wineskin-means-for-the-new-wine/",
+      link: "/go/moveee-genz",
       category: "Publications",
     },
     {
@@ -326,7 +326,7 @@ const Media = () => {
       description:
         "More than being a part of the global village, Africa is a hybrid continent. This is not just because it has 54 countries and thousands of ethnic groups,[...]",
       image: placeholder,
-      link: "https://moveee.co/africa-will-become-another-west/",
+      link: "/go/moveee-africa-west",
       category: "Publications",
     },
     {
