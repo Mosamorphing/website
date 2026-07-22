@@ -9,6 +9,18 @@ import techSemester from "../../../public/ts.png";
 const encodeFormData = (data) =>
   new URLSearchParams(data).toString();
 
+const getContactPayload = (formElement) => {
+  const formData = new FormData(formElement);
+
+  return {
+    "form-name": "work-contact",
+    "bot-field": String(formData.get("bot-field") || ""),
+    name: String(formData.get("name") || "").trim(),
+    email: String(formData.get("email") || "").trim(),
+    message: String(formData.get("message") || "").trim(),
+  };
+};
+
 const Work = () => {
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -28,16 +40,20 @@ const Work = () => {
 
   const handleContactSubmit = async (event) => {
     event.preventDefault();
+    const payload = getContactPayload(event.currentTarget);
+
+    if (!payload.name || !payload.email || !payload.message) {
+      setContactStatus("error");
+      return;
+    }
+
     setContactStatus("sending");
 
     try {
       await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encodeFormData({
-          "form-name": "work-contact",
-          ...contactForm,
-        }),
+        body: encodeFormData(payload),
       });
 
       setContactForm({ name: "", email: "", message: "" });
@@ -255,6 +271,7 @@ const Work = () => {
                     className="work-contact-form"
                     name="work-contact"
                     method="POST"
+                    action="/"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={handleContactSubmit}
@@ -263,7 +280,7 @@ const Work = () => {
                     <p className="hidden">
                       <label>
                         Don’t fill this out if you’re human:
-                        <input name="bot-field" />
+                        <input name="bot-field" tabIndex="-1" autoComplete="off" />
                       </label>
                     </p>
                     <label>
