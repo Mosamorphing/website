@@ -94,7 +94,11 @@ const Work = () => {
                   Before venturing into the blockchain ecosystem, Mosadoluwa
                   Fasasi wore many hats as an operator in the Nigerian startup
                   ecosystem, delivering human-centred experiences and unlocking
-                  value for diverse stakeholders. Today, he continues to leverage his multi-disciplinary background to help individuals and teams build with intent.
+                  value for diverse stakeholders. He holds a BSc in Science Education 
+                  from the University of Ilorin and is currently enrolled in Master of Information Technology at Miva Open University. 
+                  </p>
+                  <p>
+                  Today, he continues to leverage his multidisciplinary background to help individuals and teams build with intent as technology rapidly reshapes how we live, learn and work.
                 </p>
               </div>
               <div className="work-roles flex flex-col my-8 md:w-[95%] sm:w-[98%]">
