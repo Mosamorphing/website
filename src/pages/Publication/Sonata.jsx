@@ -6,7 +6,7 @@ const Sonata = () => {
   return (
     <div className="publication">
       <h1>The Sonata Puzzle and the Vowel Adaptation</h1>
-      <p className="publication-date">
+      <p className="article-date">
         April 2026 • watch on{" "}
         <a
           className="media-link-underline"
@@ -16,7 +16,15 @@ const Sonata = () => {
         >
           YouTube
         </a>{" "}
-        or read on
+        • read full paper on{" "}
+        <a
+          className="media-link-underline"
+          href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nubian Research
+        </a>
       </p>
       <p>
         Most people think what they are looking at is the full picture. It is
@@ -69,18 +77,6 @@ const Sonata = () => {
         The Vowel Adaptation is an attempt to bring those hidden parts forward.
       </p>
       <p>It is an exercise in seeing beyond the obvious.</p>
-      <p>
-        Explore the full publication on {" "}
-        <a
-          className="media-link-underline"
-          href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Nubian Research
-        </a>
-        .
-      </p>
       <small className="publication-copyright">
         © {currentYear} The Morphing—500. All rights reserved.
       </small>

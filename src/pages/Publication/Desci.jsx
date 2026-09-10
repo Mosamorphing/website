@@ -7,7 +7,7 @@ const Desci = () => {
     <>
       <div className="publication">
         <h1>A Case for Decentralized Science</h1>
-        <p className="publication-date">
+        <p className="article-date">
           December 2024 · originally published on{" "}
           <a
             className="media-link-underline"

@@ -11,7 +11,7 @@ const Influence = () => {
           On knowing the influences that shape your life and being true to
           yourself
         </h1>
-        <p className="blog-date">June 2024</p>
+        <p className="article-date">June 2024</p>
         <p>
           I remember how I’d just become more active on Twitter (especially
           design twitter) in 2018–2019 and how there were conversations around

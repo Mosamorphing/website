@@ -6,7 +6,7 @@ const ContextualStudies = () => {
   return (
     <div className="publication">
       <h1>The importance of contextual studies</h1>
-      <p className="publication-date">June 2026</p>
+      <p className="article-date">June 2026</p>
       <p>
         At the June 12 “Young, Bold, and Building” hangout by The Future
         Project, a question came up during the fishbowl conversation: Why do
