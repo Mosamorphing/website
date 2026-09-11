@@ -17,6 +17,10 @@ const ROUTE_METADATA = {
     description:
       "Notes, features, publications, and talks by and featuring Mosadoluwa Fasasi.",
   },
+  "/booking": {
+    title: `Booking | ${SITE_NAME}`,
+    description: "Booking and engagement requests for Mosadoluwa Fasasi.",
+  },
 };
 
 const setMetaTag = (selector, attributes) => {

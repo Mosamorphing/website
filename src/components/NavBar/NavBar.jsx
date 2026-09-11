@@ -105,6 +105,11 @@ const Navbar = () => {
                   Media
                 </Link>
               </li>
+              <li className="menu-item">
+                <Link to="/booking" onClick={closeMenu}>
+                  Booking
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

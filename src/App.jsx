@@ -6,6 +6,7 @@ import RouteMetadata from "./components/Seo/RouteMetadata";
 import Home from "./components/Home/Home";
 import Work from "./pages/About/Work";
 import Media from "./components/Media/Media";
+import Booking from "./pages/Booking/Booking";
 import Influence from "./pages/Blog/Influence";
 import Desci from "./pages/Publication/Desci";
 import Sonata from "./pages/Publication/Sonata";
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="media">
           <Route index element={<Media />} />
           <Route path="notes/on-influences" element={<Influence />} />
