@@ -135,18 +135,13 @@ const Booking = () => {
             </label>
 
             <label>
-              <span>Organisation or project</span>
+              <span>Organisation/project, with public profile</span>
               <input
                 type="text"
-                name="organization"
+                name="organization-project-profile"
                 autoComplete="organization"
                 required
               />
-            </label>
-
-            <label>
-              <span>Website or public profile</span>
-              <input type="url" name="public-profile" inputMode="url" required />
             </label>
 
             <label className="booking-field-wide">
@@ -167,7 +162,7 @@ const Booking = () => {
             </label>
 
             <label className="booking-field-wide">
-              <span>Tell me about the request</span>
+              <span>Tell me more about the request</span>
               <textarea name="request-details" rows="5" required />
             </label>
 
