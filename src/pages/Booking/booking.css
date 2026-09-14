@@ -4,13 +4,32 @@
 }
 
 .booking-hero {
+  cursor: pointer;
   height: clamp(340px, 38vw, 560px);
   margin-top: 28px;
+  outline: none;
   overflow: hidden;
   position: relative;
 }
 
-.booking-hero picture,
+.booking-hero-slide {
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1.1s ease;
+}
+
+.booking-hero-slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.booking-hero:focus-visible {
+  outline: 1px solid #e63946;
+  outline-offset: 4px;
+}
+
+.booking-hero-slide,
 .booking-hero img {
   display: block;
   height: 100%;
@@ -18,8 +37,16 @@
 }
 
 .booking-hero img {
-  filter: grayscale(0.8) brightness(0.58) contrast(1.06);
   object-fit: cover;
+  pointer-events: none;
+}
+
+.booking-hero-slide--room img {
+  object-position: center;
+}
+
+.booking-hero-slide--portrait img {
+  filter: grayscale(0.8) brightness(0.58) contrast(1.06);
   object-position: 55% 32.5%;
 }
 
@@ -220,7 +247,7 @@
     margin-top: 32px;
   }
 
-  .booking-hero img {
+  .booking-hero-slide--portrait img {
     object-position: 55% 35%;
   }
 
@@ -252,5 +279,11 @@
   .booking-form select,
   .booking-form textarea {
     font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking-hero-slide {
+    transition: none;
   }
 }
