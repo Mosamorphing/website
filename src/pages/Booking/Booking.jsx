@@ -170,9 +170,10 @@ const Booking = () => {
       <header className="booking-intro">
         <h1>Book Mosadoluwa Fasasi</h1>
         <p>
-          Mosadoluwa Fasasi works with individuals and teams across product
-          strategy, operations, growth, research infrastructure, project
-          delivery, and selected public engagements.
+          Mosadoluwa Fasasi is a multidisciplinary technologist working with
+          individuals and teams across product strategy, operations, growth,
+          research infrastructure, project delivery, and selected public
+          engagements.
         </p>
         <p>
           The form below helps him understand your exact need. Kindly fill it
