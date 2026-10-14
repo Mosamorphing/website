@@ -104,6 +104,15 @@ const Media = () => {
   // Features data
   const features = [
     {
+      title:
+        "Mapping Scientific Computing to Power Research, Big Data and AI in Africa",
+      description:
+        "A pan-African position paper mapping scientific computing readiness across 67 institutions in 28 countries and outlining pathways towards a federated ecosystem for data- and AI-intensive research.",
+      image: olhenry,
+      link: "https://scienceforafrica.foundation/sites/default/files/2026-07/Mapping%20Scientific%20Computing%20to%20Power%20Research%2C%20Big%20Data%2C%20and%20AI%20in%20Africa.pdf",
+      category: "Features",
+    },
+    {
       title: "The importance of contextual studies",
       description:
         "At the June 12 “Young, Bold, and Building” hangout by The Future Project, a question came up during the fishbowl conversation: Why do many Nigerians believe their vote does not count? [...]",
