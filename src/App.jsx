@@ -11,6 +11,7 @@ import Influence from "./pages/Blog/Influence";
 import Desci from "./pages/Publication/Desci";
 import Sonata from "./pages/Publication/Sonata";
 import ContextualStudies from "./pages/Publication/ContextualStudies";
+import ScientificComputing from "./pages/Publication/ScientificComputing";
 
 const App = () => {
   return (
@@ -32,6 +33,10 @@ const App = () => {
           <Route
             path="publication/the-sonata-puzzle-and-the-vowel-adaptation"
             element={<Sonata />}
+          />
+          <Route
+            path="publication/interpreting-africas-scientific-computing-landscape"
+            element={<ScientificComputing />}
           />
           <Route
             path="talks/the-importance-of-contextual-studies"
