@@ -70,9 +70,32 @@ const ScientificComputing = () => {
         continent, and to the Science for Africa Foundation, for leading this
         effort.
       </p>
-      <p>Onward!</p>
+      <div className="publication-related-section">
+        <p className="publication-related-note">
+          We welcome avenues of partnership and co-creation. See how{" "}
+          <a
+            className="media-link-underline"
+            href="https://nubianresearch.com/donate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
+        <p className="publication-related-note">
+          To explore other avenues of co-creation, write to us at{" "}
+          <a
+            className="media-link-underline"
+            href="mailto:info@nubianresearch.com"
+          >
+            info@nubianresearch.com
+          </a>
+          .
+        </p>
+      </div>
       <small className="publication-copyright">
-        © {currentYear} The Morphing—500. All rights reserved.
+        © {currentYear} Nubian Research. All rights reserved.
       </small>
     </div>
   );

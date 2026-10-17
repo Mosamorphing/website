@@ -79,9 +79,9 @@ const ContextualStudies = () => {
           To explore other avenues of co-creation, write to us at{" "}
           <a
             className="media-link-underline"
-            href="mailto:info.nubianresearch@gmail.com"
+            href="mailto:info@nubianresearch.com"
           >
-            info.nubianresearch@gmail.com
+            info@nubianresearch.com
           </a>
           .
         </p>
