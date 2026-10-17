@@ -7,7 +7,7 @@ const ScientificComputing = () => {
     <div className="publication">
       <h1>Interpreting Africa&apos;s scientific computing landscape</h1>
       <p className="article-date">
-        July 2026 • read full paper on{" "}
+        October 2026 • read full paper on{" "}
         <a
           className="media-link-underline"
           href="https://scienceforafrica.foundation/sites/default/files/2026-07/Mapping%20Scientific%20Computing%20to%20Power%20Research%2C%20Big%20Data%2C%20and%20AI%20in%20Africa.pdf"
@@ -18,7 +18,7 @@ const ScientificComputing = () => {
         </a>
       </p>
       <p>
-        In Q3, I participated in the Pan-African Scientific Computing
+        In July 2026, I participated in the Pan-African Scientific Computing
         Convening, led by the Science for Africa Foundation, Nairobi, Kenya.
       </p>
       <p>
