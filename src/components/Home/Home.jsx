@@ -103,7 +103,7 @@ const Home = () => {
             Principal, The Morphing—500
           </h3> */}
           <Link to="/work" className="hero-reveal hero-reveal-delay-3 hero-cta-wrap">
-            <span className="about-me-btn">About me →</span>
+            <span className="about-me-btn">About Mosa →</span>
           </Link>
         </div>
         <div className="hero-image-shell w-1/2 lg:absolute lg:bottom-0 lg:left-0 lg:w-full lg:h-[78vh] xs:h-[92vh] 2xs:z-1 lg:opacity-50 2xs:flex 2xs:justify-center object-cover bg-top h-auto mr-[50px]">

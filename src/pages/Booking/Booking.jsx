@@ -168,7 +168,7 @@ const Booking = () => {
       </div>
 
       <header className="booking-intro">
-        <h1>Book Mosadoluwa Fasasi</h1>
+        <h1>Book Mosa</h1>
         <p>
           Mosadoluwa Fasasi is a multidisciplinary technologist working with
           individuals and teams across product strategy, operations, growth,
@@ -232,7 +232,7 @@ const Booking = () => {
             </label>
 
             <label className="booking-field-wide">
-              <span>What would you like to engage me for?</span>
+              <span>What would you like to engage Mosa for?</span>
               <select name="engagement-type" defaultValue="" required>
                 <option value="" disabled>Select an engagement</option>
                 <option value="product-strategy-operations-growth">
@@ -249,7 +249,7 @@ const Booking = () => {
             </label>
 
             <label className="booking-field-wide">
-              <span>Tell me more about the request</span>
+              <span>Kindly share more about your request</span>
               <textarea name="request-details" rows="5" required />
             </label>
 
@@ -310,7 +310,7 @@ const Booking = () => {
 
           <p className="booking-status" role="status" aria-live="polite">
             {status === "sent" &&
-              "Received. Thank you for the context. I’ll be in touch."}
+              "Received. Thank you for the context. You’ll hear back within 24 hours."}
             {status === "error" &&
               "Something slipped. Please try again in a moment."}
           </p>

@@ -71,7 +71,9 @@ const Work = () => {
             <div className="work-text mb-10 z-[999]">
               <div className="work-intro">
                 <p>
-                  Mosadoluwa Fasasi is a Product & Operations Architect. He currently serves at Nubian Research, 
+                  Mosadoluwa Fasasi, or
+                  <span style={{ color: "#e63946" }}> “Mosa” </span>
+                  for short, is a Product & Operations Architect. He currently serves at Nubian Research, 
                   an open-access decentralised research infrastructure that
                   welcomes scholarly contributions from every discipline.{" "}
                 </p>
