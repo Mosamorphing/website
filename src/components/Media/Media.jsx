@@ -26,6 +26,10 @@ import desciRising from "../../../public/desci-rising.jpeg";
 import web3lagosconf from "../../../public/web3lagosconf.jpeg";
 import squareCover from "../../../public/squareCover.png";
 import olhenry from "../../../public/olhenry.jpeg";
+import scientificComputingCover from "../../../public/scientific-computing-cover.webp";
+import scientificComputingCoverMobile from "../../../public/scientific-computing-cover-mobile.webp";
+import contextualStudiesCover from "../../../public/contextual-studies-cover.webp";
+import contextualStudiesCoverMobile from "../../../public/contextual-studies-cover-mobile.webp";
 import coordination from "../../../public/coordination.jpeg";
 import memetics from "../../../public/memetics.png";
 import magic from "../../../public/magic.jpeg";
@@ -107,7 +111,9 @@ const Media = () => {
       title: "Interpreting Africa's scientific computing landscape",
       description:
         "Together with the Science for Africa Foundation, Nairobi, Kenya, we examined findings from 67 institutions across 28 countries and put forward practical pathways for [...]",
-      image: olhenry,
+      image: scientificComputingCover,
+      mobileImage: scientificComputingCoverMobile,
+      imagePosition: "42% center",
       path: "/media/publication/interpreting-africas-scientific-computing-landscape",
       category: "Publications",
     },
@@ -115,7 +121,9 @@ const Media = () => {
       title: "The importance of contextual studies",
       description:
         "At the June 12 “Young, Bold, and Building” hangout by The Future Project, a question came up during the fishbowl conversation: Why do many Nigerians believe their vote does not count? [...]",
-      image: olhenry,
+      image: contextualStudiesCover,
+      mobileImage: contextualStudiesCoverMobile,
+      imagePosition: "center 24%",
       path: "/media/talks/the-importance-of-contextual-studies",
       category: "Speakings",
     },
@@ -429,14 +437,23 @@ const Media = () => {
                     {...wrapperProps}
                   >
                     <div className="media-feature-media">
-                      <img
-                        src={feature.image}
-                        alt={`Feature image for ${feature.title}`}
-                        className="media-feature-image"
-                        loading={index < 2 ? "eager" : "lazy"}
-                        decoding="async"
-                        fetchPriority={index === 0 ? "high" : "auto"}
-                      />
+                      <picture className="media-feature-picture">
+                        {feature.mobileImage && (
+                          <source
+                            media="(max-width: 768px)"
+                            srcSet={feature.mobileImage}
+                          />
+                        )}
+                        <img
+                          src={feature.image}
+                          alt={`Feature image for ${feature.title}`}
+                          className="media-feature-image"
+                          style={{ objectPosition: feature.imagePosition || "center" }}
+                          loading={index < 2 ? "eager" : "lazy"}
+                          decoding="async"
+                          fetchPriority={index === 0 ? "high" : "auto"}
+                        />
+                      </picture>
                     </div>
                     <div className="media-feature-text">
                       <h3 className="media-feature-title">

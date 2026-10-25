@@ -176,6 +176,12 @@ p {
   width: 100%;
 }
 
+.feature-picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .feature-image {
   display: block;
   height: 100%;

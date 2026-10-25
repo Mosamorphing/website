@@ -6,12 +6,24 @@ import "./home.css"; // Custom CSS for the home page
 import hero from "/hero.webp"; // Restored hero image to preserve transparency
 import placeholder1 from "/placeholder1.jpeg"; 
 import multi1 from "/multi1.png"; // Correct path for genz image
-import olhenry from "/olhenry.jpeg"; // Correct path for work image
 import escher from "/escher.jpeg"; // Optimized feature image
+import scientificComputingCover from "/scientific-computing-cover.webp";
+import scientificComputingCoverMobile from "/scientific-computing-cover-mobile.webp";
 
 const Home = () => {
   const heroSectionRef = useRef(null);
   const featuredPieces = [
+    {
+      title: "Interpreting Africa's scientific computing landscape",
+      description:
+        "Together with the Science for Africa Foundation, Nairobi, Kenya, we examined findings from 67 institutions across 28 countries and put forward practical pathways for [...]",
+      image: scientificComputingCover,
+      mobileImage: scientificComputingCoverMobile,
+      alt: "Feature image for Interpreting Africa's scientific computing landscape",
+      imagePosition: "42% center",
+      to: "/media/publication/interpreting-africas-scientific-computing-landscape",
+      kind: "internal",
+    },
     {
       title:
         "A Revolutionary Future for Scientific Research through Decentralized Science",
@@ -38,15 +50,6 @@ const Home = () => {
       image: multi1,
       alt: "Feature image for the multisignature wallets piece",
       href: "https://github.com/bartosjiri/multisig-signer-incentives/tree/main/outcomes/document#introduction-to-multisignature-wallets",
-      kind: "external",
-    },
-    {
-      title: "Reflections of a fallout",
-      description:
-        "On the recent fallout between the $SCIHUB community and the founder of Sci-Hub, Alexandra Elbakyan. It's about trust, ideals, and the messy business of  [...]",
-      image: olhenry,
-      alt: "Feature image for Reflections of a fallout",
-      href: "https://open.substack.com/pub/themorphing500/p/intermission-one-of-our-partners",
       kind: "external",
     },
   ];
@@ -129,13 +132,22 @@ const Home = () => {
               const content = (
                 <>
                   <div className="feature-media">
-                    <img
-                      src={piece.image}
-                      alt={piece.alt}
-                      className="feature-image"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture className="feature-picture">
+                      {piece.mobileImage && (
+                        <source
+                          media="(max-width: 768px)"
+                          srcSet={piece.mobileImage}
+                        />
+                      )}
+                      <img
+                        src={piece.image}
+                        alt={piece.alt}
+                        className="feature-image"
+                        style={{ objectPosition: piece.imagePosition || "center" }}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                   <div className="feature-text">
                     <h3 className="feature-card-title text-[18px] 2xs:text-[15px]">
