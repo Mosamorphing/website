@@ -172,8 +172,8 @@ const Booking = () => {
         <p>
           Mosadoluwa Fasasi is a multidisciplinary technologist working with
           individuals and teams across product strategy, operations, growth,
-          research infrastructure, project delivery, and selected public
-          engagements.
+          research strategy and advisory, research infrastructure, project
+          delivery, and selected public engagements.
         </p>
         <p>
           The form below helps him understand your exact need. Kindly fill it
@@ -237,6 +237,9 @@ const Booking = () => {
                 <option value="" disabled>Select an engagement</option>
                 <option value="product-strategy-operations-growth">
                   Product strategy, operations and growth
+                </option>
+                <option value="research-strategy-advisory">
+                  Research strategy and advisory
                 </option>
                 <option value="research-infrastructure">Research infrastructure</option>
                 <option value="project-delivery">Project delivery</option>
