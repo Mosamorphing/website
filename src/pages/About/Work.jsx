@@ -94,7 +94,7 @@ const Work = () => {
                 </p>
                 <p>
                   Before venturing into the blockchain ecosystem, Mosadoluwa
-                  Fasasi wore many hats as an operator in the Nigerian startup
+                  Fasasi wore multiple hats as an operator in the Nigerian startup
                   ecosystem, delivering human-centred experiences and unlocking
                   value for diverse stakeholders. He holds a BSc in Science Education 
                   from the University of Ilorin and is currently enrolled in Master of Information Technology at Miva Open University. 
