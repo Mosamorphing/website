@@ -170,14 +170,22 @@ const Booking = () => {
       <header className="booking-intro">
         <h1>Book Mosa</h1>
         <p>
-          Mosadoluwa Fasasi is a multidisciplinary technologist working with
-          individuals and teams across product strategy, operations, growth,
-          research strategy and advisory, research infrastructure, project
-          delivery, and selected public engagements.
+          Mosadoluwa Fasasi is a Product &amp; Operations Architect working on
+          what comes next, and what it takes to build it.
         </p>
         <p>
-          The form below helps him understand your exact need. Kindly fill it
-          out patiently, and you will hear from him within 24 hours.
+          He works with individuals, founders, and organisations to explore
+          emerging possibilities, challenge existing assumptions, and shape
+          the ideas, strategies, products, and systems that move us forward.
+          His work cuts across emerging technologies, product and growth
+          strategy, operations, research and innovation ecosystems, and
+          strategic advisory.
+        </p>
+        <p>
+          Whether you&apos;re exploring an unconventional idea, rethinking an
+          existing venture, or navigating a complex challenge, use the form
+          below to share what you&apos;re working on. You will hear from him within 24
+          hours.
         </p>
       </header>
 

@@ -197,6 +197,106 @@
   color: #e63946;
 }
 
+.media-subscribe {
+  align-items: end;
+  border-top: 1px solid var(--border-dark-soft);
+  display: grid;
+  gap: 56px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  margin-top: 40px;
+  padding: 34px 0 16px;
+  text-align: left;
+}
+
+.media-subscribe-copy h2 {
+  color: var(--text-on-dark);
+  font-size: clamp(26px, 2.4vw, 36px);
+  font-weight: 250;
+  line-height: 1.22;
+  margin: 0 0 10px;
+}
+
+.media-subscribe-copy p {
+  color: var(--text-muted-dark);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.media-subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-subscribe-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.media-subscribe-field > label {
+  color: var(--text-subtle-dark);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.media-subscribe-control {
+  align-items: end;
+  border-bottom: 1px solid var(--border-dark-input);
+  display: flex;
+  gap: 18px;
+  transition: border-color 0.2s ease;
+}
+
+.media-subscribe-control:focus-within {
+  border-color: #e63946;
+}
+
+.media-subscribe-control input {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: var(--text-on-dark);
+  flex: 1;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 0;
+  outline: none;
+  padding: 0 0 10px;
+}
+
+.media-subscribe-control button {
+  background: transparent;
+  border: 0;
+  color: var(--text-on-dark);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0 0 12px;
+  transition: color 0.2s ease;
+}
+
+.media-subscribe-control button:hover,
+.media-subscribe-control button:focus-visible {
+  color: #e63946;
+  outline: none;
+}
+
+.media-subscribe-control button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.media-subscribe-status {
+  color: var(--text-muted-dark);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 8px 0 0;
+  min-height: 19px;
+}
+
 /* Card nudge effect for media cards (desktop only) — small upward nudge, no shadow */
 .card-nudge {
   display: block;
@@ -263,5 +363,22 @@
 
   .media-feature-links {
     margin-top: 12px;
+  }
+
+  .media-subscribe {
+    align-items: stretch;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin-top: 48px;
+    padding-top: 28px;
+  }
+
+  .media-subscribe-copy h2 {
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+  .media-subscribe-control input {
+    font-size: 15px;
   }
 }

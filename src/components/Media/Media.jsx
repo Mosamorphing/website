@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { HiArrowRight, HiArrowUpRight } from "react-icons/hi2";
 import {
   SiApplepodcasts,
@@ -37,6 +37,18 @@ import escher from "../../../public/escher.jpeg";
 import nubian from "../../../public/nubian.png";
 import partners from "../../../public/partners.png";
 
+const encodeFormData = (data) => new URLSearchParams(data).toString();
+
+const getSubscriberPayload = (formElement) => {
+  const formData = new FormData(formElement);
+
+  return {
+    "form-name": "media-subscribers",
+    "bot-field": String(formData.get("bot-field") || ""),
+    email: String(formData.get("email") || "").trim(),
+  };
+};
+
 const getFeatureId = (title) =>
   title
     .toLowerCase()
@@ -45,7 +57,12 @@ const getFeatureId = (title) =>
 
 const displayOrder = {
   all: {
+    "building-africa-s-research-commons-in-public": 1,
     "a-case-for-decentralized-science": 4.5,
+  },
+  features: {
+    "a-revolutionary-future-for-scientific-research-through-decentralized-science": 0,
+    "building-africa-s-research-commons-in-public": 1,
   },
   notes: {
     "a-case-for-decentralized-science": 3,
@@ -68,6 +85,8 @@ const orderFeatures = (items, view) => {
 };
 
 const Media = () => {
+  const [subscriberEmail, setSubscriberEmail] = useState("");
+  const [subscriberStatus, setSubscriberStatus] = useState("idle");
   const [searchParams, setSearchParams] = useSearchParams();
   const tabs = [
     { label: "All", value: "all", category: null },
@@ -116,6 +135,14 @@ const Media = () => {
       imagePosition: "42% center",
       path: "/media/publication/interpreting-africas-scientific-computing-landscape",
       category: "Publications",
+    },
+    {
+      title: "Building Africa’s Research Commons in Public",
+      description:
+        "On Nubian's effort to surface overlooked student and independent research, build an open research commons, and turn Africa's youthful demographic into a research dividend.",
+      image: olhenry,
+      link: "https://intimates.substack.com/p/building-africas-research-commons",
+      category: "Features",
     },
     {
       title: "The importance of contextual studies",
@@ -389,6 +416,35 @@ const Media = () => {
     activeTab.value
   );
 
+  const handleSubscriberSubmit = async (event) => {
+    event.preventDefault();
+    const payload = getSubscriberPayload(event.currentTarget);
+
+    if (!payload.email) {
+      setSubscriberStatus("error");
+      return;
+    }
+
+    setSubscriberStatus("sending");
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodeFormData(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Subscription failed");
+      }
+
+      setSubscriberEmail("");
+      setSubscriberStatus("sent");
+    } catch {
+      setSubscriberStatus("error");
+    }
+  };
+
   return (
     <div className="min-h-[93.5dvh] flex-1 flex flex-col justify-between">
       <div className="media-wrapper layout__container">
@@ -501,6 +557,75 @@ const Media = () => {
                 );
               })}
             </div>
+            <section
+              className="media-subscribe"
+              aria-labelledby="media-subscribe-title"
+            >
+              <div className="media-subscribe-copy">
+                <h2 id="media-subscribe-title">Keep up with the work</h2>
+                <p>
+                  New notes, research, and selected updates, sent occasionally.
+                </p>
+              </div>
+              <form
+                className="media-subscribe-form"
+                name="media-subscribers"
+                method="POST"
+                action="/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubscriberSubmit}
+              >
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="media-subscribers"
+                />
+                <p className="hidden">
+                  <label>
+                    Don&apos;t fill this out if you&apos;re human:
+                    <input name="bot-field" tabIndex="-1" autoComplete="off" />
+                  </label>
+                </p>
+                <div className="media-subscribe-field">
+                  <label htmlFor="subscriber-email">Email address</label>
+                  <div className="media-subscribe-control">
+                    <input
+                      id="subscriber-email"
+                      type="email"
+                      name="email"
+                      value={subscriberEmail}
+                      onChange={(event) => {
+                        setSubscriberEmail(event.target.value);
+                        if (subscriberStatus !== "idle") {
+                          setSubscriberStatus("idle");
+                        }
+                      }}
+                      autoComplete="email"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      disabled={subscriberStatus === "sending"}
+                    >
+                      {subscriberStatus === "sending"
+                        ? "Subscribing..."
+                        : "Subscribe"}
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="media-subscribe-status"
+                  role="status"
+                  aria-live="polite"
+                >
+                  {subscriberStatus === "sent" &&
+                    "You're on the list. Thank you."}
+                  {subscriberStatus === "error" &&
+                    "That didn't go through. Please try again."}
+                </p>
+              </form>
+            </section>
           </section>
         </div>
       </div>
