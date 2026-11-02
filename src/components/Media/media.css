@@ -224,6 +224,7 @@
 }
 
 .media-subscribe-form {
+  color-scheme: dark;
   display: flex;
   flex-direction: column;
 }
@@ -264,6 +265,14 @@
   min-width: 0;
   outline: none;
   padding: 0 0 10px;
+}
+
+.media-subscribe-control input:-webkit-autofill,
+.media-subscribe-control input:-webkit-autofill:hover,
+.media-subscribe-control input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px var(--surface-dark) inset;
+  -webkit-text-fill-color: var(--text-on-dark);
+  caret-color: var(--text-on-dark);
 }
 
 .media-subscribe-control button {
