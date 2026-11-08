@@ -6,25 +6,38 @@ const Sonata = () => {
   return (
     <div className="publication">
       <h1>The Sonata Puzzle and the Vowel Adaptation</h1>
-      <p className="article-date">
-        April 2026 • watch on{" "}
-        <a
-          className="media-link-underline"
-          href="https://www.youtube.com/watch?v=CVJ3GZcVoF4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          YouTube
-        </a>{" "}
-        • read full paper on{" "}
-        <a
-          className="media-link-underline"
-          href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Nubian Research
-        </a>
+      <p className="article-date sonata-meta">
+        <span>
+          April 2026 • {" "}
+          <a
+            className="media-link-underline"
+            href="https://www.youtube.com/watch?v=CVJ3GZcVoF4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the Vowel Adaptation explained
+          </a>{" "}
+          • Read full paper on{" "}
+          <a
+            className="media-link-underline"
+            href="https://nubianresearch.com/paper/douglas-hofstadters-sonata-puzzle-the-vowel-adaptation-1771917904472"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nubian Research
+          </a>
+        </span>
+        <span>
+          October 2026 • {" "}
+          <a
+            className="media-link-underline"
+            href="https://youtube.com/shorts/98veznee5fE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch an application of this study in game design and world-building.
+          </a>
+        </span>
       </p>
       <p>
         Most people think what they are looking at is the full picture. It is

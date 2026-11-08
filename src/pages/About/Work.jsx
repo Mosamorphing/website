@@ -142,7 +142,16 @@ const Work = () => {
                       >
                         1.1 million impressions on X
                       </a>{" "}
-                      with over 100,000 players in just 5 days.
+                      with over 100,000 players in just 5 days. {" "}
+                      <a
+                        className="work-inline-link"
+                        href="https://youtube.com/shorts/98veznee5fE"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Watch him discuss the contribution
+                      </a>
+                      .
                     </span>
                   </p>
                 </div>

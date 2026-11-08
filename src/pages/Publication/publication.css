@@ -41,6 +41,12 @@
   outline: none;
 }
 
+.publication .sonata-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .publication-inline-image {
   margin: 20px 0 24px;
   text-align: center;
