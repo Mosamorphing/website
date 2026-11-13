@@ -160,7 +160,7 @@ const Booking = () => {
               height={slide.height}
               decoding="async"
               loading={index === 0 ? "eager" : "lazy"}
-              fetchPriority={index === 0 ? "high" : "low"}
+              fetchpriority={index === 0 ? "high" : "low"}
               onLoad={index === 1 ? () => setPortraitReady(true) : undefined}
             />
           </picture>

@@ -87,6 +87,7 @@ const orderFeatures = (items, view) => {
 const Media = () => {
   const [subscriberEmail, setSubscriberEmail] = useState("");
   const [subscriberStatus, setSubscriberStatus] = useState("idle");
+  const [hasHydrated, setHasHydrated] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
   const tabs = [
     { label: "All", value: "all", category: null },
@@ -95,7 +96,9 @@ const Media = () => {
     { label: "Publications", value: "publications", category: "Publications" },
     { label: "Talks", value: "talks", category: "Speakings" },
   ];
-  const rawTabValue = searchParams.get("tab")?.toLowerCase();
+  const rawTabValue = hasHydrated
+    ? searchParams.get("tab")?.toLowerCase()
+    : undefined;
   const activeTabValue =
     rawTabValue === "blog"
       ? "notes"
@@ -103,6 +106,10 @@ const Media = () => {
         ? "talks"
         : rawTabValue ?? "all";
   const activeTab = tabs.find((tab) => tab.value === activeTabValue) ?? tabs[0];
+
+  useEffect(() => {
+    setHasHydrated(true);
+  }, []);
 
   useEffect(() => {
     if (!rawTabValue || rawTabValue === activeTabValue) return;
@@ -507,7 +514,7 @@ const Media = () => {
                           style={{ objectPosition: feature.imagePosition || "center" }}
                           loading={index < 2 ? "eager" : "lazy"}
                           decoding="async"
-                          fetchPriority={index === 0 ? "high" : "auto"}
+                          fetchpriority={index === 0 ? "high" : "auto"}
                         />
                       </picture>
                     </div>

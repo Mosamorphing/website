@@ -115,7 +115,7 @@ const Home = () => {
             alt="Hero"
             loading="eager"
             decoding="async"
-            fetchPriority="high"
+            fetchpriority="high"
             className="hero-image w-full h-auto max-h-full object-cover"
           />
         </div>

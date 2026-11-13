@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import RouteMetadata from "./components/Seo/RouteMetadata";
 
@@ -13,9 +13,9 @@ import Sonata from "./pages/Publication/Sonata";
 import ContextualStudies from "./pages/Publication/ContextualStudies";
 import ScientificComputing from "./pages/Publication/ScientificComputing";
 
-const App = () => {
+export const AppContent = () => {
   return (
-    <Router>
+    <>
       <RouteMetadata />
       <NavBar />
       <Routes>
@@ -44,8 +44,14 @@ const App = () => {
           />
         </Route>
       </Routes>
-    </Router>
+    </>
   );
 };
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
+);
 
 export default App;
